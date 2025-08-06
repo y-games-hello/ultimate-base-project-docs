@@ -2,469 +2,469 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.ApplicationEntry.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.AssetLoader.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.Configs.DataConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.Configs.GeneralConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.Configs.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.ConfigStorage.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.IConfigLoader.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.ResourcesConfigLoader.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Data.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Editor.EditorApplicationEntry.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Editor.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Extensions.BoundedQueue-1.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Extensions.TaskExtensions.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Extensions.UIExtensions.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.Extensions.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPConstants.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.ApplicationEvents.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Audio.AudioService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Audio.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Commands.ICommand-1.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Commands.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.ConfiguredService-1.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.Console.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.DebugService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.LogMessageData.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.LogMessageView.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Debugs.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Editor.CoreSettingCategory.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Editor.SettingCategory.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Editor.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Factory.FactoryService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Factory.PostProcessors.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Factory.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.IService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.Editor.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.SaveService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.Serializers.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Saves.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Scenes.SceneService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Scenes.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Services.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.UI.Handlers.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Updaters.ILateUpdatable.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Updaters.IUpdatable.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Updaters.Updater.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Updaters.UpdaterService.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.Updaters.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.UBPServices.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/api/UBP.Scripts.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>daily</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/index.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/manual/coniunctis.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
     <loc>https://y-games-hello.github.io/ultimate-base-project/manual/etiam.html</loc>
-    <lastmod>2025-08-06T03:20:01+00:00</lastmod>
+    <lastmod>2025-08-06T04:43:43+00:00</lastmod>
     <changefreq>weekly</changefreq>
     <priority>0.5</priority>
   </url>
