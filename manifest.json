@@ -1,0 +1,1047 @@
+{
+  "sitemap": {
+    "fileOptions": {
+      "api/*": {
+        "baseUrl": "https://y-games-hello.github.io/ultimate-base-project/",
+        "changefreq": "daily"
+      }
+    },
+    "baseUrl": "https://y-games-hello.github.io/ultimate-base-project/",
+    "changefreq": "weekly"
+  },
+  "homepages": [],
+  "source_base_path": "D:/a/ultimate-base-project-docs/ultimate-base-project-docs/Documentation",
+  "xrefmap": "xrefmap.yml",
+  "files": [
+    {
+      "type": "Resource",
+      "output": {
+        "resource": {
+          "relative_path": "index.json"
+        }
+      },
+      "is_incremental": false
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.ApplicationEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.ApplicationEntry.html",
+          "hash": "W4fk+/NMGJ7EpQ7x//BQ8h3jXXRG0Ihgadmng4vEjfU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.AssetLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.AssetLoader.html",
+          "hash": "A1do/djCHpqmnJw8oNFkp5S2d5665z7JeeTjwKreSXE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.ConfigStorage.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.ConfigStorage.html",
+          "hash": "Mygon0Jtv+kFqJ62ymmuVLhjDLzNwevHszFhSkzC1uw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.Configs.DataConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.Configs.DataConfig.html",
+          "hash": "px3kKFdS92A8hFC8cwrrghibHcUJRKPlYlNRGYBW6ik="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.Configs.GeneralConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.Configs.GeneralConfig.html",
+          "hash": "dTAybErEQ+Stvs0fioOiBUwHj9TcPd2AvlxtNKVJcN0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.Configs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.Configs.html",
+          "hash": "s1yPI4y0vM7KNTlNGSezjPgo+CJtimeEal5FvyF4X/Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.IConfigLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.IConfigLoader.html",
+          "hash": "SvL2BEOBgsyCC/2MAANqdlJN1sHtJJM0r7HZ5HvVcYQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.ResourcesConfigLoader.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.ResourcesConfigLoader.html",
+          "hash": "FQCfA2lIzyLz2D82xNDKqPyO8epIuVRdR6vrw3yOdcE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Data.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Data.html",
+          "hash": "JEFJIjC8S8yFd57UQYSYCGPNdolav+lotnixDRLXzoc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Editor.EditorApplicationEntry.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Editor.EditorApplicationEntry.html",
+          "hash": "WfEgpABUqYfRdVKhc9O7aXPMi4M0hqGNtI2xJznFVrE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Editor.html",
+          "hash": "oLULVdC7x7YtkigLSSe9eA7DDFIgM6VVrYZ6Y+OGatE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Extensions.BoundedQueue-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Extensions.BoundedQueue-1.html",
+          "hash": "lj0lUh+2zvyu+Nu5FBv2aH/od9emrqly66IiK+ptOGc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Extensions.TaskExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Extensions.TaskExtensions.html",
+          "hash": "NKFWAGgwXmishqZKK03PeEazdSJGAUAqXUJnpB+C93A="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Extensions.UIExtensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Extensions.UIExtensions.html",
+          "hash": "QV/z/UulvNGL2Z6mSas37TtjzlzX8DCUhIZVzjSjdZ8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.Extensions.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.Extensions.html",
+          "hash": "TutcamWUZ0JID3/bkWsNR9LUTBCcQdmnE/x1Vg3+5bc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPConstants.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPConstants.html",
+          "hash": "b5svRQV4d7+8zgjqrnUOt6kXhq1XXoQHlVX8IKlQWiY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher.html",
+          "hash": "ruLMRuVEYSbL/QvvIbrYXVeNz1WgWxxswCFEWaw9JGk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService.html",
+          "hash": "y+coNmN4gjugUM541RpYgTQi8GjqL2F/35KHWnTJ9qc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.ApplicationEvents.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.ApplicationEvents.html",
+          "hash": "f9u3NJmG1G4MHot4xLUvF6V8auCX3L9QpYFgg/fmiFo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Audio.AudioService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Audio.AudioService.html",
+          "hash": "Mm9YbWX9c2ONb28J7xLykVC6OeirAIRLpH5jbS+D4FU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Audio.AudioServiceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html",
+          "hash": "9lGdiVUJhdKdAm+AetNe4UARbjNuOhlTHOUW+OmeHcY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Audio.AudioSourcesPool.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html",
+          "hash": "1atpuOlFs+8eFMce1BtOi9oKIQigzjLG7pFivdQqRNk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Audio.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Audio.html",
+          "hash": "nsVf/7JHIKyPetg8z9LFyf8eKiEmpBqzDw//u9zdyK0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Commands.ICommand-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Commands.ICommand-1.html",
+          "hash": "lqUmAKDyHBHC9D08Ei/0PwkMYibCfwRz0C8+wzKx13k="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Commands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Commands.html",
+          "hash": "G2d7eysDrhc2rzGl6IeMSQPU7bmDNIE7VvSYVCTwmn4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.ConfiguredService-1.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.ConfiguredService-1.html",
+          "hash": "Pjfy8co2Sv7Y2wbGLFHFVb5QGPLEvzSLuHRrChTmvfk="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html",
+          "hash": "gJec4Tl+ip3Y6U2JU3KKlIx96Ee75TIC+0gqdpvCK6g="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.html",
+          "hash": "v4DaX6qdWTknKnhcFVmxrTACPE6kJRpkoaO5T1quXx4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.html",
+          "hash": "wUdb5otoze5JslP2L6rz7ZaAlntfLhv7LzFOJUG2DJ4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.html",
+          "hash": "9UTz657xMdUksfTceaYaRnDwKBvijuj4dXGhPCW+KV0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html",
+          "hash": "eg2lsajQXdPWBIn8CEx3U+WMgBPfbEo7Hs74Rey9jgA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.Console.html",
+          "hash": "kSxTuwjL3BouoxHzul462aw8fBRTeO28EsWcLz/KY3Q="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html",
+          "hash": "+McNBL23bSf3ieXNIleG6T6UgtgNe29f7GH0hosXQR8="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand.html",
+          "hash": "INTj1Cy3HsYkQB4qgBlx0UlgSQqyyie2W7RyFXAUU4I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html",
+          "hash": "/77TudPFtwX220pBkcZ6FSp+YIXbNWcBw3p9CvB9f1I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.DebugService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.DebugService.html",
+          "hash": "/tVHFk65hAiWN2x9lYiKsy80t+qJJBxX9xf0s4Gs1dw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html",
+          "hash": "qTUBeUSh/zXUoDQf3utNMORti5ZAf1cPD20aMRx3zHI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.LogMessageData.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.LogMessageData.html",
+          "hash": "XVUSy4YS1hFfraVbPICxt5oPEpBrTGpuZObDuG+0exQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.LogMessageView.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.LogMessageView.html",
+          "hash": "7SN7Y2S8nl4p/EPg/Wpt+c3SYot+rvupfNTYUPcF8cU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Debugs.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Debugs.html",
+          "hash": "pN9v4qKgFjxN+xoWx2N5B76WK3hoGd7KniKxhAMxSk4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Editor.CoreSettingCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Editor.CoreSettingCategory.html",
+          "hash": "Twfqyl/2XlTTVTJgJmQW/2LyEcK7AN2sMO3PdedXtBY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.html",
+          "hash": "md9V2+jQzr088Gtzw20asvaOOEiCTBNyuyYQJB1B1ds="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Editor.SettingCategory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Editor.SettingCategory.html",
+          "hash": "H9MYf9WBV1zdOJzfzpmGfIHIa8dfiB+ZtCMBhUEZE24="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.html",
+          "hash": "IN4MdaqmxLPo9A2qOWoRz66U81O0Hi+bO34d3j85TPE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Editor.html",
+          "hash": "Okkg2hUu5opzw/Dy4iYVC3MwFxMAeNkC6J0XkPrs29c="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Factory.FactoryService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Factory.FactoryService.html",
+          "hash": "3GiOMknoF3Adh9FOBsI244+laUD3/CrW/IGGoEPB/Lc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.html",
+          "hash": "XcKfRLKgjsmuAF3PoCm5IzS66z2VBltY8BpSGy/x4sg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.html",
+          "hash": "kwMYpZj9cbSX9qQ/7PnSPGS8mK+hgqP9LuxvjLyZWHw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor.html",
+          "hash": "Vk8zhO4kB8rqFT0cYS5f0+3ocUXuG1mOLmi/+cHWHTs="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Factory.PostProcessors.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Factory.PostProcessors.html",
+          "hash": "wdVPU6IZU2i1uyN8l+bmHFGF5J+3mRl50vA8bSP01wc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Factory.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Factory.html",
+          "hash": "hf5z9UbrouXY8NcAonbEviSB2sNVDpQszbUB6B8rAyQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.IService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.IService.html",
+          "hash": "syWMjKME37RiNAwUM3RdgzeNdkaGPJJIDSHZ/GVJzcg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.html",
+          "hash": "TcnfjeWBYre9MUCTkOxDQZPHr8iNJ/f3zTADnA69Y4I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.Editor.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.Editor.html",
+          "hash": "p61yvEkGmyHrBHmIBwTRBCd+oV8RVchRU/YAxPN21lc="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.SaveService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.SaveService.html",
+          "hash": "ufxBa5AddY9vhYVGyqx9Hh+p+TIjoNwj29C7mSr0dZY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.SaveServiceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html",
+          "hash": "H8Q0q3nxcTcENzCerVvQ/SVfiymRuBAPAwKI1cAsINY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.html",
+          "hash": "gZ6oRmjblj/A7dT/cEF6BghZ3zUHZU/CIftob1fIuJg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html",
+          "hash": "WeLgQKMYpKGylzy3S0JMPz0I1UrT6q7y59fgR0Dkz0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.Serializers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.Serializers.html",
+          "hash": "FSTEgFaI8XpYSzN0BeEHvmj1EeaVI69cJ81fwWpDQ7U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Saves.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Saves.html",
+          "hash": "xonUFVBmZ0RTUJnzrIdTmlxI7rp2so7wOSDHnAtthfA="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Scenes.SceneService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Scenes.SceneService.html",
+          "hash": "usVyeNy1CkYinbkykharI9ZbGM7C8YyEfuL8/5ODlpo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html",
+          "hash": "JyUFlnulxlTgG7RuxDIs8s+l+bMfzfcHUOllOn9ONlg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Scenes.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Scenes.html",
+          "hash": "cS76dk0EPUitt0oL3KNZYcODnx0qGUBKukqn4z4U808="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Services.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Services.html",
+          "hash": "+mEPrwtVl9g55xqgaa681zFMxfLhrpni8h1m8TPPyrw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.html",
+          "hash": "qpK74bQ5RjoA2sXMc9eTKoq8+N0RVcDQHgb5nzomd0U="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.html",
+          "hash": "pKqD6ofCrgafNDrSUjB8x1DC4T67lCkid8HwEqNg/Jo="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.UI.Handlers.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.UI.Handlers.html",
+          "hash": "mFXXcWraRJYVpXWAnCA5CvSatUT7kBT8NurR2kKonxg="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.html",
+          "hash": "eonMu0LgifKUfkEU8H1sgsfZV/CTqEr4BcUD831E/PU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Updaters.ILateUpdatable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Updaters.ILateUpdatable.html",
+          "hash": "Xqt3p7FYB1S2nOAjdvFvtLXhrip5hoqnCCV01lJN3a0="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Updaters.IUpdatable.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Updaters.IUpdatable.html",
+          "hash": "ljz4CMlS+BL32TjC/Sc3JcGzeMQLQ+6fMYhddvQoY/I="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Updaters.Updater.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Updaters.Updater.html",
+          "hash": "Ln1cATgo+3VIvg9jAQBkB79ad2/OA8nv5g3UmMSe6hw="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Updaters.UpdaterService.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Updaters.UpdaterService.html",
+          "hash": "CxSQV+A4rujYzOPpzzEZ1jJKdZtEyXMseKLJOoYldHY="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.Updaters.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.Updaters.html",
+          "hash": "vTGaFy9zxZ6AEHt9mBPrWTmK3zniHosYctNk8/whwho="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.UBPServices.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.UBPServices.html",
+          "hash": "10CapVP0M2XVb330b462Z4hO6AecS+tuVvrFbRM0dhU="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "ManagedReference",
+      "source_relative_path": "api/UBP.Scripts.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/UBP.Scripts.html",
+          "hash": "9XjZoj2eZPlEoMRsx1VJwBWV/wsfuZ/aWQ351IwNuxM="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "api/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "api/toc.html",
+          "hash": "hbvLmb4V/IfC6S7bKhAKAvXREt1GDnM3Cmjdy5dcW0Y="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "index.md",
+      "output": {
+        ".html": {
+          "relative_path": "index.html",
+          "hash": "yDb4MYb3DyakhZa9C5F48xPSCU0dxMK9HN437SyY4CE="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/coniunctis.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/coniunctis.html",
+          "hash": "FoG5u1Nr9yw9eO7kIjnrLGXmjMsBxsImQyop1BgEq8o="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Conceptual",
+      "source_relative_path": "manual/etiam.md",
+      "output": {
+        ".html": {
+          "relative_path": "manual/etiam.html",
+          "hash": "gnPrLH9emdfnSlZyTs/UUqfJ4saTTmz81tZbsY9BRJI="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "manual/toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "manual/toc.html",
+          "hash": "rP+c9KPLMLO+q5u7rC7ci/iMYXqbmZC8g5PeGCEXGU4="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    },
+    {
+      "type": "Toc",
+      "source_relative_path": "toc.yml",
+      "output": {
+        ".html": {
+          "relative_path": "toc.html",
+          "hash": "WEYRQV0FeHj8LkqU2GFusOrxusUlGDWIEsYeiwYsnNQ="
+        }
+      },
+      "is_incremental": false,
+      "version": ""
+    }
+  ],
+  "incremental_info": [
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot build incrementally because last build info is missing.",
+        "incrementalPhase": "build",
+        "total_file_count": 0,
+        "skipped_file_count": 0,
+        "full_build_reason_code": "NoAvailableBuildCache"
+      },
+      "processors": {
+        "ConceptualDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 3,
+          "skipped_file_count": 0
+        },
+        "ManagedReferenceDocumentProcessor": {
+          "can_incremental": false,
+          "incrementalPhase": "build",
+          "total_file_count": 75,
+          "skipped_file_count": 0
+        },
+        "TocDocumentProcessor": {
+          "can_incremental": false,
+          "details": "Processor TocDocumentProcessor cannot support incremental build because the processor doesn't implement ISupportIncrementalDocumentProcessor interface.",
+          "incrementalPhase": "build",
+          "total_file_count": 0,
+          "skipped_file_count": 0
+        }
+      }
+    },
+    {
+      "status": {
+        "can_incremental": false,
+        "details": "Cannot support incremental post processing, the reason is: should not trace intermediate info.",
+        "incrementalPhase": "postProcessing",
+        "total_file_count": 0,
+        "skipped_file_count": 0
+      },
+      "processors": {}
+    }
+  ],
+  "version_info": {},
+  "groups": [
+    {
+      "xrefmap": "xrefmap.yml"
+    }
+  ]
+}

@@ -1,0 +1,945 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Class SceneService
+   | Ultimate Base Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="Class SceneService
+   | Ultimate Base Project ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../favicon.ico">
+    <link rel="stylesheet" href="../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../styles/docfx.css">
+    <link rel="stylesheet" href="../styles/main.css">
+    <meta property="docfx:navrel" content="../toc.html">
+    <meta property="docfx:tocrel" content="toc.html">
+    
+    <meta property="docfx:rel" content="../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../index.html">
+                <img id="logo" class="svg" src="../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService">
+  
+  
+  <h1 id="UBP_Scripts_UBPServices_Scenes_SceneService" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService" class="text-break">Class SceneService
+  </h1>
+  <div class="markdown level0 summary"><p>Service responsible for loading, unloading, and managing scenes in the project.
+Supports both synchronous and asynchronous operations, with optional progress callbacks.</p>
+</div>
+  <div class="markdown level0 conceptual"></div>
+  <div class="inheritance">
+    <h5>Inheritance</h5>
+    <div class="level0"><span class="xref">object</span></div>
+    <div class="level1"><a class="xref" href="UBP.Scripts.UBPServices.ConfiguredService-1.html">ConfiguredService</a><a class="xref" href="UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html">SceneServiceConfig</a></div>
+    <div class="level2"><span class="xref">SceneService</span></div>
+  </div>
+  <div class="implements">
+    <h5>Implements</h5>
+    <div><a class="xref" href="UBP.Scripts.UBPServices.IService.html">IService</a></div>
+  </div>
+  <h6><strong>Namespace</strong>: <span class="xref">UBP</span><a class="xref" href="UBP.Scripts.html">Scripts</a><a class="xref" href="UBP.Scripts.UBPServices.html">UBPServices</a><a class="xref" href="UBP.Scripts.UBPServices.Scenes.html">Scenes</a></h6>
+  <h6><strong>Assembly</strong>: .dll</h6>
+  <h5 id="UBP_Scripts_UBPServices_Scenes_SceneService_syntax">Syntax</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public class SceneService : ConfiguredService&lt;SceneServiceConfig&gt;, IService</code></pre>
+  </div>
+  <h3 id="properties">Properties
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_ServiceConfig.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L25">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_ServiceConfig_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_ServiceConfig" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig">ServiceConfig</h4>
+  <div class="markdown level1 summary"></div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override SceneServiceConfig ServiceConfig { get; }</code></pre>
+  </div>
+  <h5 class="propertyValue">Property Value</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html">SceneServiceConfig</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig">ConfiguredService&lt;SceneServiceConfig&gt;.ServiceConfig</a></div>
+  <h3 id="methods">Methods
+  </h3>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_GetActiveScene.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L243">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_GetActiveScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_GetActiveScene" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene">GetActiveScene()</h4>
+  <div class="markdown level1 summary"><p>Returns the currently active scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene GetActiveScene()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.html">Scene</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_GetLoadedScenes.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L251">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_GetLoadedScenes_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_GetLoadedScenes" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes">GetLoadedScenes()</h4>
+  <div class="markdown level1 summary"><p>Returns the list of currently tracked loaded scenes.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public List&lt;Scene&gt; GetLoadedScenes()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Collections.Generic.List&lt;T&gt;</span><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.html">Scene</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_System_Int32_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L267">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_System_Int32_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.Int32)">GetScene(int)</h4>
+  <div class="markdown level1 summary"><p>Gets a scene by its build index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene GetScene(int sceneIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sceneIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.html">Scene</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_System_String_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L259">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_System_String_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.String)">GetScene(string)</h4>
+  <div class="markdown level1 summary"><p>Gets a scene by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Scene GetScene(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.html">Scene</a></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_InitializeAsync.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L31">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_InitializeAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_InitializeAsync" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync">InitializeAsync()</h4>
+  <div class="markdown level1 summary"><p>Initializes the SceneService and resets the loaded scene list.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public override Task InitializeAsync()</code></pre>
+  </div>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="overrides">Overrides</h5>
+  <div><a class="xref" href="UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync">ConfiguredService&lt;SceneServiceConfig&gt;.InitializeAsync()</a></div>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_System_Int32_UnityEngine_SceneManagement_LoadSceneMode_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.Int32%2CUnityEngine.SceneManagement.LoadSceneMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L51">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_System_Int32_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)">LoadScene(int, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Synchronously loads a scene by build index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadScene(int sceneIndex, LoadSceneMode mode = LoadSceneMode.Single)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sceneIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html">LoadSceneMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_System_String_UnityEngine_SceneManagement_LoadSceneMode_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.String%2CUnityEngine.SceneManagement.LoadSceneMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L42">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_System_String_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)">LoadScene(string, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Synchronously loads a scene by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void LoadScene(string sceneName, LoadSceneMode mode = LoadSceneMode.Single)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html">LoadSceneMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_Int32_System_Action_System_Single__System_Action_System_Boolean_UnityEngine_SceneManagement_LoadSceneMode_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32%2CSystem.Action%7BSystem.Single%7D%2CSystem.Action%2CSystem.Boolean%2CUnityEngine.SceneManagement.LoadSceneMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L101">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_Int32_System_Action_System_Single__System_Action_System_Boolean_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)">LoadSceneAsync(int, Action&lt;float&gt;, Action, bool, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Loads a scene asynchronously by index with optional callbacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LoadSceneAsync(int sceneIndex, Action&lt;float&gt; progressCallback, Action completionCallback, bool allowSceneActivation = true, LoadSceneMode mode = LoadSceneMode.Single)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sceneIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action&lt;T&gt;</span><span class="xref">float</span></td>
+        <td><span class="parametername">progressCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completionCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">allowSceneActivation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html">LoadSceneMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_Int32_UnityEngine_SceneManagement_LoadSceneMode_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32%2CUnityEngine.SceneManagement.LoadSceneMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L67">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_Int32_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)">LoadSceneAsync(int, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads a scene by build index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LoadSceneAsync(int sceneIndex, LoadSceneMode mode = LoadSceneMode.Single)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sceneIndex</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html">LoadSceneMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_String_System_Action_System_Single__System_Action_System_Boolean_UnityEngine_SceneManagement_LoadSceneMode_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String%2CSystem.Action%7BSystem.Single%7D%2CSystem.Action%2CSystem.Boolean%2CUnityEngine.SceneManagement.LoadSceneMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L75">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_String_System_Action_System_Single__System_Action_System_Boolean_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)">LoadSceneAsync(string, Action&lt;float&gt;, Action, bool, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Loads a scene asynchronously with optional progress and completion callbacks.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LoadSceneAsync(string sceneName, Action&lt;float&gt; progressCallback, Action completionCallback, bool allowSceneActivation = true, LoadSceneMode mode = LoadSceneMode.Single)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action&lt;T&gt;</span><span class="xref">float</span></td>
+        <td><span class="parametername">progressCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completionCallback</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">bool</span></td>
+        <td><span class="parametername">allowSceneActivation</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html">LoadSceneMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String%2CUnityEngine.SceneManagement.LoadSceneMode)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L59">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)">LoadSceneAsync(string, LoadSceneMode)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously loads a scene by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task LoadSceneAsync(string sceneName, LoadSceneMode mode = LoadSceneMode.Single)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.LoadSceneMode.html">LoadSceneMode</a></td>
+        <td><span class="parametername">mode</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_SetActiveScene_UnityEngine_SceneManagement_Scene_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene(UnityEngine.SceneManagement.Scene)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L277">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_SetActiveScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_SetActiveScene_UnityEngine_SceneManagement_Scene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene(UnityEngine.SceneManagement.Scene)">SetActiveScene(Scene)</h4>
+  <div class="markdown level1 summary"><p>Sets a scene as the active scene.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void SetActiveScene(Scene scene)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><a class="xref" href="https://docs.unity3d.com/ScriptReference/SceneManagement.Scene.html">Scene</a></td>
+        <td><span class="parametername">scene</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_System_Int32_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L151">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_System_Int32_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.Int32)">UnloadScene(int)</h4>
+  <div class="markdown level1 summary"><p>Unloads a scene by build index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadScene(int sceneIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sceneIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_System_String_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L142">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_System_String_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.String)">UnloadScene(string)</h4>
+  <div class="markdown level1 summary"><p>Unloads a scene by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public void UnloadScene(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_Int32_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.Int32)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L167">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_Int32_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.Int32)">UnloadSceneAsync(int)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously unloads a scene by build index.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UnloadSceneAsync(int sceneIndex)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">int</span></td>
+        <td><span class="parametername">sceneIndex</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_String_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L159">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_String_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String)">UnloadSceneAsync(string)</h4>
+  <div class="markdown level1 summary"><p>Asynchronously unloads a scene by name.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UnloadSceneAsync(string sceneName)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <span class="small pull-right mobile-hide">
+    <span class="divider">|</span>
+    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_String_System_Action_.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String%2CSystem.Action)%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A">Improve this Doc</a>
+  </span>
+  <span class="small pull-right mobile-hide">
+    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L175">View Source</a>
+  </span>
+  <a id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*"></a>
+  <h4 id="UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_String_System_Action_" data-uid="UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String,System.Action)">UnloadSceneAsync(string, Action)</h4>
+  <div class="markdown level1 summary"><p>Unloads a scene asynchronously with an optional completion callback.</p>
+</div>
+  <div class="markdown level1 conceptual"></div>
+  <h5 class="decalaration">Declaration</h5>
+  <div class="codewrapper">
+    <pre><code class="lang-csharp hljs">public Task UnloadSceneAsync(string sceneName, Action completionCallback)</code></pre>
+  </div>
+  <h5 class="parameters">Parameters</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Name</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">string</span></td>
+        <td><span class="parametername">sceneName</span></td>
+        <td></td>
+      </tr>
+      <tr>
+        <td><span class="xref">System.Action</span></td>
+        <td><span class="parametername">completionCallback</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h5 class="returns">Returns</h5>
+  <table class="table table-bordered table-striped table-condensed">
+    <thead>
+      <tr>
+        <th>Type</th>
+        <th>Description</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><span class="xref">System.Threading.Tasks.Task</span></td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 id="implements">Implements</h3>
+  <div>
+      <a class="xref" href="UBP.Scripts.UBPServices.IService.html">IService</a>
+  </div>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <div class="contribution">
+                <ul class="nav">
+                  <li>
+                    <a href="https://github.com/y-games-hello/ultimate-base-project/new/main/apiSpec/new?filename=UBP_Scripts_UBPServices_Scenes_SceneService.md&amp;value=---%0Auid%3A%20UBP.Scripts.UBPServices.Scenes.SceneService%0Asummary%3A%20'*You%20can%20override%20summary%20for%20the%20API%20here%20using%20*MARKDOWN*%20syntax'%0A---%0A%0A*Please%20type%20below%20more%20information%20about%20this%20API%3A*%0A%0A" class="contribution-link">Improve this Doc</a>
+                  </li>
+                  <li>
+                    <a href="https://github.com/y-games-hello/ultimate-base-project/blob/main/Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs/#L20" class="contribution-link">View Source</a>
+                  </li>
+                </ul>
+              </div>
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ultimate Base Project
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../styles/docfx.js"></script>
+    <script type="text/javascript" src="../styles/main.js"></script>
+  </body>
+</html>
