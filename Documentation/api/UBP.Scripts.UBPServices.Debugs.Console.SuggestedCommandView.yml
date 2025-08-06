@@ -1,0 +1,342 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  id: SuggestedCommandView
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  children:
+  - UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand
+  - UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected
+  - UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected(System.Boolean)
+  - UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  langs:
+  - csharp
+  - vb
+  name: SuggestedCommandView
+  nameWithType: SuggestedCommandView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SuggestedCommandView
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+    startLine: 11
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: >-
+    Represents a visual UI element for displaying a suggested console command.
+
+    Handles display and selection highlighting for individual commands in the suggestion list.
+  example: []
+  syntax:
+    content: 'public class SuggestedCommandView : MonoBehaviour'
+    content.vb: Public Class SuggestedCommandView Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand
+  commentId: P:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand
+  id: ConsoleCommand
+  parent: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  langs:
+  - csharp
+  - vb
+  name: ConsoleCommand
+  nameWithType: SuggestedCommandView.ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleCommand
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+    startLine: 19
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  syntax:
+    content: public ConsoleCommand ConsoleCommand { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    content.vb: Public Property ConsoleCommand As ConsoleCommand
+  overload: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand*
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected
+  commentId: P:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected
+  id: IsSelected
+  parent: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  langs:
+  - csharp
+  - vb
+  name: IsSelected
+  nameWithType: SuggestedCommandView.IsSelected
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: IsSelected
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+    startLine: 20
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  syntax:
+    content: public bool IsSelected { get; set; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public Property IsSelected As Boolean
+  overload: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected*
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  id: Setup(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  parent: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  langs:
+  - csharp
+  - vb
+  name: Setup(ConsoleCommand)
+  nameWithType: SuggestedCommandView.Setup(ConsoleCommand)
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Setup
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+    startLine: 26
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Initializes the view with the specified console command and updates its text label.
+  example: []
+  syntax:
+    content: public void Setup(ConsoleCommand consoleCommand)
+    parameters:
+    - id: consoleCommand
+      type: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+      description: The command to associate with this view.
+    content.vb: Public Sub Setup(consoleCommand As ConsoleCommand)
+  overload: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup*
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected(System.Boolean)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected(System.Boolean)
+  id: SetSelected(System.Boolean)
+  parent: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  langs:
+  - csharp
+  - vb
+  name: SetSelected(bool)
+  nameWithType: SuggestedCommandView.SetSelected(bool)
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected(bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SetSelected
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/SuggestedCommandView.cs
+    startLine: 36
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Sets the visual selection state of the view, updating background color accordingly.
+  example: []
+  syntax:
+    content: public void SetSelected(bool isSelected)
+    parameters:
+    - id: isSelected
+      type: System.Boolean
+      description: True to highlight the view, false to use the default color.
+    content.vb: Public Sub SetSelected(isSelected As Boolean)
+  overload: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected*
+  nameWithType.vb: SuggestedCommandView.SetSelected(Boolean)
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected(Boolean)
+  name.vb: SetSelected(Boolean)
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand
+  href: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html#UBP_Scripts_UBPServices_Debugs_Console_SuggestedCommandView_ConsoleCommand
+  name: ConsoleCommand
+  nameWithType: SuggestedCommandView.ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.ConsoleCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  commentId: T:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: ConsoleCommand
+  nameWithType: ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  commentId: N:UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  nameWithType: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected
+  href: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html#UBP_Scripts_UBPServices_Debugs_Console_SuggestedCommandView_IsSelected
+  name: IsSelected
+  nameWithType: SuggestedCommandView.IsSelected
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.IsSelected
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup
+  href: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html#UBP_Scripts_UBPServices_Debugs_Console_SuggestedCommandView_Setup_UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_
+  name: Setup
+  nameWithType: SuggestedCommandView.Setup
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.Setup
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected
+  href: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html#UBP_Scripts_UBPServices_Debugs_Console_SuggestedCommandView_SetSelected_System_Boolean_
+  name: SetSelected
+  nameWithType: SuggestedCommandView.SetSelected
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.SetSelected

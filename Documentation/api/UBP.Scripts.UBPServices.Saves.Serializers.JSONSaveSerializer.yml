@@ -1,0 +1,325 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  commentId: T:UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  id: JSONSaveSerializer
+  parent: UBP.Scripts.UBPServices.Saves.Serializers
+  children:
+  - UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize``1(System.String)
+  - UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize``1(``0)
+  langs:
+  - csharp
+  - vb
+  name: JSONSaveSerializer
+  nameWithType: JSONSaveSerializer
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/Serializers/JSONSaveSerializer.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: JSONSaveSerializer
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/Serializers/JSONSaveSerializer.cs
+    startLine: 6
+  namespace: UBP.Scripts.UBPServices.Saves.Serializers
+  summary: >-
+    Default JSON-based implementation of <xref href="UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer" data-throw-if-not-resolved="false"></xref> using Unity's built-in JsonUtility.
+
+    Suitable for simple data structures that follow Unity's serialization rules.
+  example: []
+  syntax:
+    content: >-
+      [Serializable]
+
+      public class JSONSaveSerializer : SaveSerializer
+    content.vb: >-
+      <Serializable>
+
+      Public Class JSONSaveSerializer Inherits SaveSerializer
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  attributes:
+  - type: System.SerializableAttribute
+    ctor: System.SerializableAttribute.#ctor
+    arguments: []
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize``1(``0)
+  commentId: M:UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize``1(``0)
+  id: Serialize``1(``0)
+  parent: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  langs:
+  - csharp
+  - vb
+  name: Serialize<T>(T)
+  nameWithType: JSONSaveSerializer.Serialize<T>(T)
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize<T>(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/Serializers/JSONSaveSerializer.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Serialize
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/Serializers/JSONSaveSerializer.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices.Saves.Serializers
+  example: []
+  syntax:
+    content: public override string Serialize<T>(T data)
+    parameters:
+    - id: data
+      type: '{T}'
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Overrides Function Serialize(Of T)(data As T) As String
+  overridden: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1({T})
+  overload: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize*
+  nameWithType.vb: JSONSaveSerializer.Serialize(Of T)(T)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize(Of T)(T)
+  name.vb: Serialize(Of T)(T)
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize``1(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize``1(System.String)
+  id: Deserialize``1(System.String)
+  parent: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  langs:
+  - csharp
+  - vb
+  name: Deserialize<T>(string)
+  nameWithType: JSONSaveSerializer.Deserialize<T>(string)
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/Serializers/JSONSaveSerializer.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Deserialize
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/Serializers/JSONSaveSerializer.cs
+    startLine: 29
+  namespace: UBP.Scripts.UBPServices.Saves.Serializers
+  summary: Deserializes a string into an object of type T.
+  example: []
+  syntax:
+    content: public override T Deserialize<T>(string data)
+    parameters:
+    - id: data
+      type: System.String
+      description: The serialized string.
+    typeParameters:
+    - id: T
+      description: The type to deserialize into.
+    return:
+      type: '{T}'
+      description: The deserialized object, or default if failed.
+    content.vb: Public Overrides Function Deserialize(Of T)(data As String) As T
+  overridden: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize``1(System.String)
+  overload: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize*
+  nameWithType.vb: JSONSaveSerializer.Deserialize(Of T)(String)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize(Of T)(String)
+  name.vb: Deserialize(Of T)(String)
+references:
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  commentId: T:UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  parent: UBP.Scripts.UBPServices.Saves.Serializers
+  href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html
+  name: SaveSerializer
+  nameWithType: SaveSerializer
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+- uid: UBP.Scripts.UBPServices.Saves.Serializers
+  commentId: N:UBP.Scripts.UBPServices.Saves.Serializers
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Saves.Serializers
+  nameWithType: UBP.Scripts.UBPServices.Saves.Serializers
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers
+    name: Serializers
+    href: UBP.Scripts.UBPServices.Saves.Serializers.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers
+    name: Serializers
+    href: UBP.Scripts.UBPServices.Saves.Serializers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1({T})
+  commentId: M:UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+  parent: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  definition: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+  href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Serialize__1___0_
+  name: Serialize<T>(T)
+  nameWithType: SaveSerializer.Serialize<T>(T)
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize<T>(T)
+  nameWithType.vb: SaveSerializer.Serialize(Of T)(T)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize(Of T)(T)
+  name.vb: Serialize(Of T)(T)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+    name: Serialize
+    href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Serialize__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+    name: Serialize
+    href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Serialize__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize
+  href: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_JSONSaveSerializer_Serialize__1___0_
+  name: Serialize
+  nameWithType: JSONSaveSerializer.Serialize
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Serialize
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+  commentId: M:UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+  href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Serialize__1___0_
+  name: Serialize<T>(T)
+  nameWithType: SaveSerializer.Serialize<T>(T)
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize<T>(T)
+  nameWithType.vb: SaveSerializer.Serialize(Of T)(T)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize(Of T)(T)
+  name.vb: Serialize(Of T)(T)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+    name: Serialize
+    href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Serialize__1___0_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Serialize``1(``0)
+    name: Serialize
+    href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Serialize__1___0_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - name: T
+  - name: )
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize``1(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize``1(System.String)
+  parent: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  isExternal: true
+  href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Deserialize__1_System_String_
+  name: Deserialize<T>(string)
+  nameWithType: SaveSerializer.Deserialize<T>(string)
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize<T>(string)
+  nameWithType.vb: SaveSerializer.Deserialize(Of T)(String)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize(Of T)(String)
+  name.vb: Deserialize(Of T)(String)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize``1(System.String)
+    name: Deserialize
+    href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Deserialize__1_System_String_
+  - name: <
+  - name: T
+  - name: '>'
+  - name: (
+  - uid: System.String
+    name: string
+    isExternal: true
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.Deserialize``1(System.String)
+    name: Deserialize
+    href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_SaveSerializer_Deserialize__1_System_String_
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+  - name: (
+  - uid: System.String
+    name: String
+    isExternal: true
+  - name: )
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize
+  href: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.html#UBP_Scripts_UBPServices_Saves_Serializers_JSONSaveSerializer_Deserialize__1_System_String_
+  name: Deserialize
+  nameWithType: JSONSaveSerializer.Deserialize
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.Deserialize

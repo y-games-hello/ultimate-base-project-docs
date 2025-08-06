@@ -1,0 +1,293 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Services
+  commentId: T:UBP.Scripts.UBPServices.Services
+  id: Services
+  parent: UBP.Scripts.UBPServices
+  children:
+  - UBP.Scripts.UBPServices.Services.CreateAsync
+  - UBP.Scripts.UBPServices.Services.GetServiceConfigPath(System.Type)
+  - UBP.Scripts.UBPServices.Services.GetServiceConfigPath``1
+  - UBP.Scripts.UBPServices.Services.Get``1
+  langs:
+  - csharp
+  - vb
+  name: Services
+  nameWithType: Services
+  fullName: UBP.Scripts.UBPServices.Services
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Services.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Services
+    path: ../Assets/UBP/Scripts/UBPServices/Services.cs
+    startLine: 13
+  namespace: UBP.Scripts.UBPServices
+  summary: >-
+    Global manager for all registered services implementing IService.
+
+    Handles service discovery, initialization, and access.
+  example: []
+  syntax:
+    content: public class Services
+    content.vb: Public Class Services
+  inheritance:
+  - System.Object
+- uid: UBP.Scripts.UBPServices.Services.CreateAsync
+  commentId: M:UBP.Scripts.UBPServices.Services.CreateAsync
+  id: CreateAsync
+  parent: UBP.Scripts.UBPServices.Services
+  langs:
+  - csharp
+  - vb
+  name: CreateAsync()
+  nameWithType: Services.CreateAsync()
+  fullName: UBP.Scripts.UBPServices.Services.CreateAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Services.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: CreateAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Services.cs
+    startLine: 26
+  namespace: UBP.Scripts.UBPServices
+  summary: Initializes the Services system and all auto-discovered IService implementations.
+  example: []
+  syntax:
+    content: public static Task CreateAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Shared Function CreateAsync() As Task
+  overload: UBP.Scripts.UBPServices.Services.CreateAsync*
+- uid: UBP.Scripts.UBPServices.Services.Get``1
+  commentId: M:UBP.Scripts.UBPServices.Services.Get``1
+  id: Get``1
+  parent: UBP.Scripts.UBPServices.Services
+  langs:
+  - csharp
+  - vb
+  name: Get<T>()
+  nameWithType: Services.Get<T>()
+  fullName: UBP.Scripts.UBPServices.Services.Get<T>()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Services.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Get
+    path: ../Assets/UBP/Scripts/UBPServices/Services.cs
+    startLine: 93
+  namespace: UBP.Scripts.UBPServices
+  summary: Retrieves a registered service of type T.
+  example: []
+  syntax:
+    content: 'public static T Get<T>() where T : IService'
+    typeParameters:
+    - id: T
+      description: The service type.
+    return:
+      type: '{T}'
+      description: The service instance if found; otherwise, null.
+    content.vb: Public Shared Function [Get](Of T As IService)() As T
+  overload: UBP.Scripts.UBPServices.Services.Get*
+  nameWithType.vb: Services.Get(Of T)()
+  fullName.vb: UBP.Scripts.UBPServices.Services.Get(Of T)()
+  name.vb: Get(Of T)()
+- uid: UBP.Scripts.UBPServices.Services.GetServiceConfigPath``1
+  commentId: M:UBP.Scripts.UBPServices.Services.GetServiceConfigPath``1
+  id: GetServiceConfigPath``1
+  parent: UBP.Scripts.UBPServices.Services
+  langs:
+  - csharp
+  - vb
+  name: GetServiceConfigPath<T>()
+  nameWithType: Services.GetServiceConfigPath<T>()
+  fullName: UBP.Scripts.UBPServices.Services.GetServiceConfigPath<T>()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Services.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetServiceConfigPath
+    path: ../Assets/UBP/Scripts/UBPServices/Services.cs
+    startLine: 115
+  namespace: UBP.Scripts.UBPServices
+  summary: Gets the expected config path for a given service type.
+  example: []
+  syntax:
+    content: 'public static string GetServiceConfigPath<T>() where T : IService'
+    typeParameters:
+    - id: T
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetServiceConfigPath(Of T As IService)() As String
+  overload: UBP.Scripts.UBPServices.Services.GetServiceConfigPath*
+  nameWithType.vb: Services.GetServiceConfigPath(Of T)()
+  fullName.vb: UBP.Scripts.UBPServices.Services.GetServiceConfigPath(Of T)()
+  name.vb: GetServiceConfigPath(Of T)()
+- uid: UBP.Scripts.UBPServices.Services.GetServiceConfigPath(System.Type)
+  commentId: M:UBP.Scripts.UBPServices.Services.GetServiceConfigPath(System.Type)
+  id: GetServiceConfigPath(System.Type)
+  parent: UBP.Scripts.UBPServices.Services
+  langs:
+  - csharp
+  - vb
+  name: GetServiceConfigPath(Type)
+  nameWithType: Services.GetServiceConfigPath(Type)
+  fullName: UBP.Scripts.UBPServices.Services.GetServiceConfigPath(System.Type)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Services.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetServiceConfigPath
+    path: ../Assets/UBP/Scripts/UBPServices/Services.cs
+    startLine: 123
+  namespace: UBP.Scripts.UBPServices
+  summary: Gets the expected config path for a given service type.
+  example: []
+  syntax:
+    content: public static string GetServiceConfigPath(Type serviceType)
+    parameters:
+    - id: serviceType
+      type: System.Type
+    return:
+      type: System.String
+    content.vb: Public Shared Function GetServiceConfigPath(serviceType As Type) As String
+  overload: UBP.Scripts.UBPServices.Services.GetServiceConfigPath*
+references:
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.Services.CreateAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Services.CreateAsync
+  href: UBP.Scripts.UBPServices.Services.html#UBP_Scripts_UBPServices_Services_CreateAsync
+  name: CreateAsync
+  nameWithType: Services.CreateAsync
+  fullName: UBP.Scripts.UBPServices.Services.CreateAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Services.Get*
+  commentId: Overload:UBP.Scripts.UBPServices.Services.Get
+  href: UBP.Scripts.UBPServices.Services.html#UBP_Scripts_UBPServices_Services_Get__1
+  name: Get
+  nameWithType: Services.Get
+  fullName: UBP.Scripts.UBPServices.Services.Get
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UBP.Scripts.UBPServices.Services.GetServiceConfigPath*
+  commentId: Overload:UBP.Scripts.UBPServices.Services.GetServiceConfigPath
+  href: UBP.Scripts.UBPServices.Services.html#UBP_Scripts_UBPServices_Services_GetServiceConfigPath__1
+  name: GetServiceConfigPath
+  nameWithType: Services.GetServiceConfigPath
+  fullName: UBP.Scripts.UBPServices.Services.GetServiceConfigPath
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type

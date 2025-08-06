@@ -1,0 +1,170 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.LogMessageView
+  id: LogMessageView
+  parent: UBP.Scripts.UBPServices.Debugs
+  children:
+  - UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup(UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  langs:
+  - csharp
+  - vb
+  name: LogMessageView
+  nameWithType: LogMessageView
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageView
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LogMessageView
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageView.cs
+    startLine: 11
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: >-
+    Represents a single log message entry in the debug console.
+
+    Displays the log type, message content, stack trace, and applies coloring/styling.
+  example: []
+  syntax:
+    content: 'public class LogMessageView : MonoBehaviour'
+    content.vb: Public Class LogMessageView Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup(UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup(UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  id: Setup(UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  parent: UBP.Scripts.UBPServices.Debugs.LogMessageView
+  langs:
+  - csharp
+  - vb
+  name: Setup(LogMessageData)
+  nameWithType: LogMessageView.Setup(LogMessageData)
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup(UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Setup
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageView.cs
+    startLine: 21
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Initializes the view with a log message's content and visual formatting.
+  example: []
+  syntax:
+    content: public void Setup(LogMessageData logMessageData)
+    parameters:
+    - id: logMessageData
+      type: UBP.Scripts.UBPServices.Debugs.LogMessageData
+      description: Data containing log type, message, and stack trace.
+    content.vb: Public Sub Setup(logMessageData As LogMessageData)
+  overload: UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs
+  commentId: N:UBP.Scripts.UBPServices.Debugs
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs
+  nameWithType: UBP.Scripts.UBPServices.Debugs
+  fullName: UBP.Scripts.UBPServices.Debugs
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageView.html#UBP_Scripts_UBPServices_Debugs_LogMessageView_Setup_UBP_Scripts_UBPServices_Debugs_LogMessageData_
+  name: Setup
+  nameWithType: LogMessageView.Setup
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageView.Setup
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  commentId: T:UBP.Scripts.UBPServices.Debugs.LogMessageData
+  parent: UBP.Scripts.UBPServices.Debugs
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  name: LogMessageData
+  nameWithType: LogMessageData
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData

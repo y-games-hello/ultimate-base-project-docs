@@ -1,0 +1,199 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  id: SaveServiceConfig
+  parent: UBP.Scripts.UBPServices.Saves
+  children:
+  - UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder
+  - UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder
+  langs:
+  - csharp
+  - vb
+  name: SaveServiceConfig
+  nameWithType: SaveServiceConfig
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SaveServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveServiceConfig.cs
+    startLine: 6
+  namespace: UBP.Scripts.UBPServices.Saves
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "SaveServiceConfig", menuName = "Configs/Services/SaveServiceConfig")]
+
+      public class SaveServiceConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="SaveServiceConfig", menuName:="Configs/Services/SaveServiceConfig")>
+
+      Public Class SaveServiceConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: SaveServiceConfig
+    - name: menuName
+      type: System.String
+      value: Configs/Services/SaveServiceConfig
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder
+  commentId: P:UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder
+  id: SavesRootFolder
+  parent: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: SavesRootFolder
+  nameWithType: SaveServiceConfig.SavesRootFolder
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SavesRootFolder
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveServiceConfig.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: The root folder name under <code>Application.persistentDataPath</code> where save files will be stored.
+  example: []
+  syntax:
+    content: public string SavesRootFolder { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Property SavesRootFolder As String
+  overload: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder*
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder
+  commentId: M:UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder
+  id: ShowSaveRootFolder
+  parent: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: ShowSaveRootFolder()
+  nameWithType: SaveServiceConfig.ShowSaveRootFolder()
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ShowSaveRootFolder
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveServiceConfig.cs
+    startLine: 14
+  namespace: UBP.Scripts.UBPServices.Saves
+  syntax:
+    content: public void ShowSaveRootFolder()
+    content.vb: Public Sub ShowSaveRootFolder()
+  overload: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder*
+references:
+- uid: UBP.Scripts.UBPServices.Saves
+  commentId: N:UBP.Scripts.UBPServices.Saves
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Saves
+  nameWithType: UBP.Scripts.UBPServices.Saves
+  fullName: UBP.Scripts.UBPServices.Saves
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder
+  href: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html#UBP_Scripts_UBPServices_Saves_SaveServiceConfig_SavesRootFolder
+  name: SavesRootFolder
+  nameWithType: SaveServiceConfig.SavesRootFolder
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.SavesRootFolder
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder
+  href: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html#UBP_Scripts_UBPServices_Saves_SaveServiceConfig_ShowSaveRootFolder
+  name: ShowSaveRootFolder
+  nameWithType: SaveServiceConfig.ShowSaveRootFolder
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.ShowSaveRootFolder

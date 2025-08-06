@@ -1,0 +1,162 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  commentId: T:UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  id: ServiceSettingCategory
+  parent: UBP.Scripts.UBPServices.Editor
+  children:
+  - UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.#ctor(System.String,System.String)
+  langs:
+  - csharp
+  - vb
+  name: ServiceSettingCategory
+  nameWithType: ServiceSettingCategory
+  fullName: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceSettingCategory
+    path: ../Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+    startLine: 258
+  namespace: UBP.Scripts.UBPServices.Editor
+  summary: Represents a dynamic service-based configuration section discovered at runtime.
+  example: []
+  syntax:
+    content: 'public class ServiceSettingCategory : SettingCategory'
+    content.vb: Public Class ServiceSettingCategory Inherits SettingCategory
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.Editor.SettingCategory
+  inheritedMembers:
+  - UBP.Scripts.UBPServices.Editor.SettingCategory.DisplayName
+  - UBP.Scripts.UBPServices.Editor.SettingCategory.ConfigPath
+- uid: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.#ctor(System.String,System.String)
+  commentId: M:UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.#ctor(System.String,System.String)
+  id: '#ctor(System.String,System.String)'
+  parent: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  langs:
+  - csharp
+  - vb
+  name: ServiceSettingCategory(string, string)
+  nameWithType: ServiceSettingCategory.ServiceSettingCategory(string, string)
+  fullName: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.ServiceSettingCategory(string, string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: .ctor
+    path: ../Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+    startLine: 260
+  namespace: UBP.Scripts.UBPServices.Editor
+  syntax:
+    content: public ServiceSettingCategory(string displayName, string configPath)
+    parameters:
+    - id: displayName
+      type: System.String
+    - id: configPath
+      type: System.String
+    content.vb: Public Sub New(displayName As String, configPath As String)
+  overload: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.#ctor*
+  nameWithType.vb: ServiceSettingCategory.New(String, String)
+  fullName.vb: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.New(String, String)
+  name.vb: New(String, String)
+references:
+- uid: UBP.Scripts.UBPServices.Editor
+  commentId: N:UBP.Scripts.UBPServices.Editor
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Editor
+  nameWithType: UBP.Scripts.UBPServices.Editor
+  fullName: UBP.Scripts.UBPServices.Editor
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Editor.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.Editor.SettingCategory
+  commentId: T:UBP.Scripts.UBPServices.Editor.SettingCategory
+  parent: UBP.Scripts.UBPServices.Editor
+  href: UBP.Scripts.UBPServices.Editor.SettingCategory.html
+  name: SettingCategory
+  nameWithType: SettingCategory
+  fullName: UBP.Scripts.UBPServices.Editor.SettingCategory
+- uid: UBP.Scripts.UBPServices.Editor.SettingCategory.DisplayName
+  commentId: P:UBP.Scripts.UBPServices.Editor.SettingCategory.DisplayName
+  parent: UBP.Scripts.UBPServices.Editor.SettingCategory
+  href: UBP.Scripts.UBPServices.Editor.SettingCategory.html#UBP_Scripts_UBPServices_Editor_SettingCategory_DisplayName
+  name: DisplayName
+  nameWithType: SettingCategory.DisplayName
+  fullName: UBP.Scripts.UBPServices.Editor.SettingCategory.DisplayName
+- uid: UBP.Scripts.UBPServices.Editor.SettingCategory.ConfigPath
+  commentId: P:UBP.Scripts.UBPServices.Editor.SettingCategory.ConfigPath
+  parent: UBP.Scripts.UBPServices.Editor.SettingCategory
+  href: UBP.Scripts.UBPServices.Editor.SettingCategory.html#UBP_Scripts_UBPServices_Editor_SettingCategory_ConfigPath
+  name: ConfigPath
+  nameWithType: SettingCategory.ConfigPath
+  fullName: UBP.Scripts.UBPServices.Editor.SettingCategory.ConfigPath
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.#ctor*
+  commentId: Overload:UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.#ctor
+  href: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.html#UBP_Scripts_UBPServices_Editor_ServiceSettingCategory__ctor_System_String_System_String_
+  name: ServiceSettingCategory
+  nameWithType: ServiceSettingCategory.ServiceSettingCategory
+  fullName: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.ServiceSettingCategory
+  nameWithType.vb: ServiceSettingCategory.New
+  fullName.vb: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String

@@ -1,0 +1,171 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  id: ConsoleCanvas
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  children:
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close
+  langs:
+  - csharp
+  - vb
+  name: ConsoleCanvas
+  nameWithType: ConsoleCanvas
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleCanvas.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleCanvas
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleCanvas.cs
+    startLine: 8
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: >-
+    Manages the root canvas for the in-game debug console interface.
+
+    Instantiates and hosts the <xref href="UBP.Scripts.UBPServices.Debugs.Console.ConsoleView" data-throw-if-not-resolved="false"></xref>. Handles cleanup and closing logic for the entire console UI.
+  example: []
+  syntax:
+    content: 'public class ConsoleCanvas : MonoBehaviour'
+    content.vb: Public Class ConsoleCanvas Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close
+  id: Close
+  parent: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  langs:
+  - csharp
+  - vb
+  name: Close()
+  nameWithType: ConsoleCanvas.Close()
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleCanvas.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Close
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleCanvas.cs
+    startLine: 17
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  syntax:
+    content: public void Close()
+    content.vb: Public Sub Close()
+  overload: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.html
+  name: ConsoleView
+  nameWithType: ConsoleView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.html#UBP_Scripts_UBPServices_Debugs_Console_ConsoleCanvas_Close
+  name: Close
+  nameWithType: ConsoleCanvas.Close
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.Close

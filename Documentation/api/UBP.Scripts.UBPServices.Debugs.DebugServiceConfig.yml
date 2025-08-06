@@ -1,0 +1,412 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  id: DebugServiceConfig
+  parent: UBP.Scripts.UBPServices.Debugs
+  children:
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor
+  langs:
+  - csharp
+  - vb
+  name: DebugServiceConfig
+  nameWithType: DebugServiceConfig
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: DebugServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 5
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "DebugServiceConfig", menuName = "Configs/Services/DebugServiceConfig")]
+
+      public class DebugServiceConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="DebugServiceConfig", menuName:="Configs/Services/DebugServiceConfig")>
+
+      Public Class DebugServiceConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: DebugServiceConfig
+    - name: menuName
+      type: System.String
+      value: Configs/Services/DebugServiceConfig
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity
+  id: MaxLogMessagesCapacity
+  parent: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: MaxLogMessagesCapacity
+  nameWithType: DebugServiceConfig.MaxLogMessagesCapacity
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: MaxLogMessagesCapacity
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: >-
+    Maximum number of log messages retained in the debug console.
+
+    Older messages are discarded when capacity is exceeded.
+  example: []
+  syntax:
+    content: public int MaxLogMessagesCapacity { get; set; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property MaxLogMessagesCapacity As Integer
+  overload: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor
+  id: LogMessageColor
+  parent: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: LogMessageColor
+  nameWithType: DebugServiceConfig.LogMessageColor
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LogMessageColor
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 14
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: public Color LogMessageColor { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property LogMessageColor As Color
+  overload: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor
+  id: WarningMessageColor
+  parent: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: WarningMessageColor
+  nameWithType: DebugServiceConfig.WarningMessageColor
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: WarningMessageColor
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 16
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: public Color WarningMessageColor { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property WarningMessageColor As Color
+  overload: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor
+  id: ErrorMessageColor
+  parent: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: ErrorMessageColor
+  nameWithType: DebugServiceConfig.ErrorMessageColor
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ErrorMessageColor
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 17
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: public Color ErrorMessageColor { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Color
+    content.vb: Public Property ErrorMessageColor As Color
+  overload: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab
+  id: ConsoleCanvasPrefab
+  parent: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: ConsoleCanvasPrefab
+  nameWithType: DebugServiceConfig.ConsoleCanvasPrefab
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleCanvasPrefab
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 22
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Prefab of the console UI canvas shown in play mode.
+  example: []
+  syntax:
+    content: public ConsoleCanvas ConsoleCanvasPrefab { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+    content.vb: Public Property ConsoleCanvasPrefab As ConsoleCanvas
+  overload: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey
+  id: OpenConsoleKey
+  parent: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: OpenConsoleKey
+  nameWithType: DebugServiceConfig.OpenConsoleKey
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OpenConsoleKey
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugServiceConfig.cs
+    startLine: 27
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Key used to toggle the console window at runtime.
+  example: []
+  syntax:
+    content: public KeyCode OpenConsoleKey { get; }
+    parameters: []
+    return:
+      type: UnityEngine.KeyCode
+    content.vb: Public Property OpenConsoleKey As KeyCode
+  overload: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs
+  commentId: N:UBP.Scripts.UBPServices.Debugs
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs
+  nameWithType: UBP.Scripts.UBPServices.Debugs
+  fullName: UBP.Scripts.UBPServices.Debugs
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html#UBP_Scripts_UBPServices_Debugs_DebugServiceConfig_MaxLogMessagesCapacity
+  name: MaxLogMessagesCapacity
+  nameWithType: DebugServiceConfig.MaxLogMessagesCapacity
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.MaxLogMessagesCapacity
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html#UBP_Scripts_UBPServices_Debugs_DebugServiceConfig_LogMessageColor
+  name: LogMessageColor
+  nameWithType: DebugServiceConfig.LogMessageColor
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.LogMessageColor
+- uid: UnityEngine.Color
+  commentId: T:UnityEngine.Color
+  parent: UnityEngine
+  isExternal: true
+  name: Color
+  nameWithType: Color
+  fullName: UnityEngine.Color
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html#UBP_Scripts_UBPServices_Debugs_DebugServiceConfig_WarningMessageColor
+  name: WarningMessageColor
+  nameWithType: DebugServiceConfig.WarningMessageColor
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.WarningMessageColor
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html#UBP_Scripts_UBPServices_Debugs_DebugServiceConfig_ErrorMessageColor
+  name: ErrorMessageColor
+  nameWithType: DebugServiceConfig.ErrorMessageColor
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ErrorMessageColor
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html#UBP_Scripts_UBPServices_Debugs_DebugServiceConfig_ConsoleCanvasPrefab
+  name: ConsoleCanvasPrefab
+  nameWithType: DebugServiceConfig.ConsoleCanvasPrefab
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.ConsoleCanvasPrefab
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.html
+  name: ConsoleCanvas
+  nameWithType: ConsoleCanvas
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html#UBP_Scripts_UBPServices_Debugs_DebugServiceConfig_OpenConsoleKey
+  name: OpenConsoleKey
+  nameWithType: DebugServiceConfig.OpenConsoleKey
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.OpenConsoleKey
+- uid: UnityEngine.KeyCode
+  commentId: T:UnityEngine.KeyCode
+  parent: UnityEngine
+  isExternal: true
+  name: KeyCode
+  nameWithType: KeyCode
+  fullName: UnityEngine.KeyCode

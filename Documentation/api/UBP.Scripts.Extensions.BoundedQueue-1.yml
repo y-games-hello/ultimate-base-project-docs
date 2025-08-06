@@ -1,0 +1,458 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Extensions.BoundedQueue`1
+  commentId: T:UBP.Scripts.Extensions.BoundedQueue`1
+  id: BoundedQueue`1
+  parent: UBP.Scripts.Extensions
+  children:
+  - UBP.Scripts.Extensions.BoundedQueue`1.#ctor(System.Int32)
+  - UBP.Scripts.Extensions.BoundedQueue`1.Clear
+  - UBP.Scripts.Extensions.BoundedQueue`1.Count
+  - UBP.Scripts.Extensions.BoundedQueue`1.Enqueue(`0)
+  - UBP.Scripts.Extensions.BoundedQueue`1.GetEnumerator
+  - UBP.Scripts.Extensions.BoundedQueue`1.ToArray
+  langs:
+  - csharp
+  - vb
+  name: BoundedQueue<T>
+  nameWithType: BoundedQueue<T>
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: BoundedQueue
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 10
+  namespace: UBP.Scripts.Extensions
+  summary: >-
+    A fixed-capacity queue that discards the oldest element when new items are added beyond the limit.
+
+    Useful for logs, history buffers, and rolling data windows.
+  example: []
+  syntax:
+    content: public class BoundedQueue<T>
+    typeParameters:
+    - id: T
+      description: The type of elements stored in the queue.
+    content.vb: Public Class BoundedQueue(Of T)
+  inheritance:
+  - System.Object
+  nameWithType.vb: BoundedQueue(Of T)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T)
+  name.vb: BoundedQueue(Of T)
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.Count
+  commentId: P:UBP.Scripts.Extensions.BoundedQueue`1.Count
+  id: Count
+  parent: UBP.Scripts.Extensions.BoundedQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Count
+  nameWithType: BoundedQueue<T>.Count
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.Count
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Count
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 15
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public int Count { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public ReadOnly Property Count As Integer
+  overload: UBP.Scripts.Extensions.BoundedQueue`1.Count*
+  nameWithType.vb: BoundedQueue(Of T).Count
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).Count
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.#ctor(System.Int32)
+  commentId: M:UBP.Scripts.Extensions.BoundedQueue`1.#ctor(System.Int32)
+  id: '#ctor(System.Int32)'
+  parent: UBP.Scripts.Extensions.BoundedQueue`1
+  langs:
+  - csharp
+  - vb
+  name: BoundedQueue(int)
+  nameWithType: BoundedQueue<T>.BoundedQueue(int)
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.BoundedQueue(int)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: .ctor
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 21
+  namespace: UBP.Scripts.Extensions
+  summary: Initializes a new instance of the <xref href="UBP.Scripts.Extensions.BoundedQueue%601" data-throw-if-not-resolved="false"></xref> class with a fixed capacity.
+  example: []
+  syntax:
+    content: public BoundedQueue(int capacity)
+    parameters:
+    - id: capacity
+      type: System.Int32
+      description: The maximum number of items the queue can hold.
+    content.vb: Public Sub New(capacity As Integer)
+  overload: UBP.Scripts.Extensions.BoundedQueue`1.#ctor*
+  nameWithType.vb: BoundedQueue(Of T).New(Integer)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).New(Integer)
+  name.vb: New(Integer)
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.Enqueue(`0)
+  commentId: M:UBP.Scripts.Extensions.BoundedQueue`1.Enqueue(`0)
+  id: Enqueue(`0)
+  parent: UBP.Scripts.Extensions.BoundedQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Enqueue(T)
+  nameWithType: BoundedQueue<T>.Enqueue(T)
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.Enqueue(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Enqueue
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 27
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public void Enqueue(T item)
+    parameters:
+    - id: item
+      type: '{T}'
+    content.vb: Public Sub Enqueue(item As T)
+  overload: UBP.Scripts.Extensions.BoundedQueue`1.Enqueue*
+  nameWithType.vb: BoundedQueue(Of T).Enqueue(T)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).Enqueue(T)
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.ToArray
+  commentId: M:UBP.Scripts.Extensions.BoundedQueue`1.ToArray
+  id: ToArray
+  parent: UBP.Scripts.Extensions.BoundedQueue`1
+  langs:
+  - csharp
+  - vb
+  name: ToArray()
+  nameWithType: BoundedQueue<T>.ToArray()
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.ToArray()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ToArray
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 37
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public T[] ToArray()
+    return:
+      type: '{T}[]'
+    content.vb: Public Function ToArray() As T()
+  overload: UBP.Scripts.Extensions.BoundedQueue`1.ToArray*
+  nameWithType.vb: BoundedQueue(Of T).ToArray()
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).ToArray()
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.Clear
+  commentId: M:UBP.Scripts.Extensions.BoundedQueue`1.Clear
+  id: Clear
+  parent: UBP.Scripts.Extensions.BoundedQueue`1
+  langs:
+  - csharp
+  - vb
+  name: Clear()
+  nameWithType: BoundedQueue<T>.Clear()
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.Clear()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Clear
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 42
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public void Clear()
+    content.vb: Public Sub Clear()
+  overload: UBP.Scripts.Extensions.BoundedQueue`1.Clear*
+  nameWithType.vb: BoundedQueue(Of T).Clear()
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).Clear()
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.GetEnumerator
+  commentId: M:UBP.Scripts.Extensions.BoundedQueue`1.GetEnumerator
+  id: GetEnumerator
+  parent: UBP.Scripts.Extensions.BoundedQueue`1
+  langs:
+  - csharp
+  - vb
+  name: GetEnumerator()
+  nameWithType: BoundedQueue<T>.GetEnumerator()
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.GetEnumerator()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetEnumerator
+    path: ../Assets/UBP/Scripts/Extensions/BoundedQueue.cs
+    startLine: 50
+  namespace: UBP.Scripts.Extensions
+  summary: Returns an enumerator that iterates through the queue.
+  example: []
+  syntax:
+    content: public IEnumerator<T> GetEnumerator()
+    return:
+      type: System.Collections.Generic.IEnumerator{{T}}
+    content.vb: Public Function GetEnumerator() As IEnumerator(Of T)
+  overload: UBP.Scripts.Extensions.BoundedQueue`1.GetEnumerator*
+  nameWithType.vb: BoundedQueue(Of T).GetEnumerator()
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).GetEnumerator()
+references:
+- uid: UBP.Scripts.Extensions
+  commentId: N:UBP.Scripts.Extensions
+  href: UBP.html
+  name: UBP.Scripts.Extensions
+  nameWithType: UBP.Scripts.Extensions
+  fullName: UBP.Scripts.Extensions
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.Count*
+  commentId: Overload:UBP.Scripts.Extensions.BoundedQueue`1.Count
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html#UBP_Scripts_Extensions_BoundedQueue_1_Count
+  name: Count
+  nameWithType: BoundedQueue<T>.Count
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.Count
+  nameWithType.vb: BoundedQueue(Of T).Count
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).Count
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UBP.Scripts.Extensions.BoundedQueue`1
+  commentId: T:UBP.Scripts.Extensions.BoundedQueue`1
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  name: BoundedQueue<T>
+  nameWithType: BoundedQueue<T>
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>
+  nameWithType.vb: BoundedQueue(Of T)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T)
+  name.vb: BoundedQueue(Of T)
+  spec.csharp:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.#ctor*
+  commentId: Overload:UBP.Scripts.Extensions.BoundedQueue`1.#ctor
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html#UBP_Scripts_Extensions_BoundedQueue_1__ctor_System_Int32_
+  name: BoundedQueue
+  nameWithType: BoundedQueue<T>.BoundedQueue
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.BoundedQueue
+  nameWithType.vb: BoundedQueue(Of T).New
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).New
+  name.vb: New
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.Enqueue*
+  commentId: Overload:UBP.Scripts.Extensions.BoundedQueue`1.Enqueue
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html#UBP_Scripts_Extensions_BoundedQueue_1_Enqueue__0_
+  name: Enqueue
+  nameWithType: BoundedQueue<T>.Enqueue
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.Enqueue
+  nameWithType.vb: BoundedQueue(Of T).Enqueue
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).Enqueue
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.ToArray*
+  commentId: Overload:UBP.Scripts.Extensions.BoundedQueue`1.ToArray
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html#UBP_Scripts_Extensions_BoundedQueue_1_ToArray
+  name: ToArray
+  nameWithType: BoundedQueue<T>.ToArray
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.ToArray
+  nameWithType.vb: BoundedQueue(Of T).ToArray
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).ToArray
+- uid: '{T}[]'
+  isExternal: true
+  name: T[]
+  nameWithType: T[]
+  fullName: T[]
+  nameWithType.vb: T()
+  fullName.vb: T()
+  name.vb: T()
+  spec.csharp:
+  - name: T
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - name: T
+  - name: (
+  - name: )
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.Clear*
+  commentId: Overload:UBP.Scripts.Extensions.BoundedQueue`1.Clear
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html#UBP_Scripts_Extensions_BoundedQueue_1_Clear
+  name: Clear
+  nameWithType: BoundedQueue<T>.Clear
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.Clear
+  nameWithType.vb: BoundedQueue(Of T).Clear
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).Clear
+- uid: UBP.Scripts.Extensions.BoundedQueue`1.GetEnumerator*
+  commentId: Overload:UBP.Scripts.Extensions.BoundedQueue`1.GetEnumerator
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html#UBP_Scripts_Extensions_BoundedQueue_1_GetEnumerator
+  name: GetEnumerator
+  nameWithType: BoundedQueue<T>.GetEnumerator
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>.GetEnumerator
+  nameWithType.vb: BoundedQueue(Of T).GetEnumerator
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T).GetEnumerator
+- uid: System.Collections.Generic.IEnumerator{{T}}
+  commentId: T:System.Collections.Generic.IEnumerator{`0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IEnumerator`1
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IEnumerator`1
+  commentId: T:System.Collections.Generic.IEnumerator`1
+  isExternal: true
+  name: IEnumerator<T>
+  nameWithType: IEnumerator<T>
+  fullName: System.Collections.Generic.IEnumerator<T>
+  nameWithType.vb: IEnumerator(Of T)
+  fullName.vb: System.Collections.Generic.IEnumerator(Of T)
+  name.vb: IEnumerator(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IEnumerator`1
+    name: IEnumerator
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true

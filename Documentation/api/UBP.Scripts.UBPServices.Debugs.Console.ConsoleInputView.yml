@@ -1,0 +1,213 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  id: ConsoleInputView
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  children:
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand
+  langs:
+  - csharp
+  - vb
+  name: ConsoleInputView
+  nameWithType: ConsoleInputView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleInputView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleInputView
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleInputView.cs
+    startLine: 14
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: >-
+    Manages user input for executing console commands within the debug console interface.
+
+    Filters and sanitizes user input, handles command suggestion interactions, and executes valid commands.
+  example: []
+  syntax:
+    content: 'public class ConsoleInputView : MonoBehaviour'
+    content.vb: Public Class ConsoleInputView Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand
+  commentId: P:UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand
+  id: CanExecuteCommand
+  parent: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  langs:
+  - csharp
+  - vb
+  name: CanExecuteCommand
+  nameWithType: ConsoleInputView.CanExecuteCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleInputView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: CanExecuteCommand
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleInputView.cs
+    startLine: 22
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Determines whether the current input is valid and the user is able to execute a command.
+  example: []
+  syntax:
+    content: public bool CanExecuteCommand { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property CanExecuteCommand As Boolean
+  overload: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand*
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand
+  id: TryExecuteCommand
+  parent: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  langs:
+  - csharp
+  - vb
+  name: TryExecuteCommand()
+  nameWithType: ConsoleInputView.TryExecuteCommand()
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleInputView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: TryExecuteCommand
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleInputView.cs
+    startLine: 117
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Attempts to parse and execute the command entered by the user.
+  example: []
+  syntax:
+    content: public void TryExecuteCommand()
+    content.vb: Public Sub TryExecuteCommand()
+  overload: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.html#UBP_Scripts_UBPServices_Debugs_Console_ConsoleInputView_CanExecuteCommand
+  name: CanExecuteCommand
+  nameWithType: ConsoleInputView.CanExecuteCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.CanExecuteCommand
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.html#UBP_Scripts_UBPServices_Debugs_Console_ConsoleInputView_TryExecuteCommand
+  name: TryExecuteCommand
+  nameWithType: ConsoleInputView.TryExecuteCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.TryExecuteCommand

@@ -1,0 +1,278 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Extensions.TaskExtensions
+  commentId: T:UBP.Scripts.Extensions.TaskExtensions
+  id: TaskExtensions
+  parent: UBP.Scripts.Extensions
+  children:
+  - UBP.Scripts.Extensions.TaskExtensions.ToCoroutine(System.Threading.Tasks.Task)
+  - UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.AsyncOperation)
+  - UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.ResourceRequest)
+  langs:
+  - csharp
+  - vb
+  name: TaskExtensions
+  nameWithType: TaskExtensions
+  fullName: UBP.Scripts.Extensions.TaskExtensions
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: TaskExtensions
+    path: ../Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+    startLine: 6
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public static class TaskExtensions
+    content.vb: Public Module TaskExtensions
+  inheritance:
+  - System.Object
+- uid: UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.ResourceRequest)
+  commentId: M:UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.ResourceRequest)
+  id: ToTask(UnityEngine.ResourceRequest)
+  isExtensionMethod: true
+  parent: UBP.Scripts.Extensions.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTask(ResourceRequest)
+  nameWithType: TaskExtensions.ToTask(ResourceRequest)
+  fullName: UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.ResourceRequest)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ToTask
+    path: ../Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+    startLine: 13
+  namespace: UBP.Scripts.Extensions
+  summary: Converts a Unity <xref href="UnityEngine.ResourceRequest" data-throw-if-not-resolved="false"></xref> into a <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>, allowing use with async/await.
+  example: []
+  syntax:
+    content: public static Task ToTask(this ResourceRequest request)
+    parameters:
+    - id: request
+      type: UnityEngine.ResourceRequest
+      description: The <xref href="UnityEngine.ResourceRequest" data-throw-if-not-resolved="false"></xref> to wait for.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that completes when the request finishes.
+    content.vb: Public Shared Function ToTask(request As ResourceRequest) As Task
+  overload: UBP.Scripts.Extensions.TaskExtensions.ToTask*
+- uid: UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.AsyncOperation)
+  commentId: M:UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.AsyncOperation)
+  id: ToTask(UnityEngine.AsyncOperation)
+  isExtensionMethod: true
+  parent: UBP.Scripts.Extensions.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToTask(AsyncOperation)
+  nameWithType: TaskExtensions.ToTask(AsyncOperation)
+  fullName: UBP.Scripts.Extensions.TaskExtensions.ToTask(UnityEngine.AsyncOperation)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ToTask
+    path: ../Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+    startLine: 25
+  namespace: UBP.Scripts.Extensions
+  summary: Converts a Unity <xref href="UnityEngine.AsyncOperation" data-throw-if-not-resolved="false"></xref> into a <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref>, enabling use with async/await.
+  example: []
+  syntax:
+    content: public static Task ToTask(this AsyncOperation operation)
+    parameters:
+    - id: operation
+      type: UnityEngine.AsyncOperation
+      description: The Unity async operation to wrap.
+    return:
+      type: System.Threading.Tasks.Task
+      description: A <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> that completes when the operation finishes.
+    content.vb: Public Shared Function ToTask(operation As AsyncOperation) As Task
+  overload: UBP.Scripts.Extensions.TaskExtensions.ToTask*
+- uid: UBP.Scripts.Extensions.TaskExtensions.ToCoroutine(System.Threading.Tasks.Task)
+  commentId: M:UBP.Scripts.Extensions.TaskExtensions.ToCoroutine(System.Threading.Tasks.Task)
+  id: ToCoroutine(System.Threading.Tasks.Task)
+  isExtensionMethod: true
+  parent: UBP.Scripts.Extensions.TaskExtensions
+  langs:
+  - csharp
+  - vb
+  name: ToCoroutine(Task)
+  nameWithType: TaskExtensions.ToCoroutine(Task)
+  fullName: UBP.Scripts.Extensions.TaskExtensions.ToCoroutine(System.Threading.Tasks.Task)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ToCoroutine
+    path: ../Assets/UBP/Scripts/Extensions/TaskExtensions.cs
+    startLine: 37
+  namespace: UBP.Scripts.Extensions
+  summary: Converts a <xref href="System.Threading.Tasks.Task" data-throw-if-not-resolved="false"></xref> into a coroutine so it can be yielded inside Unity coroutines.
+  example: []
+  syntax:
+    content: public static IEnumerator ToCoroutine(this Task task)
+    parameters:
+    - id: task
+      type: System.Threading.Tasks.Task
+      description: The task to convert.
+    return:
+      type: System.Collections.IEnumerator
+      description: An IEnumerator that yields until the task completes.
+    content.vb: Public Shared Function ToCoroutine(task As Task) As IEnumerator
+  overload: UBP.Scripts.Extensions.TaskExtensions.ToCoroutine*
+references:
+- uid: UBP.Scripts.Extensions
+  commentId: N:UBP.Scripts.Extensions
+  href: UBP.html
+  name: UBP.Scripts.Extensions
+  nameWithType: UBP.Scripts.Extensions
+  fullName: UBP.Scripts.Extensions
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine.ResourceRequest
+  commentId: T:UnityEngine.ResourceRequest
+  parent: UnityEngine
+  isExternal: true
+  name: ResourceRequest
+  nameWithType: ResourceRequest
+  fullName: UnityEngine.ResourceRequest
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UBP.Scripts.Extensions.TaskExtensions.ToTask*
+  commentId: Overload:UBP.Scripts.Extensions.TaskExtensions.ToTask
+  href: UBP.Scripts.Extensions.TaskExtensions.html#UBP_Scripts_Extensions_TaskExtensions_ToTask_UnityEngine_ResourceRequest_
+  name: ToTask
+  nameWithType: TaskExtensions.ToTask
+  fullName: UBP.Scripts.Extensions.TaskExtensions.ToTask
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UnityEngine.AsyncOperation
+  commentId: T:UnityEngine.AsyncOperation
+  parent: UnityEngine
+  isExternal: true
+  name: AsyncOperation
+  nameWithType: AsyncOperation
+  fullName: UnityEngine.AsyncOperation
+- uid: UBP.Scripts.Extensions.TaskExtensions.ToCoroutine*
+  commentId: Overload:UBP.Scripts.Extensions.TaskExtensions.ToCoroutine
+  href: UBP.Scripts.Extensions.TaskExtensions.html#UBP_Scripts_Extensions_TaskExtensions_ToCoroutine_System_Threading_Tasks_Task_
+  name: ToCoroutine
+  nameWithType: TaskExtensions.ToCoroutine
+  fullName: UBP.Scripts.Extensions.TaskExtensions.ToCoroutine
+- uid: System.Collections.IEnumerator
+  commentId: T:System.Collections.IEnumerator
+  parent: System.Collections
+  isExternal: true
+  name: IEnumerator
+  nameWithType: IEnumerator
+  fullName: System.Collections.IEnumerator
+- uid: System.Collections
+  commentId: N:System.Collections
+  isExternal: true
+  name: System.Collections
+  nameWithType: System.Collections
+  fullName: System.Collections
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true

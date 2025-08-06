@@ -1,0 +1,372 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Data.ResourcesConfigLoader
+  commentId: T:UBP.Scripts.Data.ResourcesConfigLoader
+  id: ResourcesConfigLoader
+  parent: UBP.Scripts.Data
+  children:
+  - UBP.Scripts.Data.ResourcesConfigLoader.#ctor(System.String)
+  - UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync
+  - UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync
+  langs:
+  - csharp
+  - vb
+  name: ResourcesConfigLoader
+  nameWithType: ResourcesConfigLoader
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ResourcesConfigLoader
+    path: ../Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+    startLine: 10
+  namespace: UBP.Scripts.Data
+  summary: >-
+    Loads configuration assets (e.g. ScriptableObjects) from the Unity <code>Resources</code> folder at runtime.
+
+    Implements <xref href="UBP.Scripts.Data.IConfigLoader" data-throw-if-not-resolved="false"></xref> for use in the UBP configuration system.
+  example: []
+  syntax:
+    content: 'public class ResourcesConfigLoader : IConfigLoader'
+    content.vb: Public Class ResourcesConfigLoader Implements IConfigLoader
+  inheritance:
+  - System.Object
+  implements:
+  - UBP.Scripts.Data.IConfigLoader
+- uid: UBP.Scripts.Data.ResourcesConfigLoader.#ctor(System.String)
+  commentId: M:UBP.Scripts.Data.ResourcesConfigLoader.#ctor(System.String)
+  id: '#ctor(System.String)'
+  parent: UBP.Scripts.Data.ResourcesConfigLoader
+  langs:
+  - csharp
+  - vb
+  name: ResourcesConfigLoader(string)
+  nameWithType: ResourcesConfigLoader.ResourcesConfigLoader(string)
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader.ResourcesConfigLoader(string)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: .ctor
+    path: ../Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+    startLine: 18
+  namespace: UBP.Scripts.Data
+  summary: Creates a new loader that will search for config assets under the specified <code>Resources</code> path.
+  example: []
+  syntax:
+    content: public ResourcesConfigLoader(string rootPath)
+    parameters:
+    - id: rootPath
+      type: System.String
+      description: Relative path under Resources/ where configuration assets are stored.
+    content.vb: Public Sub New(rootPath As String)
+  overload: UBP.Scripts.Data.ResourcesConfigLoader.#ctor*
+  nameWithType.vb: ResourcesConfigLoader.New(String)
+  fullName.vb: UBP.Scripts.Data.ResourcesConfigLoader.New(String)
+  name.vb: New(String)
+- uid: UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync
+  commentId: M:UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.Data.ResourcesConfigLoader
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: ResourcesConfigLoader.InitializeAsync()
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+    startLine: 23
+  namespace: UBP.Scripts.Data
+  summary: Performs any asynchronous initialization needed by the loader.
+  example: []
+  syntax:
+    content: public Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InitializeAsync() As Task
+  overload: UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync*
+  implements:
+  - UBP.Scripts.Data.IConfigLoader.InitializeAsync
+- uid: UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync
+  commentId: M:UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync
+  id: LoadConfigsAsync
+  parent: UBP.Scripts.Data.ResourcesConfigLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadConfigsAsync()
+  nameWithType: ResourcesConfigLoader.LoadConfigsAsync()
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadConfigsAsync
+    path: ../Assets/UBP/Scripts/Data/ResourcesConfigLoader.cs
+    startLine: 32
+  namespace: UBP.Scripts.Data
+  summary: Loads all <xref href="UnityEngine.ScriptableObject" data-throw-if-not-resolved="false"></xref> configs found at the root path inside the <code>Resources</code> folder.
+  example: []
+  syntax:
+    content: public Task<IList<ScriptableObject>> LoadConfigsAsync()
+    return:
+      type: System.Threading.Tasks.Task{System.Collections.Generic.IList{UnityEngine.ScriptableObject}}
+      description: A list of deserialized config objects.
+    content.vb: Public Function LoadConfigsAsync() As Task(Of IList(Of ScriptableObject))
+  overload: UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync*
+  implements:
+  - UBP.Scripts.Data.IConfigLoader.LoadConfigsAsync
+references:
+- uid: UBP.Scripts.Data.IConfigLoader
+  commentId: T:UBP.Scripts.Data.IConfigLoader
+  parent: UBP.Scripts.Data
+  href: UBP.Scripts.Data.IConfigLoader.html
+  name: IConfigLoader
+  nameWithType: IConfigLoader
+  fullName: UBP.Scripts.Data.IConfigLoader
+- uid: UBP.Scripts.Data
+  commentId: N:UBP.Scripts.Data
+  href: UBP.html
+  name: UBP.Scripts.Data
+  nameWithType: UBP.Scripts.Data
+  fullName: UBP.Scripts.Data
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.Data.ResourcesConfigLoader.#ctor*
+  commentId: Overload:UBP.Scripts.Data.ResourcesConfigLoader.#ctor
+  href: UBP.Scripts.Data.ResourcesConfigLoader.html#UBP_Scripts_Data_ResourcesConfigLoader__ctor_System_String_
+  name: ResourcesConfigLoader
+  nameWithType: ResourcesConfigLoader.ResourcesConfigLoader
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader.ResourcesConfigLoader
+  nameWithType.vb: ResourcesConfigLoader.New
+  fullName.vb: UBP.Scripts.Data.ResourcesConfigLoader.New
+  name.vb: New
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync*
+  commentId: Overload:UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync
+  href: UBP.Scripts.Data.ResourcesConfigLoader.html#UBP_Scripts_Data_ResourcesConfigLoader_InitializeAsync
+  name: InitializeAsync
+  nameWithType: ResourcesConfigLoader.InitializeAsync
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader.InitializeAsync
+- uid: UBP.Scripts.Data.IConfigLoader.InitializeAsync
+  commentId: M:UBP.Scripts.Data.IConfigLoader.InitializeAsync
+  parent: UBP.Scripts.Data.IConfigLoader
+  href: UBP.Scripts.Data.IConfigLoader.html#UBP_Scripts_Data_IConfigLoader_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IConfigLoader.InitializeAsync()
+  fullName: UBP.Scripts.Data.IConfigLoader.InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.Data.IConfigLoader.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.Data.IConfigLoader.html#UBP_Scripts_Data_IConfigLoader_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.Data.IConfigLoader.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.Data.IConfigLoader.html#UBP_Scripts_Data_IConfigLoader_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync*
+  commentId: Overload:UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync
+  href: UBP.Scripts.Data.ResourcesConfigLoader.html#UBP_Scripts_Data_ResourcesConfigLoader_LoadConfigsAsync
+  name: LoadConfigsAsync
+  nameWithType: ResourcesConfigLoader.LoadConfigsAsync
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader.LoadConfigsAsync
+- uid: UBP.Scripts.Data.IConfigLoader.LoadConfigsAsync
+  commentId: M:UBP.Scripts.Data.IConfigLoader.LoadConfigsAsync
+  parent: UBP.Scripts.Data.IConfigLoader
+  href: UBP.Scripts.Data.IConfigLoader.html#UBP_Scripts_Data_IConfigLoader_LoadConfigsAsync
+  name: LoadConfigsAsync()
+  nameWithType: IConfigLoader.LoadConfigsAsync()
+  fullName: UBP.Scripts.Data.IConfigLoader.LoadConfigsAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.Data.IConfigLoader.LoadConfigsAsync
+    name: LoadConfigsAsync
+    href: UBP.Scripts.Data.IConfigLoader.html#UBP_Scripts_Data_IConfigLoader_LoadConfigsAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.Data.IConfigLoader.LoadConfigsAsync
+    name: LoadConfigsAsync
+    href: UBP.Scripts.Data.IConfigLoader.html#UBP_Scripts_Data_IConfigLoader_LoadConfigsAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task{System.Collections.Generic.IList{UnityEngine.ScriptableObject}}
+  commentId: T:System.Threading.Tasks.Task{System.Collections.Generic.IList{UnityEngine.ScriptableObject}}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<IList<ScriptableObject>>
+  nameWithType: Task<IList<ScriptableObject>>
+  fullName: System.Threading.Tasks.Task<System.Collections.Generic.IList<UnityEngine.ScriptableObject>>
+  nameWithType.vb: Task(Of IList(Of ScriptableObject))
+  fullName.vb: System.Threading.Tasks.Task(Of System.Collections.Generic.IList(Of UnityEngine.ScriptableObject))
+  name.vb: Task(Of IList(Of ScriptableObject))
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.ScriptableObject
+    name: ScriptableObject
+    isExternal: true
+  - name: '>'
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.ScriptableObject
+    name: ScriptableObject
+    isExternal: true
+  - name: )
+  - name: )
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )

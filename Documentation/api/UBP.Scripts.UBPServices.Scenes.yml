@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Scenes
+  commentId: N:UBP.Scripts.UBPServices.Scenes
+  id: UBP.Scripts.UBPServices.Scenes
+  children:
+  - UBP.Scripts.UBPServices.Scenes.SceneService
+  - UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Scenes
+  nameWithType: UBP.Scripts.UBPServices.Scenes
+  fullName: UBP.Scripts.UBPServices.Scenes
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  parent: UBP.Scripts.UBPServices.Scenes
+  href: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html
+  name: SceneServiceConfig
+  nameWithType: SceneServiceConfig
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService
+  commentId: T:UBP.Scripts.UBPServices.Scenes.SceneService
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html
+  name: SceneService
+  nameWithType: SceneService
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService
+- uid: UBP.Scripts.UBPServices.Scenes
+  commentId: N:UBP.Scripts.UBPServices.Scenes
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Scenes
+  nameWithType: UBP.Scripts.UBPServices.Scenes
+  fullName: UBP.Scripts.UBPServices.Scenes
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Scenes
+    name: Scenes
+    href: UBP.Scripts.UBPServices.Scenes.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Scenes
+    name: Scenes
+    href: UBP.Scripts.UBPServices.Scenes.html

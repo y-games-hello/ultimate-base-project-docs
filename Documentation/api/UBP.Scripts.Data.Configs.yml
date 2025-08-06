@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Data.Configs
+  commentId: N:UBP.Scripts.Data.Configs
+  id: UBP.Scripts.Data.Configs
+  children:
+  - UBP.Scripts.Data.Configs.DataConfig
+  - UBP.Scripts.Data.Configs.GeneralConfig
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.Data.Configs
+  nameWithType: UBP.Scripts.Data.Configs
+  fullName: UBP.Scripts.Data.Configs
+  type: Namespace
+references:
+- uid: UBP.Scripts.Data.Configs.DataConfig
+  commentId: T:UBP.Scripts.Data.Configs.DataConfig
+  href: UBP.Scripts.Data.Configs.DataConfig.html
+  name: DataConfig
+  nameWithType: DataConfig
+  fullName: UBP.Scripts.Data.Configs.DataConfig
+- uid: UBP.Scripts.Data.Configs.GeneralConfig
+  commentId: T:UBP.Scripts.Data.Configs.GeneralConfig
+  href: UBP.Scripts.Data.Configs.GeneralConfig.html
+  name: GeneralConfig
+  nameWithType: GeneralConfig
+  fullName: UBP.Scripts.Data.Configs.GeneralConfig

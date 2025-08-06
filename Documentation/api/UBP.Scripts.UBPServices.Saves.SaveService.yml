@@ -1,0 +1,615 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves.SaveService
+  commentId: T:UBP.Scripts.UBPServices.Saves.SaveService
+  id: SaveService
+  parent: UBP.Scripts.UBPServices.Saves
+  children:
+  - UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync
+  - UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync``1(System.String)
+  - UBP.Scripts.UBPServices.Saves.SaveService.Load``1(System.String)
+  - UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync``1(System.String,``0)
+  - UBP.Scripts.UBPServices.Saves.SaveService.Save``1(System.String,``0)
+  - UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: SaveService
+  nameWithType: SaveService
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SaveService
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 13
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: >-
+    A service for saving and loading persistent game data to disk.
+
+    Supports serialization, backup recovery, and async file IO.
+  example: []
+  syntax:
+    content: 'public class SaveService : ConfiguredService<SaveServiceConfig>, IService'
+    content.vb: Public Class SaveService Inherits ConfiguredService(Of SaveServiceConfig) Implements IService
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}
+  implements:
+  - UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig
+  id: ServiceConfig
+  parent: UBP.Scripts.UBPServices.Saves.SaveService
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: SaveService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 18
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: Returns the active config used by this service.
+  example: []
+  syntax:
+    content: public override SaveServiceConfig ServiceConfig { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+    content.vb: Public Overrides ReadOnly Property ServiceConfig As SaveServiceConfig
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.ServiceConfig
+  overload: UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig*
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.Saves.SaveService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: SaveService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 25
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: Initializes the service and sets the default serializer.
+  example: []
+  syntax:
+    content: public override Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function InitializeAsync() As Task
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.InitializeAsync
+  overload: UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync*
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync``1(System.String,``0)
+  commentId: M:UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync``1(System.String,``0)
+  id: SaveAsync``1(System.String,``0)
+  parent: UBP.Scripts.UBPServices.Saves.SaveService
+  langs:
+  - csharp
+  - vb
+  name: SaveAsync<T>(string, T)
+  nameWithType: SaveService.SaveAsync<T>(string, T)
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync<T>(string, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SaveAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 66
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: Saves data asynchronously, using a temporary file first and falling back to a backup system.
+  example: []
+  syntax:
+    content: public Task SaveAsync<T>(string fileName, T data)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The save file name (without extension).
+    - id: data
+      type: '{T}'
+      description: The data object to save.
+    typeParameters:
+    - id: T
+      description: The type of data to serialize.
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function SaveAsync(Of T)(fileName As String, data As T) As Task
+  overload: UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync*
+  nameWithType.vb: SaveService.SaveAsync(Of T)(String, T)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync(Of T)(String, T)
+  name.vb: SaveAsync(Of T)(String, T)
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.Save``1(System.String,``0)
+  commentId: M:UBP.Scripts.UBPServices.Saves.SaveService.Save``1(System.String,``0)
+  id: Save``1(System.String,``0)
+  parent: UBP.Scripts.UBPServices.Saves.SaveService
+  langs:
+  - csharp
+  - vb
+  name: Save<T>(string, T)
+  nameWithType: SaveService.Save<T>(string, T)
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.Save<T>(string, T)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Save
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 79
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: Synchronously saves data using the same logic as async, including backup handling.
+  example: []
+  syntax:
+    content: public void Save<T>(string fileName, T data)
+    parameters:
+    - id: fileName
+      type: System.String
+      description: The save file name (without extension).
+    - id: data
+      type: '{T}'
+      description: The data object to save.
+    typeParameters:
+    - id: T
+      description: The type of data to serialize.
+    content.vb: Public Sub Save(Of T)(fileName As String, data As T)
+  overload: UBP.Scripts.UBPServices.Saves.SaveService.Save*
+  nameWithType.vb: SaveService.Save(Of T)(String, T)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.SaveService.Save(Of T)(String, T)
+  name.vb: Save(Of T)(String, T)
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync``1(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync``1(System.String)
+  id: LoadAsync``1(System.String)
+  parent: UBP.Scripts.UBPServices.Saves.SaveService
+  langs:
+  - csharp
+  - vb
+  name: LoadAsync<T>(string)
+  nameWithType: SaveService.LoadAsync<T>(string)
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 155
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: >-
+    Attempts to load and deserialize data asynchronously.
+
+    Falls back to backup file if the main file is missing or corrupted.
+  example: []
+  syntax:
+    content: public Task<T> LoadAsync<T>(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Function LoadAsync(Of T)(fileName As String) As Task(Of T)
+  overload: UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync*
+  nameWithType.vb: SaveService.LoadAsync(Of T)(String)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync(Of T)(String)
+  name.vb: LoadAsync(Of T)(String)
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.Load``1(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Saves.SaveService.Load``1(System.String)
+  id: Load``1(System.String)
+  parent: UBP.Scripts.UBPServices.Saves.SaveService
+  langs:
+  - csharp
+  - vb
+  name: Load<T>(string)
+  nameWithType: SaveService.Load<T>(string)
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.Load<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Load
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/SaveService.cs
+    startLine: 194
+  namespace: UBP.Scripts.UBPServices.Saves
+  summary: Synchronously loads and deserializes data from a save file or its backup.
+  example: []
+  syntax:
+    content: public T Load<T>(string fileName)
+    parameters:
+    - id: fileName
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Function Load(Of T)(fileName As String) As T
+  overload: UBP.Scripts.UBPServices.Saves.SaveService.Load*
+  nameWithType.vb: SaveService.Load(Of T)(String)
+  fullName.vb: UBP.Scripts.UBPServices.Saves.SaveService.Load(Of T)(String)
+  name.vb: Load(Of T)(String)
+references:
+- uid: UBP.Scripts.UBPServices.Saves
+  commentId: N:UBP.Scripts.UBPServices.Saves
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Saves
+  nameWithType: UBP.Scripts.UBPServices.Saves
+  fullName: UBP.Scripts.UBPServices.Saves
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}
+  parent: UBP.Scripts.UBPServices
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<SaveServiceConfig>
+  nameWithType: ConfiguredService<SaveServiceConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Saves.SaveServiceConfig>
+  nameWithType.vb: ConfiguredService(Of SaveServiceConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Saves.SaveServiceConfig)
+  name.vb: ConfiguredService(Of SaveServiceConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+    name: SaveServiceConfig
+    href: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+    name: SaveServiceConfig
+    href: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html
+  - name: )
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - name: TConfig
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConfig
+  - name: )
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.ServiceConfig
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<SaveServiceConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Saves.SaveServiceConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of SaveServiceConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Saves.SaveServiceConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html#UBP_Scripts_UBPServices_Saves_SaveService_ServiceConfig
+  name: ServiceConfig
+  nameWithType: SaveService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.ServiceConfig
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  parent: UBP.Scripts.UBPServices.Saves
+  href: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html
+  name: SaveServiceConfig
+  nameWithType: SaveServiceConfig
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.InitializeAsync
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<SaveServiceConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Saves.SaveServiceConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of SaveServiceConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Saves.SaveServiceConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Saves.SaveServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html#UBP_Scripts_UBPServices_Saves_SaveService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: SaveService.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html#UBP_Scripts_UBPServices_Saves_SaveService_SaveAsync__1_System_String___0_
+  name: SaveAsync
+  nameWithType: SaveService.SaveAsync
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.SaveAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.Save*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveService.Save
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html#UBP_Scripts_UBPServices_Saves_SaveService_Save__1_System_String___0_
+  name: Save
+  nameWithType: SaveService.Save
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.Save
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html#UBP_Scripts_UBPServices_Saves_SaveService_LoadAsync__1_System_String_
+  name: LoadAsync
+  nameWithType: SaveService.LoadAsync
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.LoadAsync
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: UBP.Scripts.UBPServices.Saves.SaveService.Load*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.SaveService.Load
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html#UBP_Scripts_UBPServices_Saves_SaveService_Load__1_System_String_
+  name: Load
+  nameWithType: SaveService.Load
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService.Load

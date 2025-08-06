@@ -1,0 +1,72 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.ApplicationEntry
+  commentId: T:UBP.Scripts.ApplicationEntry
+  id: ApplicationEntry
+  parent: UBP.Scripts
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ApplicationEntry
+  nameWithType: ApplicationEntry
+  fullName: UBP.Scripts.ApplicationEntry
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/ApplicationEntry.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ApplicationEntry
+    path: ../Assets/UBP/Scripts/ApplicationEntry.cs
+    startLine: 11
+  namespace: UBP.Scripts
+  summary: >-
+    The application's startup entry point, invoked automatically when the game is launched.
+
+    Responsible for initializing configuration and service layers, then loading the game intro scene.
+  example: []
+  syntax:
+    content: public class ApplicationEntry
+    content.vb: Public Class ApplicationEntry
+  inheritance:
+  - System.Object
+references:
+- uid: UBP.Scripts
+  commentId: N:UBP.Scripts
+  href: UBP.html
+  name: UBP.Scripts
+  nameWithType: UBP.Scripts
+  fullName: UBP.Scripts
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

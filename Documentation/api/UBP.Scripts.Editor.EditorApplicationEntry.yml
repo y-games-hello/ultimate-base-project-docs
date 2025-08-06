@@ -1,0 +1,90 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Editor.EditorApplicationEntry
+  commentId: T:UBP.Scripts.Editor.EditorApplicationEntry
+  id: EditorApplicationEntry
+  parent: UBP.Scripts.Editor
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: EditorApplicationEntry
+  nameWithType: EditorApplicationEntry
+  fullName: UBP.Scripts.Editor.EditorApplicationEntry
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Editor/EditorApplicationEntry.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: EditorApplicationEntry
+    path: ../Assets/UBP/Scripts/Editor/EditorApplicationEntry.cs
+    startLine: 9
+  namespace: UBP.Scripts.Editor
+  summary: >-
+    Automatically sets the play mode start scene in the Unity Editor to the first scene listed in build settings.
+
+    Ensures a consistent and controlled entry point for testing and development.
+  example: []
+  syntax:
+    content: >-
+      [InitializeOnLoad]
+
+      public static class EditorApplicationEntry
+    content.vb: >-
+      <InitializeOnLoad>
+
+      Public Module EditorApplicationEntry
+  inheritance:
+  - System.Object
+  attributes:
+  - type: UnityEditor.InitializeOnLoadAttribute
+    ctor: UnityEditor.InitializeOnLoadAttribute.#ctor
+    arguments: []
+references:
+- uid: UBP.Scripts.Editor
+  commentId: N:UBP.Scripts.Editor
+  href: UBP.html
+  name: UBP.Scripts.Editor
+  nameWithType: UBP.Scripts.Editor
+  fullName: UBP.Scripts.Editor
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Editor
+    name: Editor
+    href: UBP.Scripts.Editor.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Editor
+    name: Editor
+    href: UBP.Scripts.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

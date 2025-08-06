@@ -1,0 +1,252 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  id: ConfiguredService`1
+  parent: UBP.Scripts.UBPServices
+  children:
+  - UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  - UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/ConfiguredService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConfiguredService
+    path: ../Assets/UBP/Scripts/UBPServices/ConfiguredService.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices
+  summary: >-
+    A base service implementation that uses a configuration object of type TConfig.
+
+    Configs are loaded from the Resources folder at runtime.
+  example: []
+  syntax:
+    content: 'public abstract class ConfiguredService<TConfig> : IService where TConfig : ScriptableObject'
+    typeParameters:
+    - id: TConfig
+      description: The ScriptableObject type used as config.
+    content.vb: Public MustInherit Class ConfiguredService(Of TConfig As ScriptableObject) Implements IService
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - UBP.Scripts.UBPServices.Audio.AudioService
+  - UBP.Scripts.UBPServices.Debugs.DebugService
+  - UBP.Scripts.UBPServices.Factory.FactoryService
+  - UBP.Scripts.UBPServices.Saves.SaveService
+  - UBP.Scripts.UBPServices.Scenes.SceneService
+  implements:
+  - UBP.Scripts.UBPServices.IService
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  id: ServiceConfig
+  parent: UBP.Scripts.UBPServices.ConfiguredService`1
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/ConfiguredService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/ConfiguredService.cs
+    startLine: 16
+  namespace: UBP.Scripts.UBPServices
+  summary: >-
+    The configuration asset used by the service.
+
+    Must be provided by the derived class.
+  example: []
+  syntax:
+    content: public abstract TConfig ServiceConfig { get; }
+    parameters: []
+    return:
+      type: '{TConfig}'
+    content.vb: Public MustOverride ReadOnly Property ServiceConfig As TConfig
+  overload: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig*
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.ConfiguredService`1
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/ConfiguredService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/ConfiguredService.cs
+    startLine: 21
+  namespace: UBP.Scripts.UBPServices
+  summary: Requires override in derived services to perform async initialization.
+  example: []
+  syntax:
+    content: public abstract Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public MustOverride Function InitializeAsync() As Task
+  overload: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync*
+  implements:
+  - UBP.Scripts.UBPServices.IService.InitializeAsync
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync()
+references:
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig*
+  commentId: Overload:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: '{TConfig}'
+  commentId: '!:TConfig'
+  definition: TConfig
+  name: TConfig
+  nameWithType: TConfig
+  fullName: TConfig
+- uid: TConfig
+  commentId: '!:TConfig'
+  name: TConfig
+  nameWithType: TConfig
+  fullName: TConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync
+- uid: UBP.Scripts.UBPServices.IService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.IService.InitializeAsync
+  parent: UBP.Scripts.UBPServices.IService
+  href: UBP.Scripts.UBPServices.IService.html#UBP_Scripts_UBPServices_IService_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.IService.InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.IService.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.IService.html#UBP_Scripts_UBPServices_IService_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.IService.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.IService.html#UBP_Scripts_UBPServices_IService_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true

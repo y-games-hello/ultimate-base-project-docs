@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Data.Configs.GeneralConfig
+  commentId: T:UBP.Scripts.Data.Configs.GeneralConfig
+  id: GeneralConfig
+  parent: UBP.Scripts.Data.Configs
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: GeneralConfig
+  nameWithType: GeneralConfig
+  fullName: UBP.Scripts.Data.Configs.GeneralConfig
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/Configs/GeneralConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GeneralConfig
+    path: ../Assets/UBP/Scripts/Data/Configs/GeneralConfig.cs
+    startLine: 4
+  namespace: UBP.Scripts.Data.Configs
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "GeneralConfig", menuName = "Configs/GeneralConfig")]
+
+      public class GeneralConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="GeneralConfig", menuName:="Configs/GeneralConfig")>
+
+      Public Class GeneralConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: GeneralConfig
+    - name: menuName
+      type: System.String
+      value: Configs/GeneralConfig
+references:
+- uid: UBP.Scripts.Data.Configs
+  commentId: N:UBP.Scripts.Data.Configs
+  href: UBP.html
+  name: UBP.Scripts.Data.Configs
+  nameWithType: UBP.Scripts.Data.Configs
+  fullName: UBP.Scripts.Data.Configs
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+  - name: .
+  - uid: UBP.Scripts.Data.Configs
+    name: Configs
+    href: UBP.Scripts.Data.Configs.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+  - name: .
+  - uid: UBP.Scripts.Data.Configs
+    name: Configs
+    href: UBP.Scripts.Data.Configs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

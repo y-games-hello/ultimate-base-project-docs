@@ -1,0 +1,40 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Commands
+  commentId: N:UBP.Scripts.UBPServices.Commands
+  id: UBP.Scripts.UBPServices.Commands
+  children:
+  - UBP.Scripts.UBPServices.Commands.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Commands
+  nameWithType: UBP.Scripts.UBPServices.Commands
+  fullName: UBP.Scripts.UBPServices.Commands
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+  commentId: T:UBP.Scripts.UBPServices.Commands.ICommand`1
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T)
+  name.vb: ICommand(Of T)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

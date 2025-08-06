@@ -1,0 +1,82 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs
+  commentId: N:UBP.Scripts.UBPServices.Debugs
+  id: UBP.Scripts.UBPServices.Debugs
+  children:
+  - UBP.Scripts.UBPServices.Debugs.DebugService
+  - UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  - UBP.Scripts.UBPServices.Debugs.LogMessageData
+  - UBP.Scripts.UBPServices.Debugs.LogMessageView
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Debugs
+  nameWithType: UBP.Scripts.UBPServices.Debugs
+  fullName: UBP.Scripts.UBPServices.Debugs
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService
+  commentId: T:UBP.Scripts.UBPServices.Debugs.DebugService
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html
+  name: DebugService
+  nameWithType: DebugService
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.LogMessageView
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageView.html
+  name: LogMessageView
+  nameWithType: LogMessageView
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageView
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  commentId: T:UBP.Scripts.UBPServices.Debugs.LogMessageData
+  parent: UBP.Scripts.UBPServices.Debugs
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  name: LogMessageData
+  nameWithType: LogMessageData
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  parent: UBP.Scripts.UBPServices.Debugs
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html
+  name: DebugServiceConfig
+  nameWithType: DebugServiceConfig
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+- uid: UBP.Scripts.UBPServices.Debugs
+  commentId: N:UBP.Scripts.UBPServices.Debugs
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs
+  nameWithType: UBP.Scripts.UBPServices.Debugs
+  fullName: UBP.Scripts.UBPServices.Debugs
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html

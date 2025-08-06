@@ -1,0 +1,457 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService
+  commentId: T:UBP.Scripts.UBPServices.Factory.FactoryService
+  id: FactoryService
+  parent: UBP.Scripts.UBPServices.Factory
+  children:
+  - UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync
+  - UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency(System.Object)
+  - UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: FactoryService
+  nameWithType: FactoryService
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: FactoryService
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+    startLine: 14
+  namespace: UBP.Scripts.UBPServices.Factory
+  summary: >-
+    A service responsible for automatically injecting dependencies or running post-processing logic on objects,
+
+    using registered <xref href="UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor" data-throw-if-not-resolved="false"></xref> implementations.
+  example: []
+  syntax:
+    content: 'public class FactoryService : ConfiguredService<FactoryServiceConfig>, IService'
+    content.vb: Public Class FactoryService Inherits ConfiguredService(Of FactoryServiceConfig) Implements IService
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}
+  implements:
+  - UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig
+  id: ServiceConfig
+  parent: UBP.Scripts.UBPServices.Factory.FactoryService
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: FactoryService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+    startLine: 19
+  namespace: UBP.Scripts.UBPServices.Factory
+  summary: Returns the configuration associated with the factory service.
+  example: []
+  syntax:
+    content: public override FactoryServiceConfig ServiceConfig { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+    content.vb: Public Overrides ReadOnly Property ServiceConfig As FactoryServiceConfig
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.ServiceConfig
+  overload: UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig*
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.Factory.FactoryService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: FactoryService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+    startLine: 26
+  namespace: UBP.Scripts.UBPServices.Factory
+  summary: Initializes the service by discovering and registering all <xref href="UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor" data-throw-if-not-resolved="false"></xref> implementations.
+  example: []
+  syntax:
+    content: public override Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function InitializeAsync() As Task
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.InitializeAsync
+  overload: UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync*
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency(System.Object)
+  commentId: M:UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency(System.Object)
+  id: InjectDependency(System.Object)
+  parent: UBP.Scripts.UBPServices.Factory.FactoryService
+  langs:
+  - csharp
+  - vb
+  name: InjectDependency(object)
+  nameWithType: FactoryService.InjectDependency(object)
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InjectDependency
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/FactoryService.cs
+    startLine: 64
+  namespace: UBP.Scripts.UBPServices.Factory
+  summary: >-
+    Applies all registered <xref href="UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor" data-throw-if-not-resolved="false"></xref> instances to the given target object.
+
+    This is commonly used for dependency injection or object decoration.
+  example: []
+  syntax:
+    content: public void InjectDependency(object target)
+    parameters:
+    - id: target
+      type: System.Object
+      description: The object to process.
+    content.vb: Public Sub InjectDependency(target As Object)
+  overload: UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency*
+  nameWithType.vb: FactoryService.InjectDependency(Object)
+  fullName.vb: UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency(Object)
+  name.vb: InjectDependency(Object)
+references:
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  commentId: T:UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  parent: UBP.Scripts.UBPServices.Factory.PostProcessors
+  href: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.html
+  name: IPostProcessor
+  nameWithType: IPostProcessor
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+- uid: UBP.Scripts.UBPServices.Factory
+  commentId: N:UBP.Scripts.UBPServices.Factory
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Factory
+  nameWithType: UBP.Scripts.UBPServices.Factory
+  fullName: UBP.Scripts.UBPServices.Factory
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}
+  parent: UBP.Scripts.UBPServices
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<FactoryServiceConfig>
+  nameWithType: ConfiguredService<FactoryServiceConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Factory.FactoryServiceConfig>
+  nameWithType.vb: ConfiguredService(Of FactoryServiceConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Factory.FactoryServiceConfig)
+  name.vb: ConfiguredService(Of FactoryServiceConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+    name: FactoryServiceConfig
+    href: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+    name: FactoryServiceConfig
+    href: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.html
+  - name: )
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+  commentId: N:UBP.Scripts.UBPServices.Factory.PostProcessors
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Factory.PostProcessors
+  nameWithType: UBP.Scripts.UBPServices.Factory.PostProcessors
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+    name: PostProcessors
+    href: UBP.Scripts.UBPServices.Factory.PostProcessors.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+    name: PostProcessors
+    href: UBP.Scripts.UBPServices.Factory.PostProcessors.html
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - name: TConfig
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConfig
+  - name: )
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.ServiceConfig
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<FactoryServiceConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Factory.FactoryServiceConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of FactoryServiceConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Factory.FactoryServiceConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig*
+  commentId: Overload:UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig
+  href: UBP.Scripts.UBPServices.Factory.FactoryService.html#UBP_Scripts_UBPServices_Factory_FactoryService_ServiceConfig
+  name: ServiceConfig
+  nameWithType: FactoryService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService.ServiceConfig
+- uid: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  parent: UBP.Scripts.UBPServices.Factory
+  href: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.html
+  name: FactoryServiceConfig
+  nameWithType: FactoryServiceConfig
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.InitializeAsync
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<FactoryServiceConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Factory.FactoryServiceConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of FactoryServiceConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Factory.FactoryServiceConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Factory.FactoryServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync
+  href: UBP.Scripts.UBPServices.Factory.FactoryService.html#UBP_Scripts_UBPServices_Factory_FactoryService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: FactoryService.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency*
+  commentId: Overload:UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency
+  href: UBP.Scripts.UBPServices.Factory.FactoryService.html#UBP_Scripts_UBPServices_Factory_FactoryService_InjectDependency_System_Object_
+  name: InjectDependency
+  nameWithType: FactoryService.InjectDependency
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService.InjectDependency

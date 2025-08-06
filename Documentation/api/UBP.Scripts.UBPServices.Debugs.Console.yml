@@ -1,0 +1,96 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  id: UBP.Scripts.UBPServices.Debugs.Console
+  children:
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  - UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  href: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html
+  name: CommandSuggestionsView
+  nameWithType: CommandSuggestionsView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.html
+  name: ConsoleView
+  nameWithType: ConsoleView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas.html
+  name: ConsoleCanvas
+  nameWithType: ConsoleCanvas
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+- uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+  href: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView.html
+  name: SuggestedCommandView
+  nameWithType: SuggestedCommandView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView.html
+  name: ConsoleInputView
+  nameWithType: ConsoleInputView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html

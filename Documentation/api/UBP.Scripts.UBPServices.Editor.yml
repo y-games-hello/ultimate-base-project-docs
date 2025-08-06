@@ -1,0 +1,81 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Editor
+  commentId: N:UBP.Scripts.UBPServices.Editor
+  id: UBP.Scripts.UBPServices.Editor
+  children:
+  - UBP.Scripts.UBPServices.Editor.CoreSettingCategory
+  - UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  - UBP.Scripts.UBPServices.Editor.SettingCategory
+  - UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Editor
+  nameWithType: UBP.Scripts.UBPServices.Editor
+  fullName: UBP.Scripts.UBPServices.Editor
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  commentId: T:UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  href: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.html
+  name: UltimateBaseProjectWindow
+  nameWithType: UltimateBaseProjectWindow
+  fullName: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+- uid: UBP.Scripts.UBPServices.Editor.SettingCategory
+  commentId: T:UBP.Scripts.UBPServices.Editor.SettingCategory
+  parent: UBP.Scripts.UBPServices.Editor
+  href: UBP.Scripts.UBPServices.Editor.SettingCategory.html
+  name: SettingCategory
+  nameWithType: SettingCategory
+  fullName: UBP.Scripts.UBPServices.Editor.SettingCategory
+- uid: UBP.Scripts.UBPServices.Editor.CoreSettingCategory
+  commentId: T:UBP.Scripts.UBPServices.Editor.CoreSettingCategory
+  href: UBP.Scripts.UBPServices.Editor.CoreSettingCategory.html
+  name: CoreSettingCategory
+  nameWithType: CoreSettingCategory
+  fullName: UBP.Scripts.UBPServices.Editor.CoreSettingCategory
+- uid: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  commentId: T:UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+  href: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory.html
+  name: ServiceSettingCategory
+  nameWithType: ServiceSettingCategory
+  fullName: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+- uid: UBP.Scripts.UBPServices.Editor
+  commentId: N:UBP.Scripts.UBPServices.Editor
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Editor
+  nameWithType: UBP.Scripts.UBPServices.Editor
+  fullName: UBP.Scripts.UBPServices.Editor
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Editor.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Editor.html

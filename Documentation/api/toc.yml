@@ -1,0 +1,249 @@
+### YamlMime:TableOfContent
+items:
+- uid: UBP.Scripts
+  name: UBP.Scripts
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.ApplicationEntry
+    name: ApplicationEntry
+    type: Class
+  - uid: UBP.Scripts.UBPConstants
+    name: UBPConstants
+    type: Class
+- uid: UBP.Scripts.Data
+  name: UBP.Scripts.Data
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.Data.AssetLoader
+    name: AssetLoader
+    type: Class
+  - uid: UBP.Scripts.Data.ConfigStorage
+    name: ConfigStorage
+    type: Class
+  - uid: UBP.Scripts.Data.IConfigLoader
+    name: IConfigLoader
+    type: Interface
+  - uid: UBP.Scripts.Data.ResourcesConfigLoader
+    name: ResourcesConfigLoader
+    type: Class
+- uid: UBP.Scripts.Data.Configs
+  name: UBP.Scripts.Data.Configs
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.Data.Configs.DataConfig
+    name: DataConfig
+    type: Class
+  - uid: UBP.Scripts.Data.Configs.GeneralConfig
+    name: GeneralConfig
+    type: Class
+- uid: UBP.Scripts.Editor
+  name: UBP.Scripts.Editor
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.Editor.EditorApplicationEntry
+    name: EditorApplicationEntry
+    type: Class
+- uid: UBP.Scripts.Extensions
+  name: UBP.Scripts.Extensions
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue<T>
+    type: Class
+  - uid: UBP.Scripts.Extensions.TaskExtensions
+    name: TaskExtensions
+    type: Class
+  - uid: UBP.Scripts.Extensions.UIExtensions
+    name: UIExtensions
+    type: Class
+- uid: UBP.Scripts.UBPServices
+  name: UBP.Scripts.UBPServices
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService<TConfig>
+    type: Class
+  - uid: UBP.Scripts.UBPServices.IService
+    name: IService
+    type: Interface
+  - uid: UBP.Scripts.UBPServices.Services
+    name: Services
+    type: Class
+- uid: UBP.Scripts.UBPServices.ApplicationEvents
+  name: UBP.Scripts.UBPServices.ApplicationEvents
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+    name: ApplicationEventsDispatcher
+    type: Class
+  - uid: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+    name: ApplicationEventsService
+    type: Class
+- uid: UBP.Scripts.UBPServices.Audio
+  name: UBP.Scripts.UBPServices.Audio
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Audio.AudioService
+    name: AudioService
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+    name: AudioServiceConfig
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+    name: AudioSourcesPool
+    type: Class
+- uid: UBP.Scripts.UBPServices.Commands
+  name: UBP.Scripts.UBPServices.Commands
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand<T>
+    type: Interface
+- uid: UBP.Scripts.UBPServices.Debugs
+  name: UBP.Scripts.UBPServices.Debugs
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Debugs.DebugService
+    name: DebugService
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+    name: DebugServiceConfig
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+    name: LogMessageData
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.LogMessageView
+    name: LogMessageView
+    type: Class
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+    name: CommandSuggestionsView
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleCanvas
+    name: ConsoleCanvas
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleInputView
+    name: ConsoleInputView
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+    name: ConsoleView
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.Console.SuggestedCommandView
+    name: SuggestedCommandView
+    type: Class
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  name: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand
+    name: SampleConsoleCommand
+    type: Class
+- uid: UBP.Scripts.UBPServices.Editor
+  name: UBP.Scripts.UBPServices.Editor
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Editor.CoreSettingCategory
+    name: CoreSettingCategory
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Editor.ServiceSettingCategory
+    name: ServiceSettingCategory
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Editor.SettingCategory
+    name: SettingCategory
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+    name: UltimateBaseProjectWindow
+    type: Class
+- uid: UBP.Scripts.UBPServices.Factory
+  name: UBP.Scripts.UBPServices.Factory
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Factory.FactoryService
+    name: FactoryService
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+    name: FactoryServiceConfig
+    type: Class
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+  name: UBP.Scripts.UBPServices.Factory.PostProcessors
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+    name: IPostProcessor
+    type: Interface
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor
+    name: UpdaterPostProcessor
+    type: Class
+- uid: UBP.Scripts.UBPServices.Saves
+  name: UBP.Scripts.UBPServices.Saves
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Saves.SaveService
+    name: SaveService
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+    name: SaveServiceConfig
+    type: Class
+- uid: UBP.Scripts.UBPServices.Saves.Editor
+  name: UBP.Scripts.UBPServices.Saves.Editor
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+    name: SaveServiceConfigEditor
+    type: Class
+- uid: UBP.Scripts.UBPServices.Saves.Serializers
+  name: UBP.Scripts.UBPServices.Saves.Serializers
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+    name: JSONSaveSerializer
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+    name: SaveSerializer
+    type: Class
+- uid: UBP.Scripts.UBPServices.Scenes
+  name: UBP.Scripts.UBPServices.Scenes
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Scenes.SceneService
+    name: SceneService
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+    name: SceneServiceConfig
+    type: Class
+- uid: UBP.Scripts.UBPServices.UI.Handlers
+  name: UBP.Scripts.UBPServices.UI.Handlers
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+    name: UIDragHandler
+    type: Class
+  - uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+    name: UIResizeHandler
+    type: Class
+- uid: UBP.Scripts.UBPServices.Updaters
+  name: UBP.Scripts.UBPServices.Updaters
+  type: Namespace
+  items:
+  - uid: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+    name: IFixedUpdatable
+    type: Interface
+  - uid: UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+    name: ILateUpdatable
+    type: Interface
+  - uid: UBP.Scripts.UBPServices.Updaters.IUpdatable
+    name: IUpdatable
+    type: Interface
+  - uid: UBP.Scripts.UBPServices.Updaters.Updater
+    name: Updater
+    type: Class
+  - uid: UBP.Scripts.UBPServices.Updaters.UpdaterService
+    name: UpdaterService
+    type: Class
+memberLayout: SamePage

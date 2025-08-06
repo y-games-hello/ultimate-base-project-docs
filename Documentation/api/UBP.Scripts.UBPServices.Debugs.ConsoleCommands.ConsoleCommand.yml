@@ -1,0 +1,588 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  commentId: T:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  id: ConsoleCommand
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  children:
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.#ctor(System.Type[])
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute(System.Object[])
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo
+  langs:
+  - csharp
+  - vb
+  name: ConsoleCommand
+  nameWithType: ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleCommand
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: >-
+    Represents the base class for all in-game console commands.
+
+    Each command has a name derived from its class name and a set of required argument types.
+  example: []
+  syntax:
+    content: 'public abstract class ConsoleCommand : ICommand<object[]>'
+    content.vb: Public MustInherit Class ConsoleCommand Implements ICommand(Of Object())
+  inheritance:
+  - System.Object
+  derivedClasses:
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand
+  implements:
+  - UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name
+  commentId: P:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name
+  id: Name
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: Name
+  nameWithType: ConsoleCommand.Name
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Name
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 15
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: Gets the name of the command, derived from the class name.
+  example: []
+  syntax:
+    content: public string Name { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Name As String
+  overload: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name*
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments
+  commentId: P:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments
+  id: RequiredArguments
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: RequiredArguments
+  nameWithType: ConsoleCommand.RequiredArguments
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: RequiredArguments
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 21
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: Gets or sets the expected types of arguments this command requires.
+  example: []
+  syntax:
+    content: public Type[] RequiredArguments { get; protected set; }
+    parameters: []
+    return:
+      type: System.Type[]
+      description: An array of <xref href="System.Type" data-throw-if-not-resolved="false"></xref> indicating argument types.
+    content.vb: Public Property RequiredArguments As Type()
+  overload: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments*
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.#ctor(System.Type[])
+  commentId: M:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.#ctor(System.Type[])
+  id: '#ctor(System.Type[])'
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: ConsoleCommand(Type[])
+  nameWithType: ConsoleCommand.ConsoleCommand(Type[])
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.ConsoleCommand(System.Type[])
+  type: Constructor
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: .ctor
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 27
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: Initializes a new instance of the <xref href="UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand" data-throw-if-not-resolved="false"></xref> class with specified argument types.
+  example: []
+  syntax:
+    content: public ConsoleCommand(Type[] requiredArguments)
+    parameters:
+    - id: requiredArguments
+      type: System.Type[]
+      description: An array of types representing the arguments required by the command.
+    content.vb: Public Sub New(requiredArguments As Type())
+  overload: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.#ctor*
+  nameWithType.vb: ConsoleCommand.New(Type())
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.New(System.Type())
+  name.vb: New(Type())
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute(System.Object[])
+  commentId: M:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute(System.Object[])
+  id: Execute(System.Object[])
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: Execute(object[])
+  nameWithType: ConsoleCommand.Execute(object[])
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute(object[])
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Execute
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 36
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: Executes the command with the given arguments.
+  example: []
+  syntax:
+    content: public abstract void Execute(object[] arguments)
+    parameters:
+    - id: arguments
+      type: System.Object[]
+      description: An array of objects representing the arguments passed to the command.
+    content.vb: Public MustOverride Sub Execute(arguments As Object())
+  overload: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute*
+  implements:
+  - UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Execute(System.Object[])
+  nameWithType.vb: ConsoleCommand.Execute(Object())
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute(Object())
+  name.vb: Execute(Object())
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo
+  commentId: M:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo
+  id: Undo
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: ConsoleCommand.Undo()
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Undo
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 41
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: Reverts or undoes the effect of the command if supported.
+  example: []
+  syntax:
+    content: public abstract void Undo()
+    content.vb: Public MustOverride Sub Undo()
+  overload: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo*
+  implements:
+  - UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Undo
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments
+  commentId: M:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments
+  id: GetCommandNameWithArguments
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: GetCommandNameWithArguments()
+  nameWithType: ConsoleCommand.GetCommandNameWithArguments()
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetCommandNameWithArguments
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/ConsoleCommands/ConsoleCommand.cs
+    startLine: 47
+  namespace: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  summary: Returns a formatted command name with its required argument types.
+  example: []
+  syntax:
+    content: public string GetCommandNameWithArguments()
+    return:
+      type: System.String
+      description: A string representing the command with its argument type placeholders.
+    content.vb: Public Function GetCommandNameWithArguments() As String
+  overload: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  commentId: N:UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  nameWithType: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}
+  commentId: T:UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}
+  parent: UBP.Scripts.UBPServices.Commands
+  definition: UBP.Scripts.UBPServices.Commands.ICommand`1
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  name: ICommand<object[]>
+  nameWithType: ICommand<object[]>
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<object[]>
+  nameWithType.vb: ICommand(Of Object())
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of Object())
+  name.vb: ICommand(Of Object())
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  - name: <
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+  commentId: T:UBP.Scripts.UBPServices.Commands.ICommand`1
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T)
+  name.vb: ICommand(Of T)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+    name: ICommand
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UBP.Scripts.UBPServices.Commands
+  commentId: N:UBP.Scripts.UBPServices.Commands
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Commands
+  nameWithType: UBP.Scripts.UBPServices.Commands
+  fullName: UBP.Scripts.UBPServices.Commands
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Commands
+    name: Commands
+    href: UBP.Scripts.UBPServices.Commands.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Commands
+    name: Commands
+    href: UBP.Scripts.UBPServices.Commands.html
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html#UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_Name
+  name: Name
+  nameWithType: ConsoleCommand.Name
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Name
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Type
+  commentId: T:System.Type
+  parent: System
+  isExternal: true
+  name: Type
+  nameWithType: Type
+  fullName: System.Type
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html#UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_RequiredArguments
+  name: RequiredArguments
+  nameWithType: ConsoleCommand.RequiredArguments
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.RequiredArguments
+- uid: System.Type[]
+  isExternal: true
+  name: Type[]
+  nameWithType: Type[]
+  fullName: System.Type[]
+  nameWithType.vb: Type()
+  fullName.vb: System.Type()
+  name.vb: Type()
+  spec.csharp:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Type
+    name: Type
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  commentId: T:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: ConsoleCommand
+  nameWithType: ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.#ctor*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.#ctor
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html#UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand__ctor_System_Type___
+  name: ConsoleCommand
+  nameWithType: ConsoleCommand.ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.ConsoleCommand
+  nameWithType.vb: ConsoleCommand.New
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.New
+  name.vb: New
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html#UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_Execute_System_Object___
+  name: Execute
+  nameWithType: ConsoleCommand.Execute
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Execute
+- uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Execute(System.Object[])
+  commentId: M:UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Execute(System.Object[])
+  parent: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}
+  definition: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  name: Execute(object[])
+  nameWithType: ICommand<object[]>.Execute(object[])
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<object[]>.Execute(object[])
+  nameWithType.vb: ICommand(Of Object()).Execute(Object())
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of Object()).Execute(Object())
+  name.vb: Execute(Object())
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Execute(System.Object[])
+    name: Execute
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  - name: (
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Execute(System.Object[])
+    name: Execute
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  - name: (
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+  - name: )
+- uid: System.Object[]
+  isExternal: true
+  name: object[]
+  nameWithType: object[]
+  fullName: object[]
+  nameWithType.vb: Object()
+  fullName.vb: Object()
+  name.vb: Object()
+  spec.csharp:
+  - uid: System.Object
+    name: object
+    isExternal: true
+  - name: '['
+  - name: ']'
+  spec.vb:
+  - uid: System.Object
+    name: Object
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+  commentId: M:UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  name: Execute(T)
+  nameWithType: ICommand<T>.Execute(T)
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>.Execute(T)
+  nameWithType.vb: ICommand(Of T).Execute(T)
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T).Execute(T)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+    name: Execute
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+    name: Execute
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  - name: (
+  - name: T
+  - name: )
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html#UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_Undo
+  name: Undo
+  nameWithType: ConsoleCommand.Undo
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.Undo
+- uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Undo
+  commentId: M:UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Undo
+  parent: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}
+  definition: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  name: Undo()
+  nameWithType: ICommand<object[]>.Undo()
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<object[]>.Undo()
+  nameWithType.vb: ICommand(Of Object()).Undo()
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of Object()).Undo()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Undo
+    name: Undo
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand{System.Object[]}.Undo
+    name: Undo
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  commentId: M:UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  name: Undo()
+  nameWithType: ICommand<T>.Undo()
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>.Undo()
+  nameWithType.vb: ICommand(Of T).Undo()
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T).Undo()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+    name: Undo
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+    name: Undo
+    href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html#UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_GetCommandNameWithArguments
+  name: GetCommandNameWithArguments
+  nameWithType: ConsoleCommand.GetCommandNameWithArguments
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.GetCommandNameWithArguments

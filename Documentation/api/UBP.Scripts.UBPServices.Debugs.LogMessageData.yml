@@ -1,0 +1,266 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  commentId: T:UBP.Scripts.UBPServices.Debugs.LogMessageData
+  id: LogMessageData
+  parent: UBP.Scripts.UBPServices.Debugs
+  children:
+  - UBP.Scripts.UBPServices.Debugs.LogMessageData.#ctor(System.String,System.String,UnityEngine.LogType)
+  - UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition
+  - UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace
+  - UBP.Scripts.UBPServices.Debugs.LogMessageData.Type
+  langs:
+  - csharp
+  - vb
+  name: LogMessageData
+  nameWithType: LogMessageData
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LogMessageData
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+    startLine: 7
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Represents a structured container for Unity log message data.
+  example: []
+  syntax:
+    content: public class LogMessageData
+    content.vb: Public Class LogMessageData
+  inheritance:
+  - System.Object
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition
+  commentId: P:UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition
+  id: Condition
+  parent: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  langs:
+  - csharp
+  - vb
+  name: Condition
+  nameWithType: LogMessageData.Condition
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Condition
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+    startLine: 9
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: public string Condition { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property Condition As String
+  overload: UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition*
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace
+  commentId: P:UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace
+  id: StackTrace
+  parent: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  langs:
+  - csharp
+  - vb
+  name: StackTrace
+  nameWithType: LogMessageData.StackTrace
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: StackTrace
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: public string StackTrace { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public ReadOnly Property StackTrace As String
+  overload: UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace*
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.Type
+  commentId: P:UBP.Scripts.UBPServices.Debugs.LogMessageData.Type
+  id: Type
+  parent: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  langs:
+  - csharp
+  - vb
+  name: Type
+  nameWithType: LogMessageData.Type
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.Type
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Type
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+    startLine: 11
+  namespace: UBP.Scripts.UBPServices.Debugs
+  syntax:
+    content: public LogType Type { get; }
+    parameters: []
+    return:
+      type: UnityEngine.LogType
+    content.vb: Public ReadOnly Property Type As LogType
+  overload: UBP.Scripts.UBPServices.Debugs.LogMessageData.Type*
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.#ctor(System.String,System.String,UnityEngine.LogType)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.LogMessageData.#ctor(System.String,System.String,UnityEngine.LogType)
+  id: '#ctor(System.String,System.String,UnityEngine.LogType)'
+  parent: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  langs:
+  - csharp
+  - vb
+  name: LogMessageData(string, string, LogType)
+  nameWithType: LogMessageData.LogMessageData(string, string, LogType)
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.LogMessageData(string, string, UnityEngine.LogType)
+  type: Constructor
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: .ctor
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/LogMessageData.cs
+    startLine: 19
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Initializes a new instance of the <xref href="UBP.Scripts.UBPServices.Debugs.LogMessageData" data-throw-if-not-resolved="false"></xref> class with the specified log data.
+  example: []
+  syntax:
+    content: public LogMessageData(string condition, string stackTrace, LogType type)
+    parameters:
+    - id: condition
+      type: System.String
+      description: The main message or condition of the log entry.
+    - id: stackTrace
+      type: System.String
+      description: The stack trace related to the log message.
+    - id: type
+      type: UnityEngine.LogType
+      description: The severity or category of the log message.
+    content.vb: Public Sub New(condition As String, stackTrace As String, type As LogType)
+  overload: UBP.Scripts.UBPServices.Debugs.LogMessageData.#ctor*
+  nameWithType.vb: LogMessageData.New(String, String, LogType)
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.LogMessageData.New(String, String, UnityEngine.LogType)
+  name.vb: New(String, String, LogType)
+references:
+- uid: UBP.Scripts.UBPServices.Debugs
+  commentId: N:UBP.Scripts.UBPServices.Debugs
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs
+  nameWithType: UBP.Scripts.UBPServices.Debugs
+  fullName: UBP.Scripts.UBPServices.Debugs
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html#UBP_Scripts_UBPServices_Debugs_LogMessageData_Condition
+  name: Condition
+  nameWithType: LogMessageData.Condition
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.Condition
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html#UBP_Scripts_UBPServices_Debugs_LogMessageData_StackTrace
+  name: StackTrace
+  nameWithType: LogMessageData.StackTrace
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.StackTrace
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.Type*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.LogMessageData.Type
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html#UBP_Scripts_UBPServices_Debugs_LogMessageData_Type
+  name: Type
+  nameWithType: LogMessageData.Type
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.Type
+- uid: UnityEngine.LogType
+  commentId: T:UnityEngine.LogType
+  parent: UnityEngine
+  isExternal: true
+  name: LogType
+  nameWithType: LogType
+  fullName: UnityEngine.LogType
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+  commentId: T:UBP.Scripts.UBPServices.Debugs.LogMessageData
+  parent: UBP.Scripts.UBPServices.Debugs
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  name: LogMessageData
+  nameWithType: LogMessageData
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData
+- uid: UBP.Scripts.UBPServices.Debugs.LogMessageData.#ctor*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.LogMessageData.#ctor
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html#UBP_Scripts_UBPServices_Debugs_LogMessageData__ctor_System_String_System_String_UnityEngine_LogType_
+  name: LogMessageData
+  nameWithType: LogMessageData.LogMessageData
+  fullName: UBP.Scripts.UBPServices.Debugs.LogMessageData.LogMessageData
+  nameWithType.vb: LogMessageData.New
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.LogMessageData.New
+  name.vb: New

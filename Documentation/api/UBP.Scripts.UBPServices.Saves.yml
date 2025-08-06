@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves
+  commentId: N:UBP.Scripts.UBPServices.Saves
+  id: UBP.Scripts.UBPServices.Saves
+  children:
+  - UBP.Scripts.UBPServices.Saves.SaveService
+  - UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Saves
+  nameWithType: UBP.Scripts.UBPServices.Saves
+  fullName: UBP.Scripts.UBPServices.Saves
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Saves.SaveService
+  commentId: T:UBP.Scripts.UBPServices.Saves.SaveService
+  href: UBP.Scripts.UBPServices.Saves.SaveService.html
+  name: SaveService
+  nameWithType: SaveService
+  fullName: UBP.Scripts.UBPServices.Saves.SaveService
+- uid: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+  parent: UBP.Scripts.UBPServices.Saves
+  href: UBP.Scripts.UBPServices.Saves.SaveServiceConfig.html
+  name: SaveServiceConfig
+  nameWithType: SaveServiceConfig
+  fullName: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+- uid: UBP.Scripts.UBPServices.Saves
+  commentId: N:UBP.Scripts.UBPServices.Saves
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Saves
+  nameWithType: UBP.Scripts.UBPServices.Saves
+  fullName: UBP.Scripts.UBPServices.Saves
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html

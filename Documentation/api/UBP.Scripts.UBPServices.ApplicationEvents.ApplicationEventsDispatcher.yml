@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+  commentId: T:UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+  id: ApplicationEventsDispatcher
+  parent: UBP.Scripts.UBPServices.ApplicationEvents
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: ApplicationEventsDispatcher
+  nameWithType: ApplicationEventsDispatcher
+  fullName: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/ApplicationEvents/ApplicationEventsDispatcher.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ApplicationEventsDispatcher
+    path: ../Assets/UBP/Scripts/UBPServices/ApplicationEvents/ApplicationEventsDispatcher.cs
+    startLine: 9
+  namespace: UBP.Scripts.UBPServices.ApplicationEvents
+  summary: >-
+    A MonoBehaviour that listens for Unity application events (focus, pause, quit, destroy)
+
+    and forwards them to the centralized <xref href="UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService" data-throw-if-not-resolved="false"></xref>.
+
+    This enables non-MonoBehaviour systems to respond to Unity lifecycle events.
+  example: []
+  syntax:
+    content: 'public class ApplicationEventsDispatcher : MonoBehaviour'
+    content.vb: Public Class ApplicationEventsDispatcher Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+references:
+- uid: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+  commentId: T:UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+  href: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService.html
+  name: ApplicationEventsService
+  nameWithType: ApplicationEventsService
+  fullName: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+- uid: UBP.Scripts.UBPServices.ApplicationEvents
+  commentId: N:UBP.Scripts.UBPServices.ApplicationEvents
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.ApplicationEvents
+  nameWithType: UBP.Scripts.UBPServices.ApplicationEvents
+  fullName: UBP.Scripts.UBPServices.ApplicationEvents
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.ApplicationEvents
+    name: ApplicationEvents
+    href: UBP.Scripts.UBPServices.ApplicationEvents.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.ApplicationEvents
+    name: ApplicationEvents
+    href: UBP.Scripts.UBPServices.ApplicationEvents.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

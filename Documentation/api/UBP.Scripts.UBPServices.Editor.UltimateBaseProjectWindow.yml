@@ -1,0 +1,169 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  commentId: T:UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  id: UltimateBaseProjectWindow
+  parent: UBP.Scripts.UBPServices.Editor
+  children:
+  - UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow
+  langs:
+  - csharp
+  - vb
+  name: UltimateBaseProjectWindow
+  nameWithType: UltimateBaseProjectWindow
+  fullName: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UltimateBaseProjectWindow
+    path: ../Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+    startLine: 14
+  namespace: UBP.Scripts.UBPServices.Editor
+  summary: >-
+    A custom Unity Editor window for configuring UBP service settings and core configurations.
+
+    Mimics Unity's Project Settings UI with a category list on the left and settings panel on the right.
+  example: []
+  syntax:
+    content: 'public class UltimateBaseProjectWindow : EditorWindow'
+    content.vb: Public Class UltimateBaseProjectWindow Inherits EditorWindow
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.EditorWindow
+- uid: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow
+  commentId: M:UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow
+  id: ShowWindow
+  parent: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow
+  langs:
+  - csharp
+  - vb
+  name: ShowWindow()
+  nameWithType: UltimateBaseProjectWindow.ShowWindow()
+  fullName: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ShowWindow
+    path: ../Assets/UBP/Scripts/UBPServices/Editor/UltimateBaseProjectWindow.cs
+    startLine: 26
+  namespace: UBP.Scripts.UBPServices.Editor
+  summary: Opens the UBP settings window from the Unity top menu.
+  example: []
+  syntax:
+    content: >-
+      [MenuItem("Window/YGames/Ultimate Base Project")]
+
+      public static void ShowWindow()
+    content.vb: >-
+      <MenuItem("Window/YGames/Ultimate Base Project")>
+
+      Public Shared Sub ShowWindow()
+  overload: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow*
+  attributes:
+  - type: UnityEditor.MenuItem
+    ctor: UnityEditor.MenuItem.#ctor(System.String)
+    arguments:
+    - type: System.String
+      value: Window/YGames/Ultimate Base Project
+references:
+- uid: UBP.Scripts.UBPServices.Editor
+  commentId: N:UBP.Scripts.UBPServices.Editor
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Editor
+  nameWithType: UBP.Scripts.UBPServices.Editor
+  fullName: UBP.Scripts.UBPServices.Editor
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Editor.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.EditorWindow
+  commentId: T:UnityEditor.EditorWindow
+  parent: UnityEditor
+  isExternal: true
+  name: EditorWindow
+  nameWithType: EditorWindow
+  fullName: UnityEditor.EditorWindow
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow*
+  commentId: Overload:UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow
+  href: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.html#UBP_Scripts_UBPServices_Editor_UltimateBaseProjectWindow_ShowWindow
+  name: ShowWindow
+  nameWithType: UltimateBaseProjectWindow.ShowWindow
+  fullName: UBP.Scripts.UBPServices.Editor.UltimateBaseProjectWindow.ShowWindow

@@ -1,0 +1,134 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Extensions.UIExtensions
+  commentId: T:UBP.Scripts.Extensions.UIExtensions
+  id: UIExtensions
+  parent: UBP.Scripts.Extensions
+  children:
+  - UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform(UnityEngine.RectTransform,UnityEngine.RectTransform)
+  langs:
+  - csharp
+  - vb
+  name: UIExtensions
+  nameWithType: UIExtensions
+  fullName: UBP.Scripts.Extensions.UIExtensions
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/UIExtensions.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UIExtensions
+    path: ../Assets/UBP/Scripts/Extensions/UIExtensions.cs
+    startLine: 4
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public static class UIExtensions
+    content.vb: Public Module UIExtensions
+  inheritance:
+  - System.Object
+- uid: UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform(UnityEngine.RectTransform,UnityEngine.RectTransform)
+  commentId: M:UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform(UnityEngine.RectTransform,UnityEngine.RectTransform)
+  id: GetPositionInsideRectTransform(UnityEngine.RectTransform,UnityEngine.RectTransform)
+  isExtensionMethod: true
+  parent: UBP.Scripts.Extensions.UIExtensions
+  langs:
+  - csharp
+  - vb
+  name: GetPositionInsideRectTransform(RectTransform, RectTransform)
+  nameWithType: UIExtensions.GetPositionInsideRectTransform(RectTransform, RectTransform)
+  fullName: UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform(UnityEngine.RectTransform, UnityEngine.RectTransform)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Extensions/UIExtensions.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetPositionInsideRectTransform
+    path: ../Assets/UBP/Scripts/Extensions/UIExtensions.cs
+    startLine: 6
+  namespace: UBP.Scripts.Extensions
+  syntax:
+    content: public static Vector2 GetPositionInsideRectTransform(this RectTransform target, RectTransform parentRectTransform)
+    parameters:
+    - id: target
+      type: UnityEngine.RectTransform
+    - id: parentRectTransform
+      type: UnityEngine.RectTransform
+    return:
+      type: UnityEngine.Vector2
+    content.vb: Public Shared Function GetPositionInsideRectTransform(target As RectTransform, parentRectTransform As RectTransform) As Vector2
+  overload: UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform*
+references:
+- uid: UBP.Scripts.Extensions
+  commentId: N:UBP.Scripts.Extensions
+  href: UBP.html
+  name: UBP.Scripts.Extensions
+  nameWithType: UBP.Scripts.Extensions
+  fullName: UBP.Scripts.Extensions
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform*
+  commentId: Overload:UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform
+  href: UBP.Scripts.Extensions.UIExtensions.html#UBP_Scripts_Extensions_UIExtensions_GetPositionInsideRectTransform_UnityEngine_RectTransform_UnityEngine_RectTransform_
+  name: GetPositionInsideRectTransform
+  nameWithType: UIExtensions.GetPositionInsideRectTransform
+  fullName: UBP.Scripts.Extensions.UIExtensions.GetPositionInsideRectTransform
+- uid: UnityEngine.RectTransform
+  commentId: T:UnityEngine.RectTransform
+  parent: UnityEngine
+  isExternal: true
+  name: RectTransform
+  nameWithType: RectTransform
+  fullName: UnityEngine.RectTransform
+- uid: UnityEngine.Vector2
+  commentId: T:UnityEngine.Vector2
+  parent: UnityEngine
+  isExternal: true
+  name: Vector2
+  nameWithType: Vector2
+  fullName: UnityEngine.Vector2
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

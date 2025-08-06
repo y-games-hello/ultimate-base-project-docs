@@ -1,0 +1,57 @@
+name: Ultimate Base Project
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write  # Required to deploy to gh-pages
+
+jobs:
+  # Build the documentation
+  build:
+    runs-on: windows-latest
+    outputs:
+      site-path: ${{ steps.upload.outputs.artifact }}
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install DocFX
+        run: choco install -y docfx
+
+      - name: Use README.md as index.md
+        run: copy README.md Documentation\\index.md
+
+      - name: Build DocFX
+        run: docfx Documentation\\docfx.json
+
+      - name: Upload site artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: docfx-site
+          path: Documentation/_site
+
+  # Deploy the generated documentation to GitHub Pages
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Download site artifact
+        uses: actions/download-artifact@v4
+        with:
+          name: docfx-site
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_branch: gh-pages
+          publish_dir: _site

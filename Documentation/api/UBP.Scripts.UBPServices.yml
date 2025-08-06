@@ -1,0 +1,85 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  id: UBP.Scripts.UBPServices
+  children:
+  - UBP.Scripts.UBPServices.ConfiguredService`1
+  - UBP.Scripts.UBPServices.IService
+  - UBP.Scripts.UBPServices.Services
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Services
+  commentId: T:UBP.Scripts.UBPServices.Services
+  href: UBP.Scripts.UBPServices.Services.html
+  name: Services
+  nameWithType: Services
+  fullName: UBP.Scripts.UBPServices.Services
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - name: TConfig
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConfig
+  - name: )
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html

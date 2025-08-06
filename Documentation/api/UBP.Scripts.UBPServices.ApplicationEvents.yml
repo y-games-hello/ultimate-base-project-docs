@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.ApplicationEvents
+  commentId: N:UBP.Scripts.UBPServices.ApplicationEvents
+  id: UBP.Scripts.UBPServices.ApplicationEvents
+  children:
+  - UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+  - UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.ApplicationEvents
+  nameWithType: UBP.Scripts.UBPServices.ApplicationEvents
+  fullName: UBP.Scripts.UBPServices.ApplicationEvents
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+  commentId: T:UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+  href: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService.html
+  name: ApplicationEventsService
+  nameWithType: ApplicationEventsService
+  fullName: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsService
+- uid: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+  commentId: T:UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher
+  href: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher.html
+  name: ApplicationEventsDispatcher
+  nameWithType: ApplicationEventsDispatcher
+  fullName: UBP.Scripts.UBPServices.ApplicationEvents.ApplicationEventsDispatcher

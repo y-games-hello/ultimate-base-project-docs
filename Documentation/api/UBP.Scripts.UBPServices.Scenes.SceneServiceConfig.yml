@@ -1,0 +1,174 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  id: SceneServiceConfig
+  parent: UBP.Scripts.UBPServices.Scenes
+  children:
+  - UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene
+  langs:
+  - csharp
+  - vb
+  name: SceneServiceConfig
+  nameWithType: SceneServiceConfig
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SceneServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneServiceConfig.cs
+    startLine: 5
+  namespace: UBP.Scripts.UBPServices.Scenes
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "SceneServiceConfig", menuName = "Configs/Services/SceneServiceConfig")]
+
+      public class SceneServiceConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="SceneServiceConfig", menuName:="Configs/Services/SceneServiceConfig")>
+
+      Public Class SceneServiceConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: SceneServiceConfig
+    - name: menuName
+      type: System.String
+      value: Configs/Services/SceneServiceConfig
+- uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene
+  commentId: P:UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene
+  id: GameIntroScene
+  parent: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: GameIntroScene
+  nameWithType: SceneServiceConfig.GameIntroScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GameIntroScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneServiceConfig.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: >-
+    The scene to be loaded automatically after <code>ConfigStorage</code> and <code>Services</code> are initialized.
+
+    This is typically the first real scene the user sees.
+  example: []
+  syntax:
+    content: public SceneAsset GameIntroScene { get; }
+    parameters: []
+    return:
+      type: UnityEditor.SceneAsset
+    content.vb: Public Property GameIntroScene As SceneAsset
+  overload: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene*
+references:
+- uid: UBP.Scripts.UBPServices.Scenes
+  commentId: N:UBP.Scripts.UBPServices.Scenes
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Scenes
+  nameWithType: UBP.Scripts.UBPServices.Scenes
+  fullName: UBP.Scripts.UBPServices.Scenes
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Scenes
+    name: Scenes
+    href: UBP.Scripts.UBPServices.Scenes.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Scenes
+    name: Scenes
+    href: UBP.Scripts.UBPServices.Scenes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene
+  href: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html#UBP_Scripts_UBPServices_Scenes_SceneServiceConfig_GameIntroScene
+  name: GameIntroScene
+  nameWithType: SceneServiceConfig.GameIntroScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.GameIntroScene
+- uid: UnityEditor.SceneAsset
+  commentId: T:UnityEditor.SceneAsset
+  parent: UnityEditor
+  isExternal: true
+  name: SceneAsset
+  nameWithType: SceneAsset
+  fullName: UnityEditor.SceneAsset
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor

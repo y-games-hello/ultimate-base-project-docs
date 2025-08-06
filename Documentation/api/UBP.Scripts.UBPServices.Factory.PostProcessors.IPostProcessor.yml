@@ -1,0 +1,140 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  commentId: T:UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  id: IPostProcessor
+  parent: UBP.Scripts.UBPServices.Factory.PostProcessors
+  children:
+  - UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: IPostProcessor
+  nameWithType: IPostProcessor
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  type: Interface
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/PostProcessors/IPostProcessor.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: IPostProcessor
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/PostProcessors/IPostProcessor.cs
+    startLine: 6
+  namespace: UBP.Scripts.UBPServices.Factory.PostProcessors
+  summary: >-
+    Interface used by the <xref href="UBP.Scripts.UBPServices.Factory.FactoryService" data-throw-if-not-resolved="false"></xref> to define post-construction behavior for objects.
+
+    Implementations can inject dependencies, register systems, or perform other setup logic.
+  example: []
+  syntax:
+    content: public interface IPostProcessor
+    content.vb: Public Interface IPostProcessor
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process(System.Object)
+  commentId: M:UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process(System.Object)
+  id: Process(System.Object)
+  parent: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: Process(object)
+  nameWithType: IPostProcessor.Process(object)
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/PostProcessors/IPostProcessor.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Process
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/PostProcessors/IPostProcessor.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Factory.PostProcessors
+  summary: Processes the specified object after creation or injection.
+  example: []
+  syntax:
+    content: void Process(object target)
+    parameters:
+    - id: target
+      type: System.Object
+      description: The object to process.
+    content.vb: Sub Process(target As Object)
+  overload: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process*
+  nameWithType.vb: IPostProcessor.Process(Object)
+  fullName.vb: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process(Object)
+  name.vb: Process(Object)
+references:
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService
+  commentId: T:UBP.Scripts.UBPServices.Factory.FactoryService
+  href: UBP.Scripts.UBPServices.Factory.FactoryService.html
+  name: FactoryService
+  nameWithType: FactoryService
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+  commentId: N:UBP.Scripts.UBPServices.Factory.PostProcessors
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Factory.PostProcessors
+  nameWithType: UBP.Scripts.UBPServices.Factory.PostProcessors
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+    name: PostProcessors
+    href: UBP.Scripts.UBPServices.Factory.PostProcessors.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+    name: PostProcessors
+    href: UBP.Scripts.UBPServices.Factory.PostProcessors.html
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process*
+  commentId: Overload:UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process
+  href: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.html#UBP_Scripts_UBPServices_Factory_PostProcessors_IPostProcessor_Process_System_Object_
+  name: Process
+  nameWithType: IPostProcessor.Process
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.Process
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System

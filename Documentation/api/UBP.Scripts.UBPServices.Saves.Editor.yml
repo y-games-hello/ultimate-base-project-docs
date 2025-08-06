@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves.Editor
+  commentId: N:UBP.Scripts.UBPServices.Saves.Editor
+  id: UBP.Scripts.UBPServices.Saves.Editor
+  children:
+  - UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Saves.Editor
+  nameWithType: UBP.Scripts.UBPServices.Saves.Editor
+  fullName: UBP.Scripts.UBPServices.Saves.Editor
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  commentId: T:UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  href: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.html
+  name: SaveServiceConfigEditor
+  nameWithType: SaveServiceConfigEditor
+  fullName: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor

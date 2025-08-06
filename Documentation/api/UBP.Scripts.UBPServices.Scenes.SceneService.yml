@@ -1,0 +1,1181 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService
+  commentId: T:UBP.Scripts.UBPServices.Scenes.SceneService
+  id: SceneService
+  parent: UBP.Scripts.UBPServices.Scenes
+  children:
+  - UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene
+  - UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes
+  - UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.Int32)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.String)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync
+  - UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig
+  - UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.Int32)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.String)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.Int32)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String)
+  - UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String,System.Action)
+  langs:
+  - csharp
+  - vb
+  name: SceneService
+  nameWithType: SceneService
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SceneService
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 19
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: >-
+    Service responsible for loading, unloading, and managing scenes in the project.
+
+    Supports both synchronous and asynchronous operations, with optional progress callbacks.
+  example: []
+  syntax:
+    content: 'public class SceneService : ConfiguredService<SceneServiceConfig>, IService'
+    content.vb: Public Class SceneService Inherits ConfiguredService(Of SceneServiceConfig) Implements IService
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}
+  implements:
+  - UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig
+  id: ServiceConfig
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: SceneService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 24
+  namespace: UBP.Scripts.UBPServices.Scenes
+  syntax:
+    content: public override SceneServiceConfig ServiceConfig { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+    content.vb: Public Overrides ReadOnly Property ServiceConfig As SceneServiceConfig
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.ServiceConfig
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig*
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: SceneService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 30
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Initializes the SceneService and resets the loaded scene list.
+  example: []
+  syntax:
+    content: public override Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function InitializeAsync() As Task
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.InitializeAsync
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync*
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  id: LoadScene(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: LoadScene(string, LoadSceneMode)
+  nameWithType: SceneService.LoadScene(string, LoadSceneMode)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(string, UnityEngine.SceneManagement.LoadSceneMode)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 41
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Synchronously loads a scene by name.
+  example: []
+  syntax:
+    content: public void LoadScene(string sceneName, LoadSceneMode mode = LoadSceneMode.Single)
+    parameters:
+    - id: sceneName
+      type: System.String
+    - id: mode
+      type: UnityEngine.SceneManagement.LoadSceneMode
+    content.vb: Public Sub LoadScene(sceneName As String, mode As LoadSceneMode = LoadSceneMode.Single)
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene*
+  nameWithType.vb: SceneService.LoadScene(String, LoadSceneMode)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(String, UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadScene(String, LoadSceneMode)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  id: LoadScene(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: LoadScene(int, LoadSceneMode)
+  nameWithType: SceneService.LoadScene(int, LoadSceneMode)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(int, UnityEngine.SceneManagement.LoadSceneMode)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 50
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Synchronously loads a scene by build index.
+  example: []
+  syntax:
+    content: public void LoadScene(int sceneIndex, LoadSceneMode mode = LoadSceneMode.Single)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+    - id: mode
+      type: UnityEngine.SceneManagement.LoadSceneMode
+    content.vb: Public Sub LoadScene(sceneIndex As Integer, mode As LoadSceneMode = LoadSceneMode.Single)
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene*
+  nameWithType.vb: SceneService.LoadScene(Integer, LoadSceneMode)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene(Integer, UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadScene(Integer, LoadSceneMode)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  id: LoadSceneAsync(System.String,UnityEngine.SceneManagement.LoadSceneMode)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: LoadSceneAsync(string, LoadSceneMode)
+  nameWithType: SceneService.LoadSceneAsync(string, LoadSceneMode)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(string, UnityEngine.SceneManagement.LoadSceneMode)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 58
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Asynchronously loads a scene by name.
+  example: []
+  syntax:
+    content: public Task LoadSceneAsync(string sceneName, LoadSceneMode mode = LoadSceneMode.Single)
+    parameters:
+    - id: sceneName
+      type: System.String
+    - id: mode
+      type: UnityEngine.SceneManagement.LoadSceneMode
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadSceneAsync(sceneName As String, mode As LoadSceneMode = LoadSceneMode.Single) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*
+  nameWithType.vb: SceneService.LoadSceneAsync(String, LoadSceneMode)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(String, UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadSceneAsync(String, LoadSceneMode)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  id: LoadSceneAsync(System.Int32,UnityEngine.SceneManagement.LoadSceneMode)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: LoadSceneAsync(int, LoadSceneMode)
+  nameWithType: SceneService.LoadSceneAsync(int, LoadSceneMode)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(int, UnityEngine.SceneManagement.LoadSceneMode)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 66
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Asynchronously loads a scene by build index.
+  example: []
+  syntax:
+    content: public Task LoadSceneAsync(int sceneIndex, LoadSceneMode mode = LoadSceneMode.Single)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+    - id: mode
+      type: UnityEngine.SceneManagement.LoadSceneMode
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadSceneAsync(sceneIndex As Integer, mode As LoadSceneMode = LoadSceneMode.Single) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*
+  nameWithType.vb: SceneService.LoadSceneAsync(Integer, LoadSceneMode)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(Integer, UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadSceneAsync(Integer, LoadSceneMode)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.String,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  id: LoadSceneAsync(System.String,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: LoadSceneAsync(string, Action<float>, Action, bool, LoadSceneMode)
+  nameWithType: SceneService.LoadSceneAsync(string, Action<float>, Action, bool, LoadSceneMode)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(string, System.Action<float>, System.Action, bool, UnityEngine.SceneManagement.LoadSceneMode)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 74
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Loads a scene asynchronously with optional progress and completion callbacks.
+  example: []
+  syntax:
+    content: public Task LoadSceneAsync(string sceneName, Action<float> progressCallback, Action completionCallback, bool allowSceneActivation = true, LoadSceneMode mode = LoadSceneMode.Single)
+    parameters:
+    - id: sceneName
+      type: System.String
+    - id: progressCallback
+      type: System.Action{System.Single}
+    - id: completionCallback
+      type: System.Action
+    - id: allowSceneActivation
+      type: System.Boolean
+    - id: mode
+      type: UnityEngine.SceneManagement.LoadSceneMode
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadSceneAsync(sceneName As String, progressCallback As Action(Of Single), completionCallback As Action, allowSceneActivation As Boolean = True, mode As LoadSceneMode = LoadSceneMode.Single) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*
+  nameWithType.vb: SceneService.LoadSceneAsync(String, Action(Of Single), Action, Boolean, LoadSceneMode)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(String, System.Action(Of Single), System.Action, Boolean, UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadSceneAsync(String, Action(Of Single), Action, Boolean, LoadSceneMode)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(System.Int32,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  id: LoadSceneAsync(System.Int32,System.Action{System.Single},System.Action,System.Boolean,UnityEngine.SceneManagement.LoadSceneMode)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: LoadSceneAsync(int, Action<float>, Action, bool, LoadSceneMode)
+  nameWithType: SceneService.LoadSceneAsync(int, Action<float>, Action, bool, LoadSceneMode)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(int, System.Action<float>, System.Action, bool, UnityEngine.SceneManagement.LoadSceneMode)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 100
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Loads a scene asynchronously by index with optional callbacks.
+  example: []
+  syntax:
+    content: public Task LoadSceneAsync(int sceneIndex, Action<float> progressCallback, Action completionCallback, bool allowSceneActivation = true, LoadSceneMode mode = LoadSceneMode.Single)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+    - id: progressCallback
+      type: System.Action{System.Single}
+    - id: completionCallback
+      type: System.Action
+    - id: allowSceneActivation
+      type: System.Boolean
+    - id: mode
+      type: UnityEngine.SceneManagement.LoadSceneMode
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function LoadSceneAsync(sceneIndex As Integer, progressCallback As Action(Of Single), completionCallback As Action, allowSceneActivation As Boolean = True, mode As LoadSceneMode = LoadSceneMode.Single) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*
+  nameWithType.vb: SceneService.LoadSceneAsync(Integer, Action(Of Single), Action, Boolean, LoadSceneMode)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync(Integer, System.Action(Of Single), System.Action, Boolean, UnityEngine.SceneManagement.LoadSceneMode)
+  name.vb: LoadSceneAsync(Integer, Action(Of Single), Action, Boolean, LoadSceneMode)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.String)
+  id: UnloadScene(System.String)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: UnloadScene(string)
+  nameWithType: SceneService.UnloadScene(string)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UnloadScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 141
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Unloads a scene by name.
+  example: []
+  syntax:
+    content: public void UnloadScene(string sceneName)
+    parameters:
+    - id: sceneName
+      type: System.String
+    content.vb: Public Sub UnloadScene(sceneName As String)
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene*
+  nameWithType.vb: SceneService.UnloadScene(String)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(String)
+  name.vb: UnloadScene(String)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.Int32)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(System.Int32)
+  id: UnloadScene(System.Int32)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: UnloadScene(int)
+  nameWithType: SceneService.UnloadScene(int)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UnloadScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 150
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Unloads a scene by build index.
+  example: []
+  syntax:
+    content: public void UnloadScene(int sceneIndex)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+    content.vb: Public Sub UnloadScene(sceneIndex As Integer)
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene*
+  nameWithType.vb: SceneService.UnloadScene(Integer)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene(Integer)
+  name.vb: UnloadScene(Integer)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String)
+  id: UnloadSceneAsync(System.String)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: UnloadSceneAsync(string)
+  nameWithType: SceneService.UnloadSceneAsync(string)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UnloadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 158
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Asynchronously unloads a scene by name.
+  example: []
+  syntax:
+    content: public Task UnloadSceneAsync(string sceneName)
+    parameters:
+    - id: sceneName
+      type: System.String
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UnloadSceneAsync(sceneName As String) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*
+  nameWithType.vb: SceneService.UnloadSceneAsync(String)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(String)
+  name.vb: UnloadSceneAsync(String)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.Int32)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.Int32)
+  id: UnloadSceneAsync(System.Int32)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: UnloadSceneAsync(int)
+  nameWithType: SceneService.UnloadSceneAsync(int)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UnloadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 166
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Asynchronously unloads a scene by build index.
+  example: []
+  syntax:
+    content: public Task UnloadSceneAsync(int sceneIndex)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UnloadSceneAsync(sceneIndex As Integer) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*
+  nameWithType.vb: SceneService.UnloadSceneAsync(Integer)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(Integer)
+  name.vb: UnloadSceneAsync(Integer)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String,System.Action)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(System.String,System.Action)
+  id: UnloadSceneAsync(System.String,System.Action)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: UnloadSceneAsync(string, Action)
+  nameWithType: SceneService.UnloadSceneAsync(string, Action)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(string, System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UnloadSceneAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 174
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Unloads a scene asynchronously with an optional completion callback.
+  example: []
+  syntax:
+    content: public Task UnloadSceneAsync(string sceneName, Action completionCallback)
+    parameters:
+    - id: sceneName
+      type: System.String
+    - id: completionCallback
+      type: System.Action
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function UnloadSceneAsync(sceneName As String, completionCallback As Action) As Task
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*
+  nameWithType.vb: SceneService.UnloadSceneAsync(String, Action)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync(String, System.Action)
+  name.vb: UnloadSceneAsync(String, Action)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene
+  id: GetActiveScene
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: GetActiveScene()
+  nameWithType: SceneService.GetActiveScene()
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetActiveScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 242
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Returns the currently active scene.
+  example: []
+  syntax:
+    content: public Scene GetActiveScene()
+    return:
+      type: UnityEngine.SceneManagement.Scene
+    content.vb: Public Function GetActiveScene() As Scene
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene*
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes
+  id: GetLoadedScenes
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: GetLoadedScenes()
+  nameWithType: SceneService.GetLoadedScenes()
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetLoadedScenes
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 250
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Returns the list of currently tracked loaded scenes.
+  example: []
+  syntax:
+    content: public List<Scene> GetLoadedScenes()
+    return:
+      type: System.Collections.Generic.List{UnityEngine.SceneManagement.Scene}
+    content.vb: Public Function GetLoadedScenes() As List(Of Scene)
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes*
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.String)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.String)
+  id: GetScene(System.String)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: GetScene(string)
+  nameWithType: SceneService.GetScene(string)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 258
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Gets a scene by name.
+  example: []
+  syntax:
+    content: public Scene GetScene(string sceneName)
+    parameters:
+    - id: sceneName
+      type: System.String
+    return:
+      type: UnityEngine.SceneManagement.Scene
+    content.vb: Public Function GetScene(sceneName As String) As Scene
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene*
+  nameWithType.vb: SceneService.GetScene(String)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(String)
+  name.vb: GetScene(String)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.Int32)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(System.Int32)
+  id: GetScene(System.Int32)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: GetScene(int)
+  nameWithType: SceneService.GetScene(int)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 266
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Gets a scene by its build index.
+  example: []
+  syntax:
+    content: public Scene GetScene(int sceneIndex)
+    parameters:
+    - id: sceneIndex
+      type: System.Int32
+    return:
+      type: UnityEngine.SceneManagement.Scene
+    content.vb: Public Function GetScene(sceneIndex As Integer) As Scene
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene*
+  nameWithType.vb: SceneService.GetScene(Integer)
+  fullName.vb: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene(Integer)
+  name.vb: GetScene(Integer)
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  commentId: M:UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  id: SetActiveScene(UnityEngine.SceneManagement.Scene)
+  parent: UBP.Scripts.UBPServices.Scenes.SceneService
+  langs:
+  - csharp
+  - vb
+  name: SetActiveScene(Scene)
+  nameWithType: SceneService.SetActiveScene(Scene)
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene(UnityEngine.SceneManagement.Scene)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SetActiveScene
+    path: ../Assets/UBP/Scripts/UBPServices/Scenes/SceneService.cs
+    startLine: 276
+  namespace: UBP.Scripts.UBPServices.Scenes
+  summary: Sets a scene as the active scene.
+  example: []
+  syntax:
+    content: public void SetActiveScene(Scene scene)
+    parameters:
+    - id: scene
+      type: UnityEngine.SceneManagement.Scene
+    content.vb: Public Sub SetActiveScene(scene As Scene)
+  overload: UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene*
+references:
+- uid: UBP.Scripts.UBPServices.Scenes
+  commentId: N:UBP.Scripts.UBPServices.Scenes
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Scenes
+  nameWithType: UBP.Scripts.UBPServices.Scenes
+  fullName: UBP.Scripts.UBPServices.Scenes
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Scenes
+    name: Scenes
+    href: UBP.Scripts.UBPServices.Scenes.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Scenes
+    name: Scenes
+    href: UBP.Scripts.UBPServices.Scenes.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}
+  parent: UBP.Scripts.UBPServices
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<SceneServiceConfig>
+  nameWithType: ConfiguredService<SceneServiceConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Scenes.SceneServiceConfig>
+  nameWithType.vb: ConfiguredService(Of SceneServiceConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Scenes.SceneServiceConfig)
+  name.vb: ConfiguredService(Of SceneServiceConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+    name: SceneServiceConfig
+    href: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+    name: SceneServiceConfig
+    href: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html
+  - name: )
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - name: TConfig
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConfig
+  - name: )
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.ServiceConfig
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<SceneServiceConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Scenes.SceneServiceConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of SceneServiceConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Scenes.SceneServiceConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_ServiceConfig
+  name: ServiceConfig
+  nameWithType: SceneService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.ServiceConfig
+- uid: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+  parent: UBP.Scripts.UBPServices.Scenes
+  href: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig.html
+  name: SceneServiceConfig
+  nameWithType: SceneServiceConfig
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.InitializeAsync
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<SceneServiceConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Scenes.SceneServiceConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of SceneServiceConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Scenes.SceneServiceConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Scenes.SceneServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: SceneService.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_LoadScene_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  name: LoadScene
+  nameWithType: SceneService.LoadScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadScene
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UnityEngine.SceneManagement.LoadSceneMode
+  commentId: T:UnityEngine.SceneManagement.LoadSceneMode
+  parent: UnityEngine.SceneManagement
+  isExternal: true
+  name: LoadSceneMode
+  nameWithType: LoadSceneMode
+  fullName: UnityEngine.SceneManagement.LoadSceneMode
+- uid: UnityEngine.SceneManagement
+  commentId: N:UnityEngine.SceneManagement
+  isExternal: true
+  name: UnityEngine.SceneManagement
+  nameWithType: UnityEngine.SceneManagement
+  fullName: UnityEngine.SceneManagement
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.SceneManagement
+    name: SceneManagement
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.SceneManagement
+    name: SceneManagement
+    isExternal: true
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_LoadSceneAsync_System_String_UnityEngine_SceneManagement_LoadSceneMode_
+  name: LoadSceneAsync
+  nameWithType: SceneService.LoadSceneAsync
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.LoadSceneAsync
+- uid: System.Action{System.Single}
+  commentId: T:System.Action{System.Single}
+  parent: System
+  definition: System.Action`1
+  name: Action<float>
+  nameWithType: Action<float>
+  fullName: System.Action<float>
+  nameWithType.vb: Action(Of Single)
+  fullName.vb: System.Action(Of Single)
+  name.vb: Action(Of Single)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: System.Single
+    name: float
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: System.Single
+    name: Single
+    isExternal: true
+  - name: )
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_UnloadScene_System_String_
+  name: UnloadScene
+  nameWithType: SceneService.UnloadScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadScene
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_UnloadSceneAsync_System_String_
+  name: UnloadSceneAsync
+  nameWithType: SceneService.UnloadSceneAsync
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.UnloadSceneAsync
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_GetActiveScene
+  name: GetActiveScene
+  nameWithType: SceneService.GetActiveScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetActiveScene
+- uid: UnityEngine.SceneManagement.Scene
+  commentId: T:UnityEngine.SceneManagement.Scene
+  parent: UnityEngine.SceneManagement
+  isExternal: true
+  name: Scene
+  nameWithType: Scene
+  fullName: UnityEngine.SceneManagement.Scene
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_GetLoadedScenes
+  name: GetLoadedScenes
+  nameWithType: SceneService.GetLoadedScenes
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetLoadedScenes
+- uid: System.Collections.Generic.List{UnityEngine.SceneManagement.Scene}
+  commentId: T:System.Collections.Generic.List{UnityEngine.SceneManagement.Scene}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  name: List<Scene>
+  nameWithType: List<Scene>
+  fullName: System.Collections.Generic.List<UnityEngine.SceneManagement.Scene>
+  nameWithType.vb: List(Of Scene)
+  fullName.vb: System.Collections.Generic.List(Of UnityEngine.SceneManagement.Scene)
+  name.vb: List(Of Scene)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UnityEngine.SceneManagement.Scene
+    name: Scene
+    isExternal: true
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.GetScene
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_GetScene_System_String_
+  name: GetScene
+  nameWithType: SceneService.GetScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.GetScene
+- uid: UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene*
+  commentId: Overload:UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene
+  href: UBP.Scripts.UBPServices.Scenes.SceneService.html#UBP_Scripts_UBPServices_Scenes_SceneService_SetActiveScene_UnityEngine_SceneManagement_Scene_
+  name: SetActiveScene
+  nameWithType: SceneService.SetActiveScene
+  fullName: UBP.Scripts.UBPServices.Scenes.SceneService.SetActiveScene

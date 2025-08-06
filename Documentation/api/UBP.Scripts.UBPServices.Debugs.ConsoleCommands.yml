@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  commentId: N:UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  id: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  children:
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  - UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  nameWithType: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  commentId: T:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: ConsoleCommand
+  nameWithType: ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand
+  commentId: T:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand.html
+  name: SampleConsoleCommand
+  nameWithType: SampleConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.SampleConsoleCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  commentId: N:UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  nameWithType: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html

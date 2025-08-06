@@ -1,0 +1,595 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Audio.AudioService
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioService
+  id: AudioService
+  parent: UBP.Scripts.UBPServices.Audio
+  children:
+  - UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync
+  - UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic(UnityEngine.AudioClip,System.Single,System.Single,System.Boolean)
+  - UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single,System.Single)
+  - UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig
+  - UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume(System.Single)
+  - UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume(System.Single)
+  langs:
+  - csharp
+  - vb
+  name: AudioService
+  nameWithType: AudioService
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: AudioService
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: >-
+    Handles audio playback for music and sound effects using a pooled system of <xref href="UnityEngine.AudioSource" data-throw-if-not-resolved="false"></xref>s.
+
+    Supports volume control via AudioMixer groups and auto-recycling sources after playback.
+  example: []
+  syntax:
+    content: 'public class AudioService : ConfiguredService<AudioServiceConfig>, IService'
+    content.vb: Public Class AudioService Inherits ConfiguredService(Of AudioServiceConfig) Implements IService
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}
+  implements:
+  - UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig
+  id: ServiceConfig
+  parent: UBP.Scripts.UBPServices.Audio.AudioService
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: AudioService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: >-
+    The configuration asset used by the service.
+
+    Must be provided by the derived class.
+  example: []
+  syntax:
+    content: public override AudioServiceConfig ServiceConfig { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+    content.vb: Public Overrides ReadOnly Property ServiceConfig As AudioServiceConfig
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.ServiceConfig
+  overload: UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig*
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.Audio.AudioService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: AudioService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 19
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Initializes the service by creating and configuring the audio source pool.
+  example: []
+  syntax:
+    content: public override Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function InitializeAsync() As Task
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.InitializeAsync
+  overload: UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync*
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single,System.Single)
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single,System.Single)
+  id: PlaySFX(UnityEngine.AudioClip,UnityEngine.Vector3,System.Single,System.Single)
+  parent: UBP.Scripts.UBPServices.Audio.AudioService
+  langs:
+  - csharp
+  - vb
+  name: PlaySFX(AudioClip, Vector3, float, float)
+  nameWithType: AudioService.PlaySFX(AudioClip, Vector3, float, float)
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX(UnityEngine.AudioClip, UnityEngine.Vector3, float, float)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: PlaySFX
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 44
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Plays a one-shot sound effect (SFX) at a world position with optional volume and pitch.
+  example: []
+  syntax:
+    content: public AudioSource PlaySFX(AudioClip audioClip, Vector3 position, float volume = 1, float pitch = 1)
+    parameters:
+    - id: audioClip
+      type: UnityEngine.AudioClip
+      description: The audio clip to play.
+    - id: position
+      type: UnityEngine.Vector3
+      description: The world position for 3D sound playback.
+    - id: volume
+      type: System.Single
+      description: 'Playback volume (default: 1.0).'
+    - id: pitch
+      type: System.Single
+      description: 'Playback pitch (default: 1.0).'
+    return:
+      type: UnityEngine.AudioSource
+      description: The <xref href="UnityEngine.AudioSource" data-throw-if-not-resolved="false"></xref> used to play the clip.
+    content.vb: Public Function PlaySFX(audioClip As AudioClip, position As Vector3, volume As Single = 1, pitch As Single = 1) As AudioSource
+  overload: UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX*
+  nameWithType.vb: AudioService.PlaySFX(AudioClip, Vector3, Single, Single)
+  fullName.vb: UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX(UnityEngine.AudioClip, UnityEngine.Vector3, Single, Single)
+  name.vb: PlaySFX(AudioClip, Vector3, Single, Single)
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic(UnityEngine.AudioClip,System.Single,System.Single,System.Boolean)
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic(UnityEngine.AudioClip,System.Single,System.Single,System.Boolean)
+  id: PlayMusic(UnityEngine.AudioClip,System.Single,System.Single,System.Boolean)
+  parent: UBP.Scripts.UBPServices.Audio.AudioService
+  langs:
+  - csharp
+  - vb
+  name: PlayMusic(AudioClip, float, float, bool)
+  nameWithType: AudioService.PlayMusic(AudioClip, float, float, bool)
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic(UnityEngine.AudioClip, float, float, bool)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: PlayMusic
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 67
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Plays a looping music track using an available audio source.
+  example: []
+  syntax:
+    content: public AudioSource PlayMusic(AudioClip audioClip, float volume = 1, float pitch = 1, bool loop = true)
+    parameters:
+    - id: audioClip
+      type: UnityEngine.AudioClip
+      description: The audio clip to play.
+    - id: volume
+      type: System.Single
+      description: 'Playback volume (default: 1.0).'
+    - id: pitch
+      type: System.Single
+      description: 'Playback pitch (default: 1.0).'
+    - id: loop
+      type: System.Boolean
+      description: 'Whether the music should loop (default: true).'
+    return:
+      type: UnityEngine.AudioSource
+      description: The <xref href="UnityEngine.AudioSource" data-throw-if-not-resolved="false"></xref> used to play the music.
+    content.vb: Public Function PlayMusic(audioClip As AudioClip, volume As Single = 1, pitch As Single = 1, [loop] As Boolean = True) As AudioSource
+  overload: UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic*
+  nameWithType.vb: AudioService.PlayMusic(AudioClip, Single, Single, Boolean)
+  fullName.vb: UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic(UnityEngine.AudioClip, Single, Single, Boolean)
+  name.vb: PlayMusic(AudioClip, Single, Single, Boolean)
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume(System.Single)
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume(System.Single)
+  id: SetSFXVolume(System.Single)
+  parent: UBP.Scripts.UBPServices.Audio.AudioService
+  langs:
+  - csharp
+  - vb
+  name: SetSFXVolume(float)
+  nameWithType: AudioService.SetSFXVolume(float)
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SetSFXVolume
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 88
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Sets the volume for sound effects (SFX) using the linked AudioMixer group.
+  example: []
+  syntax:
+    content: public void SetSFXVolume(float volume)
+    parameters:
+    - id: volume
+      type: System.Single
+      description: Normalized volume between 0 and 1. Clamped internally.
+    content.vb: Public Sub SetSFXVolume(volume As Single)
+  overload: UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume*
+  nameWithType.vb: AudioService.SetSFXVolume(Single)
+  fullName.vb: UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume(Single)
+  name.vb: SetSFXVolume(Single)
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume(System.Single)
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume(System.Single)
+  id: SetMusicVolume(System.Single)
+  parent: UBP.Scripts.UBPServices.Audio.AudioService
+  langs:
+  - csharp
+  - vb
+  name: SetMusicVolume(float)
+  nameWithType: AudioService.SetMusicVolume(float)
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume(float)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SetMusicVolume
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioService.cs
+    startLine: 98
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Sets the volume for music using the linked AudioMixer group.
+  example: []
+  syntax:
+    content: public void SetMusicVolume(float volume)
+    parameters:
+    - id: volume
+      type: System.Single
+      description: Normalized volume between 0 and 1. Clamped internally.
+    content.vb: Public Sub SetMusicVolume(volume As Single)
+  overload: UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume*
+  nameWithType.vb: AudioService.SetMusicVolume(Single)
+  fullName.vb: UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume(Single)
+  name.vb: SetMusicVolume(Single)
+references:
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource
+- uid: UBP.Scripts.UBPServices.Audio
+  commentId: N:UBP.Scripts.UBPServices.Audio
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Audio
+  nameWithType: UBP.Scripts.UBPServices.Audio
+  fullName: UBP.Scripts.UBPServices.Audio
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}
+  parent: UBP.Scripts.UBPServices
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<AudioServiceConfig>
+  nameWithType: ConfiguredService<AudioServiceConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Audio.AudioServiceConfig>
+  nameWithType.vb: ConfiguredService(Of AudioServiceConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Audio.AudioServiceConfig)
+  name.vb: ConfiguredService(Of AudioServiceConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+    name: AudioServiceConfig
+    href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+    name: AudioServiceConfig
+    href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html
+  - name: )
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - name: TConfig
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConfig
+  - name: )
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.ServiceConfig
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<AudioServiceConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Audio.AudioServiceConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of AudioServiceConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Audio.AudioServiceConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html#UBP_Scripts_UBPServices_Audio_AudioService_ServiceConfig
+  name: ServiceConfig
+  nameWithType: AudioService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.ServiceConfig
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  parent: UBP.Scripts.UBPServices.Audio
+  href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html
+  name: AudioServiceConfig
+  nameWithType: AudioServiceConfig
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.InitializeAsync
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<AudioServiceConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Audio.AudioServiceConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of AudioServiceConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Audio.AudioServiceConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Audio.AudioServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html#UBP_Scripts_UBPServices_Audio_AudioService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: AudioService.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html#UBP_Scripts_UBPServices_Audio_AudioService_PlaySFX_UnityEngine_AudioClip_UnityEngine_Vector3_System_Single_System_Single_
+  name: PlaySFX
+  nameWithType: AudioService.PlaySFX
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.PlaySFX
+- uid: UnityEngine.AudioClip
+  commentId: T:UnityEngine.AudioClip
+  parent: UnityEngine
+  isExternal: true
+  name: AudioClip
+  nameWithType: AudioClip
+  fullName: UnityEngine.AudioClip
+- uid: UnityEngine.Vector3
+  commentId: T:UnityEngine.Vector3
+  parent: UnityEngine
+  isExternal: true
+  name: Vector3
+  nameWithType: Vector3
+  fullName: UnityEngine.Vector3
+- uid: System.Single
+  commentId: T:System.Single
+  parent: System
+  isExternal: true
+  name: float
+  nameWithType: float
+  fullName: float
+  nameWithType.vb: Single
+  fullName.vb: Single
+  name.vb: Single
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html#UBP_Scripts_UBPServices_Audio_AudioService_PlayMusic_UnityEngine_AudioClip_System_Single_System_Single_System_Boolean_
+  name: PlayMusic
+  nameWithType: AudioService.PlayMusic
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.PlayMusic
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html#UBP_Scripts_UBPServices_Audio_AudioService_SetSFXVolume_System_Single_
+  name: SetSFXVolume
+  nameWithType: AudioService.SetSFXVolume
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.SetSFXVolume
+- uid: UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html#UBP_Scripts_UBPServices_Audio_AudioService_SetMusicVolume_System_Single_
+  name: SetMusicVolume
+  nameWithType: AudioService.SetMusicVolume
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService.SetMusicVolume

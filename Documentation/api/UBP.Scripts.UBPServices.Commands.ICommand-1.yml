@@ -1,0 +1,164 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1
+  commentId: T:UBP.Scripts.UBPServices.Commands.ICommand`1
+  id: ICommand`1
+  parent: UBP.Scripts.UBPServices.Commands
+  children:
+  - UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+  - UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  langs:
+  - csharp
+  - vb
+  name: ICommand<T>
+  nameWithType: ICommand<T>
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>
+  type: Interface
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ICommand
+    path: ../Assets/UBP/Scripts/UBPServices/Commands/ICommand.cs
+    startLine: 7
+  namespace: UBP.Scripts.UBPServices.Commands
+  summary: >-
+    Defines a generic command interface that supports execution and undo operations.
+
+    Follows the Command Pattern, allowing encapsulated actions with arguments.
+  example: []
+  syntax:
+    content: public interface ICommand<in T>
+    typeParameters:
+    - id: T
+      description: The type of arguments required to execute the command.
+    content.vb: Public Interface ICommand(Of In T)
+  nameWithType.vb: ICommand(Of T)
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T)
+  name.vb: ICommand(Of T)
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+  commentId: M:UBP.Scripts.UBPServices.Commands.ICommand`1.Execute(`0)
+  id: Execute(`0)
+  parent: UBP.Scripts.UBPServices.Commands.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: Execute(T)
+  nameWithType: ICommand<T>.Execute(T)
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>.Execute(T)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Execute
+    path: ../Assets/UBP/Scripts/UBPServices/Commands/ICommand.cs
+    startLine: 13
+  namespace: UBP.Scripts.UBPServices.Commands
+  summary: Executes the command with the given arguments.
+  example: []
+  syntax:
+    content: void Execute(T arguments)
+    parameters:
+    - id: arguments
+      type: '{T}'
+      description: The arguments required to execute the command.
+    content.vb: Sub Execute(arguments As T)
+  overload: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute*
+  nameWithType.vb: ICommand(Of T).Execute(T)
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T).Execute(T)
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  commentId: M:UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  id: Undo
+  parent: UBP.Scripts.UBPServices.Commands.ICommand`1
+  langs:
+  - csharp
+  - vb
+  name: Undo()
+  nameWithType: ICommand<T>.Undo()
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>.Undo()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Commands/ICommand.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Undo
+    path: ../Assets/UBP/Scripts/UBPServices/Commands/ICommand.cs
+    startLine: 18
+  namespace: UBP.Scripts.UBPServices.Commands
+  summary: Undoes the previously executed command.
+  example: []
+  syntax:
+    content: void Undo()
+    content.vb: Sub Undo()
+  overload: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo*
+  nameWithType.vb: ICommand(Of T).Undo()
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T).Undo()
+references:
+- uid: UBP.Scripts.UBPServices.Commands
+  commentId: N:UBP.Scripts.UBPServices.Commands
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Commands
+  nameWithType: UBP.Scripts.UBPServices.Commands
+  fullName: UBP.Scripts.UBPServices.Commands
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Commands
+    name: Commands
+    href: UBP.Scripts.UBPServices.Commands.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Commands
+    name: Commands
+    href: UBP.Scripts.UBPServices.Commands.html
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Execute*
+  commentId: Overload:UBP.Scripts.UBPServices.Commands.ICommand`1.Execute
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Execute__0_
+  name: Execute
+  nameWithType: ICommand<T>.Execute
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>.Execute
+  nameWithType.vb: ICommand(Of T).Execute
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T).Execute
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UBP.Scripts.UBPServices.Commands.ICommand`1.Undo*
+  commentId: Overload:UBP.Scripts.UBPServices.Commands.ICommand`1.Undo
+  href: UBP.Scripts.UBPServices.Commands.ICommand-1.html#UBP_Scripts_UBPServices_Commands_ICommand_1_Undo
+  name: Undo
+  nameWithType: ICommand<T>.Undo
+  fullName: UBP.Scripts.UBPServices.Commands.ICommand<T>.Undo
+  nameWithType.vb: ICommand(Of T).Undo
+  fullName.vb: UBP.Scripts.UBPServices.Commands.ICommand(Of T).Undo

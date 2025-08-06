@@ -1,0 +1,279 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  id: AudioServiceConfig
+  parent: UBP.Scripts.UBPServices.Audio
+  children:
+  - UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize
+  - UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup
+  - UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup
+  langs:
+  - csharp
+  - vb
+  name: AudioServiceConfig
+  nameWithType: AudioServiceConfig
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: AudioServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+    startLine: 5
+  namespace: UBP.Scripts.UBPServices.Audio
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "AudioServiceConfig", menuName = "Configs/Services/AudioServiceConfig")]
+
+      public class AudioServiceConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="AudioServiceConfig", menuName:="Configs/Services/AudioServiceConfig")>
+
+      Public Class AudioServiceConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: AudioServiceConfig
+    - name: menuName
+      type: System.String
+      value: Configs/Services/AudioServiceConfig
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize
+  commentId: P:UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize
+  id: AudioSourcesPoolSize
+  parent: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: AudioSourcesPoolSize
+  nameWithType: AudioServiceConfig.AudioSourcesPoolSize
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: AudioSourcesPoolSize
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: >-
+    The number of <xref href="UnityEngine.AudioSource" data-throw-if-not-resolved="false"></xref> instances to preallocate in the pool.
+
+    This helps reduce runtime allocations for frequent audio playback.
+  example: []
+  syntax:
+    content: public int AudioSourcesPoolSize { get; }
+    parameters: []
+    return:
+      type: System.Int32
+    content.vb: Public Property AudioSourcesPoolSize As Integer
+  overload: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize*
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup
+  commentId: P:UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup
+  id: MusicAudioMixerGroup
+  parent: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: MusicAudioMixerGroup
+  nameWithType: AudioServiceConfig.MusicAudioMixerGroup
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: MusicAudioMixerGroup
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+    startLine: 17
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: The <xref href="UnityEngine.Audio.AudioMixerGroup" data-throw-if-not-resolved="false"></xref> used to route music playback audio sources.
+  example: []
+  syntax:
+    content: public AudioMixerGroup MusicAudioMixerGroup { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Audio.AudioMixerGroup
+    content.vb: Public Property MusicAudioMixerGroup As AudioMixerGroup
+  overload: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup*
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup
+  commentId: P:UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup
+  id: SFXAudioMixerGroup
+  parent: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: SFXAudioMixerGroup
+  nameWithType: AudioServiceConfig.SFXAudioMixerGroup
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SFXAudioMixerGroup
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioServiceConfig.cs
+    startLine: 22
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: The <xref href="UnityEngine.Audio.AudioMixerGroup" data-throw-if-not-resolved="false"></xref> used to route SFX (sound effects) playback audio sources.
+  example: []
+  syntax:
+    content: public AudioMixerGroup SFXAudioMixerGroup { get; }
+    parameters: []
+    return:
+      type: UnityEngine.Audio.AudioMixerGroup
+    content.vb: Public Property SFXAudioMixerGroup As AudioMixerGroup
+  overload: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup*
+references:
+- uid: UBP.Scripts.UBPServices.Audio
+  commentId: N:UBP.Scripts.UBPServices.Audio
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Audio
+  nameWithType: UBP.Scripts.UBPServices.Audio
+  fullName: UBP.Scripts.UBPServices.Audio
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize
+  href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html#UBP_Scripts_UBPServices_Audio_AudioServiceConfig_AudioSourcesPoolSize
+  name: AudioSourcesPoolSize
+  nameWithType: AudioServiceConfig.AudioSourcesPoolSize
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.AudioSourcesPoolSize
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UnityEngine.Audio.AudioMixerGroup
+  commentId: T:UnityEngine.Audio.AudioMixerGroup
+  parent: UnityEngine.Audio
+  isExternal: true
+  name: AudioMixerGroup
+  nameWithType: AudioMixerGroup
+  fullName: UnityEngine.Audio.AudioMixerGroup
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup
+  href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html#UBP_Scripts_UBPServices_Audio_AudioServiceConfig_MusicAudioMixerGroup
+  name: MusicAudioMixerGroup
+  nameWithType: AudioServiceConfig.MusicAudioMixerGroup
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.MusicAudioMixerGroup
+- uid: UnityEngine.Audio
+  commentId: N:UnityEngine.Audio
+  isExternal: true
+  name: UnityEngine.Audio
+  nameWithType: UnityEngine.Audio
+  fullName: UnityEngine.Audio
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Audio
+    name: Audio
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.Audio
+    name: Audio
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup
+  href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html#UBP_Scripts_UBPServices_Audio_AudioServiceConfig_SFXAudioMixerGroup
+  name: SFXAudioMixerGroup
+  nameWithType: AudioServiceConfig.SFXAudioMixerGroup
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.SFXAudioMixerGroup

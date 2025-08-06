@@ -1,0 +1,235 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  commentId: T:UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  id: UIResizeHandler
+  parent: UBP.Scripts.UBPServices.UI.Handlers
+  children:
+  - UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  - UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: UIResizeHandler
+  nameWithType: UIResizeHandler
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/UI/Handlers/UIResizeHandler.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UIResizeHandler
+    path: ../Assets/UBP/Scripts/UBPServices/UI/Handlers/UIResizeHandler.cs
+    startLine: 9
+  namespace: UBP.Scripts.UBPServices.UI.Handlers
+  summary: >-
+    Allows a UI panel to be resized via dragging, with minimum size constraints.
+
+    Intended for use on a UI element with a draggable resize handle (like a corner).
+  example: []
+  syntax:
+    content: 'public class UIResizeHandler : MonoBehaviour'
+    content.vb: Public Class UIResizeHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  id: OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  parent: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  langs:
+  - csharp
+  - vb
+  name: OnPointerDown(PointerEventData)
+  nameWithType: UIResizeHandler.OnPointerDown(PointerEventData)
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/UI/Handlers/UIResizeHandler.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnPointerDown
+    path: ../Assets/UBP/Scripts/UBPServices/UI/Handlers/UIResizeHandler.cs
+    startLine: 27
+  namespace: UBP.Scripts.UBPServices.UI.Handlers
+  summary: Called when the resize handle is pressed. Caches the current mouse position and canvas reference.
+  example: []
+  syntax:
+    content: public void OnPointerDown(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnPointerDown(eventData As PointerEventData)
+  overload: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown*
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  langs:
+  - csharp
+  - vb
+  name: OnDrag(PointerEventData)
+  nameWithType: UIResizeHandler.OnDrag(PointerEventData)
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/UI/Handlers/UIResizeHandler.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnDrag
+    path: ../Assets/UBP/Scripts/UBPServices/UI/Handlers/UIResizeHandler.cs
+    startLine: 39
+  namespace: UBP.Scripts.UBPServices.UI.Handlers
+  summary: Called while the pointer is dragging. Calculates mouse delta and resizes the target panel accordingly.
+  example: []
+  syntax:
+    content: public void OnDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnDrag(eventData As PointerEventData)
+  overload: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag*
+references:
+- uid: UBP.Scripts.UBPServices.UI.Handlers
+  commentId: N:UBP.Scripts.UBPServices.UI.Handlers
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.UI.Handlers
+  nameWithType: UBP.Scripts.UBPServices.UI.Handlers
+  fullName: UBP.Scripts.UBPServices.UI.Handlers
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI
+    name: UI
+    href: UBP.Scripts.UBPServices.UI.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI.Handlers
+    name: Handlers
+    href: UBP.Scripts.UBPServices.UI.Handlers.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI
+    name: UI
+    href: UBP.Scripts.UBPServices.UI.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI.Handlers
+    name: Handlers
+    href: UBP.Scripts.UBPServices.UI.Handlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown*
+  commentId: Overload:UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown
+  href: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.html#UBP_Scripts_UBPServices_UI_Handlers_UIResizeHandler_OnPointerDown_UnityEngine_EventSystems_PointerEventData_
+  name: OnPointerDown
+  nameWithType: UIResizeHandler.OnPointerDown
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnPointerDown
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag*
+  commentId: Overload:UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag
+  href: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.html#UBP_Scripts_UBPServices_UI_Handlers_UIResizeHandler_OnDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnDrag
+  nameWithType: UIResizeHandler.OnDrag
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.OnDrag

@@ -1,0 +1,73 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Data
+  commentId: N:UBP.Scripts.Data
+  id: UBP.Scripts.Data
+  children:
+  - UBP.Scripts.Data.AssetLoader
+  - UBP.Scripts.Data.ConfigStorage
+  - UBP.Scripts.Data.IConfigLoader
+  - UBP.Scripts.Data.ResourcesConfigLoader
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.Data
+  nameWithType: UBP.Scripts.Data
+  fullName: UBP.Scripts.Data
+  type: Namespace
+references:
+- uid: UBP.Scripts.Data.ResourcesConfigLoader
+  commentId: T:UBP.Scripts.Data.ResourcesConfigLoader
+  href: UBP.Scripts.Data.ResourcesConfigLoader.html
+  name: ResourcesConfigLoader
+  nameWithType: ResourcesConfigLoader
+  fullName: UBP.Scripts.Data.ResourcesConfigLoader
+- uid: UBP.Scripts.Data.IConfigLoader
+  commentId: T:UBP.Scripts.Data.IConfigLoader
+  parent: UBP.Scripts.Data
+  href: UBP.Scripts.Data.IConfigLoader.html
+  name: IConfigLoader
+  nameWithType: IConfigLoader
+  fullName: UBP.Scripts.Data.IConfigLoader
+- uid: UBP.Scripts.Data.ConfigStorage
+  commentId: T:UBP.Scripts.Data.ConfigStorage
+  href: UBP.Scripts.Data.ConfigStorage.html
+  name: ConfigStorage
+  nameWithType: ConfigStorage
+  fullName: UBP.Scripts.Data.ConfigStorage
+- uid: UBP.Scripts.Data.AssetLoader
+  commentId: T:UBP.Scripts.Data.AssetLoader
+  href: UBP.Scripts.Data.AssetLoader.html
+  name: AssetLoader
+  nameWithType: AssetLoader
+  fullName: UBP.Scripts.Data.AssetLoader
+- uid: UBP.Scripts.Data
+  commentId: N:UBP.Scripts.Data
+  href: UBP.html
+  name: UBP.Scripts.Data
+  nameWithType: UBP.Scripts.Data
+  fullName: UBP.Scripts.Data
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html

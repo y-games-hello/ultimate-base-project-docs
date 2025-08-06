@@ -1,0 +1,88 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  id: UBP.Scripts.UBPServices.Updaters
+  children:
+  - UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  - UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+  - UBP.Scripts.UBPServices.Updaters.IUpdatable
+  - UBP.Scripts.UBPServices.Updaters.Updater
+  - UBP.Scripts.UBPServices.Updaters.UpdaterService
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Updaters.Updater
+  commentId: T:UBP.Scripts.UBPServices.Updaters.Updater
+  href: UBP.Scripts.UBPServices.Updaters.Updater.html
+  name: Updater
+  nameWithType: Updater
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater
+- uid: UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+  href: UBP.Scripts.UBPServices.Updaters.ILateUpdatable.html
+  name: ILateUpdatable
+  nameWithType: ILateUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IUpdatable
+  parent: UBP.Scripts.UBPServices.Updaters
+  href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html
+  name: IUpdatable
+  nameWithType: IUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  commentId: T:UBP.Scripts.UBPServices.Updaters.UpdaterService
+  href: UBP.Scripts.UBPServices.Updaters.UpdaterService.html
+  name: UpdaterService
+  nameWithType: UpdaterService
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService
+- uid: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  href: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.html
+  name: IFixedUpdatable
+  nameWithType: IFixedUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html

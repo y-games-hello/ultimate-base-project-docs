@@ -1,0 +1,311 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  commentId: T:UBP.Scripts.UBPServices.Updaters.UpdaterService
+  id: UpdaterService
+  parent: UBP.Scripts.UBPServices.Updaters
+  children:
+  - UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync
+  - UBP.Scripts.UBPServices.Updaters.UpdaterService.Register(System.Object)
+  - UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: UpdaterService
+  nameWithType: UpdaterService
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UpdaterService
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    A service that manages custom update loops for non-MonoBehaviour objects.
+
+    It provides registration and unregistration for objects requiring Update, FixedUpdate, or LateUpdate
+
+    via the internal <xref href="UBP.Scripts.UBPServices.Updaters.Updater" data-throw-if-not-resolved="false"></xref> component.
+  example: []
+  syntax:
+    content: 'public class UpdaterService : IService'
+    content.vb: Public Class UpdaterService Implements IService
+  inheritance:
+  - System.Object
+  implements:
+  - UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: UpdaterService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+    startLine: 17
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: Initializes the service by creating a persistent Updater GameObject in the scene.
+  example: []
+  syntax:
+    content: public Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Function InitializeAsync() As Task
+  overload: UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync*
+  implements:
+  - UBP.Scripts.UBPServices.IService.InitializeAsync
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService.Register(System.Object)
+  commentId: M:UBP.Scripts.UBPServices.Updaters.UpdaterService.Register(System.Object)
+  id: Register(System.Object)
+  parent: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  langs:
+  - csharp
+  - vb
+  name: Register(object)
+  nameWithType: UpdaterService.Register(object)
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService.Register(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Register
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+    startLine: 38
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    Registers an object that needs to receive update callbacks from the Updater.
+
+    The object must implement one or more of IUpdatable, IFixedUpdatable, or ILateUpdatable.
+  example: []
+  syntax:
+    content: public void Register(object updateRequester)
+    parameters:
+    - id: updateRequester
+      type: System.Object
+      description: The object to register for updates.
+    content.vb: Public Sub Register(updateRequester As Object)
+  overload: UBP.Scripts.UBPServices.Updaters.UpdaterService.Register*
+  nameWithType.vb: UpdaterService.Register(Object)
+  fullName.vb: UBP.Scripts.UBPServices.Updaters.UpdaterService.Register(Object)
+  name.vb: Register(Object)
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister(System.Object)
+  commentId: M:UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister(System.Object)
+  id: Unregister(System.Object)
+  parent: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  langs:
+  - csharp
+  - vb
+  name: Unregister(object)
+  nameWithType: UpdaterService.Unregister(object)
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Unregister
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/UpdaterService.cs
+    startLine: 47
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: Unregisters an object from the update loop.
+  example: []
+  syntax:
+    content: public void Unregister(object updateRequester)
+    parameters:
+    - id: updateRequester
+      type: System.Object
+      description: The object to remove from update callbacks.
+    content.vb: Public Sub Unregister(updateRequester As Object)
+  overload: UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister*
+  nameWithType.vb: UpdaterService.Unregister(Object)
+  fullName.vb: UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister(Object)
+  name.vb: Unregister(Object)
+references:
+- uid: UBP.Scripts.UBPServices.Updaters.Updater
+  commentId: T:UBP.Scripts.UBPServices.Updaters.Updater
+  href: UBP.Scripts.UBPServices.Updaters.Updater.html
+  name: Updater
+  nameWithType: Updater
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync
+  href: UBP.Scripts.UBPServices.Updaters.UpdaterService.html#UBP_Scripts_UBPServices_Updaters_UpdaterService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: UpdaterService.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService.InitializeAsync
+- uid: UBP.Scripts.UBPServices.IService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.IService.InitializeAsync
+  parent: UBP.Scripts.UBPServices.IService
+  href: UBP.Scripts.UBPServices.IService.html#UBP_Scripts_UBPServices_IService_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: IService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.IService.InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.IService.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.IService.html#UBP_Scripts_UBPServices_IService_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.IService.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.IService.html#UBP_Scripts_UBPServices_IService_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService.Register*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.UpdaterService.Register
+  href: UBP.Scripts.UBPServices.Updaters.UpdaterService.html#UBP_Scripts_UBPServices_Updaters_UpdaterService_Register_System_Object_
+  name: Register
+  nameWithType: UpdaterService.Register
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService.Register
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister
+  href: UBP.Scripts.UBPServices.Updaters.UpdaterService.html#UBP_Scripts_UBPServices_Updaters_UpdaterService_Unregister_System_Object_
+  name: Unregister
+  nameWithType: UpdaterService.Unregister
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService.Unregister

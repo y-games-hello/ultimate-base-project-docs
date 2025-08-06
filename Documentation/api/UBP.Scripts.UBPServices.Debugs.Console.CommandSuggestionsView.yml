@@ -1,0 +1,502 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  id: CommandSuggestionsView
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  children:
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions(System.Int32)
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.OnCommandSelected
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion
+  - UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup(System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand})
+  langs:
+  - csharp
+  - vb
+  name: CommandSuggestionsView
+  nameWithType: CommandSuggestionsView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: CommandSuggestionsView
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 11
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: >-
+    Manages the UI display and navigation of suggested console commands during input.
+
+    Allows keyboard navigation and selection using up/down and enter keys.
+  example: []
+  syntax:
+    content: 'public class CommandSuggestionsView : MonoBehaviour'
+    content.vb: Public Class CommandSuggestionsView Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused
+  commentId: P:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused
+  id: IsFocused
+  parent: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  langs:
+  - csharp
+  - vb
+  name: IsFocused
+  nameWithType: CommandSuggestionsView.IsFocused
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: IsFocused
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 16
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  syntax:
+    content: public bool IsFocused { get; }
+    parameters: []
+    return:
+      type: System.Boolean
+    content.vb: Public ReadOnly Property IsFocused As Boolean
+  overload: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused*
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.OnCommandSelected
+  commentId: F:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.OnCommandSelected
+  id: OnCommandSelected
+  parent: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  langs:
+  - csharp
+  - vb
+  name: OnCommandSelected
+  nameWithType: CommandSuggestionsView.OnCommandSelected
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.OnCommandSelected
+  type: Field
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnCommandSelected
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 42
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  syntax:
+    content: public Action<ConsoleCommand> OnCommandSelected
+    return:
+      type: System.Action{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+    content.vb: Public OnCommandSelected As Action(Of ConsoleCommand)
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup(System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand})
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup(System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand})
+  id: Setup(System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand})
+  parent: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  langs:
+  - csharp
+  - vb
+  name: Setup(List<ConsoleCommand>)
+  nameWithType: CommandSuggestionsView.Setup(List<ConsoleCommand>)
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup(System.Collections.Generic.List<UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand>)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Setup
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 48
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Creates or reuses UI elements to display the given list of command suggestions.
+  example: []
+  syntax:
+    content: public void Setup(List<ConsoleCommand> commands)
+    parameters:
+    - id: commands
+      type: System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+      description: A list of available commands to suggest.
+    content.vb: Public Sub Setup(commands As List(Of ConsoleCommand))
+  overload: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup*
+  nameWithType.vb: CommandSuggestionsView.Setup(List(Of ConsoleCommand))
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup(System.Collections.Generic.List(Of UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand))
+  name.vb: Setup(List(Of ConsoleCommand))
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions(System.Int32)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions(System.Int32)
+  id: NavigateThroughSuggestions(System.Int32)
+  parent: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  langs:
+  - csharp
+  - vb
+  name: NavigateThroughSuggestions(int)
+  nameWithType: CommandSuggestionsView.NavigateThroughSuggestions(int)
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions(int)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: NavigateThroughSuggestions
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 72
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Navigates through the suggestion list using the provided direction.
+  example: []
+  syntax:
+    content: public void NavigateThroughSuggestions(int direction)
+    parameters:
+    - id: direction
+      type: System.Int32
+      description: -1 for up, 1 for down.
+    content.vb: Public Sub NavigateThroughSuggestions(direction As Integer)
+  overload: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions*
+  nameWithType.vb: CommandSuggestionsView.NavigateThroughSuggestions(Integer)
+  fullName.vb: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions(Integer)
+  name.vb: NavigateThroughSuggestions(Integer)
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion
+  id: SelectSuggestion
+  parent: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  langs:
+  - csharp
+  - vb
+  name: SelectSuggestion()
+  nameWithType: CommandSuggestionsView.SelectSuggestion()
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SelectSuggestion
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 83
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Executes the currently selected suggestion and deselects all.
+  example: []
+  syntax:
+    content: public void SelectSuggestion()
+    content.vb: Public Sub SelectSuggestion()
+  overload: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion*
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion
+  id: DeselectSuggestion
+  parent: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView
+  langs:
+  - csharp
+  - vb
+  name: DeselectSuggestion()
+  nameWithType: CommandSuggestionsView.DeselectSuggestion()
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: DeselectSuggestion
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/CommandSuggestionsView.cs
+    startLine: 92
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Resets selection state to unfocused (none selected).
+  example: []
+  syntax:
+    content: public void DeselectSuggestion()
+    content.vb: Public Sub DeselectSuggestion()
+  overload: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused
+  href: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html#UBP_Scripts_UBPServices_Debugs_Console_CommandSuggestionsView_IsFocused
+  name: IsFocused
+  nameWithType: CommandSuggestionsView.IsFocused
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.IsFocused
+- uid: System.Boolean
+  commentId: T:System.Boolean
+  parent: System
+  isExternal: true
+  name: bool
+  nameWithType: bool
+  fullName: bool
+  nameWithType.vb: Boolean
+  fullName.vb: Boolean
+  name.vb: Boolean
+- uid: System.Action{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+  commentId: T:System.Action{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+  parent: System
+  definition: System.Action`1
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: Action<ConsoleCommand>
+  nameWithType: Action<ConsoleCommand>
+  fullName: System.Action<UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand>
+  nameWithType.vb: Action(Of ConsoleCommand)
+  fullName.vb: System.Action(Of UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  name.vb: Action(Of ConsoleCommand)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup
+  href: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html#UBP_Scripts_UBPServices_Debugs_Console_CommandSuggestionsView_Setup_System_Collections_Generic_List_UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand__
+  name: Setup
+  nameWithType: CommandSuggestionsView.Setup
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.Setup
+- uid: System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+  commentId: T:System.Collections.Generic.List{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.List`1
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: List<ConsoleCommand>
+  nameWithType: List<ConsoleCommand>
+  fullName: System.Collections.Generic.List<UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand>
+  nameWithType.vb: List(Of ConsoleCommand)
+  fullName.vb: System.Collections.Generic.List(Of UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  name.vb: List(Of ConsoleCommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  - name: )
+- uid: System.Collections.Generic.List`1
+  commentId: T:System.Collections.Generic.List`1
+  isExternal: true
+  name: List<T>
+  nameWithType: List<T>
+  fullName: System.Collections.Generic.List<T>
+  nameWithType.vb: List(Of T)
+  fullName.vb: System.Collections.Generic.List(Of T)
+  name.vb: List(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.List`1
+    name: List
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions
+  href: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html#UBP_Scripts_UBPServices_Debugs_Console_CommandSuggestionsView_NavigateThroughSuggestions_System_Int32_
+  name: NavigateThroughSuggestions
+  nameWithType: CommandSuggestionsView.NavigateThroughSuggestions
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.NavigateThroughSuggestions
+- uid: System.Int32
+  commentId: T:System.Int32
+  parent: System
+  isExternal: true
+  name: int
+  nameWithType: int
+  fullName: int
+  nameWithType.vb: Integer
+  fullName.vb: Integer
+  name.vb: Integer
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion
+  href: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html#UBP_Scripts_UBPServices_Debugs_Console_CommandSuggestionsView_SelectSuggestion
+  name: SelectSuggestion
+  nameWithType: CommandSuggestionsView.SelectSuggestion
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.SelectSuggestion
+- uid: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion
+  href: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.html#UBP_Scripts_UBPServices_Debugs_Console_CommandSuggestionsView_DeselectSuggestion
+  name: DeselectSuggestion
+  nameWithType: CommandSuggestionsView.DeselectSuggestion
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.CommandSuggestionsView.DeselectSuggestion

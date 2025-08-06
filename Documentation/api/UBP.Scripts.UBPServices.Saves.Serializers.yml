@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves.Serializers
+  commentId: N:UBP.Scripts.UBPServices.Saves.Serializers
+  id: UBP.Scripts.UBPServices.Saves.Serializers
+  children:
+  - UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  - UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Saves.Serializers
+  nameWithType: UBP.Scripts.UBPServices.Saves.Serializers
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  commentId: T:UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+  parent: UBP.Scripts.UBPServices.Saves.Serializers
+  href: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer.html
+  name: SaveSerializer
+  nameWithType: SaveSerializer
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.SaveSerializer
+- uid: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  commentId: T:UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+  href: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer.html
+  name: JSONSaveSerializer
+  nameWithType: JSONSaveSerializer
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers.JSONSaveSerializer
+- uid: UBP.Scripts.UBPServices.Saves.Serializers
+  commentId: N:UBP.Scripts.UBPServices.Saves.Serializers
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Saves.Serializers
+  nameWithType: UBP.Scripts.UBPServices.Saves.Serializers
+  fullName: UBP.Scripts.UBPServices.Saves.Serializers
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers
+    name: Serializers
+    href: UBP.Scripts.UBPServices.Saves.Serializers.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves.Serializers
+    name: Serializers
+    href: UBP.Scripts.UBPServices.Saves.Serializers.html

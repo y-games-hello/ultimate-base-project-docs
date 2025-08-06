@@ -1,0 +1,145 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPConstants
+  commentId: T:UBP.Scripts.UBPConstants
+  id: UBPConstants
+  parent: UBP.Scripts
+  children:
+  - UBP.Scripts.UBPConstants.ConfigsRoot
+  - UBP.Scripts.UBPConstants.UBPPrefix
+  langs:
+  - csharp
+  - vb
+  name: UBPConstants
+  nameWithType: UBPConstants
+  fullName: UBP.Scripts.UBPConstants
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPConstants.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UBPConstants
+    path: ../Assets/UBP/Scripts/UBPConstants.cs
+    startLine: 2
+  namespace: UBP.Scripts
+  syntax:
+    content: public static class UBPConstants
+    content.vb: Public Module UBPConstants
+  inheritance:
+  - System.Object
+- uid: UBP.Scripts.UBPConstants.UBPPrefix
+  commentId: P:UBP.Scripts.UBPConstants.UBPPrefix
+  id: UBPPrefix
+  parent: UBP.Scripts.UBPConstants
+  langs:
+  - csharp
+  - vb
+  name: UBPPrefix
+  nameWithType: UBPConstants.UBPPrefix
+  fullName: UBP.Scripts.UBPConstants.UBPPrefix
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPConstants.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UBPPrefix
+    path: ../Assets/UBP/Scripts/UBPConstants.cs
+    startLine: 4
+  namespace: UBP.Scripts
+  syntax:
+    content: public static string UBPPrefix { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property UBPPrefix As String
+  overload: UBP.Scripts.UBPConstants.UBPPrefix*
+- uid: UBP.Scripts.UBPConstants.ConfigsRoot
+  commentId: P:UBP.Scripts.UBPConstants.ConfigsRoot
+  id: ConfigsRoot
+  parent: UBP.Scripts.UBPConstants
+  langs:
+  - csharp
+  - vb
+  name: ConfigsRoot
+  nameWithType: UBPConstants.ConfigsRoot
+  fullName: UBP.Scripts.UBPConstants.ConfigsRoot
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPConstants.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConfigsRoot
+    path: ../Assets/UBP/Scripts/UBPConstants.cs
+    startLine: 5
+  namespace: UBP.Scripts
+  syntax:
+    content: public static string ConfigsRoot { get; }
+    parameters: []
+    return:
+      type: System.String
+    content.vb: Public Shared ReadOnly Property ConfigsRoot As String
+  overload: UBP.Scripts.UBPConstants.ConfigsRoot*
+references:
+- uid: UBP.Scripts
+  commentId: N:UBP.Scripts
+  href: UBP.html
+  name: UBP.Scripts
+  nameWithType: UBP.Scripts
+  fullName: UBP.Scripts
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPConstants.UBPPrefix*
+  commentId: Overload:UBP.Scripts.UBPConstants.UBPPrefix
+  href: UBP.Scripts.UBPConstants.html#UBP_Scripts_UBPConstants_UBPPrefix
+  name: UBPPrefix
+  nameWithType: UBPConstants.UBPPrefix
+  fullName: UBP.Scripts.UBPConstants.UBPPrefix
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: UBP.Scripts.UBPConstants.ConfigsRoot*
+  commentId: Overload:UBP.Scripts.UBPConstants.ConfigsRoot
+  href: UBP.Scripts.UBPConstants.html#UBP_Scripts_UBPConstants_ConfigsRoot
+  name: ConfigsRoot
+  nameWithType: UBPConstants.ConfigsRoot
+  fullName: UBP.Scripts.UBPConstants.ConfigsRoot

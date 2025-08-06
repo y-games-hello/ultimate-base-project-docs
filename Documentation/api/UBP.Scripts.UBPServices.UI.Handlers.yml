@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.UI.Handlers
+  commentId: N:UBP.Scripts.UBPServices.UI.Handlers
+  id: UBP.Scripts.UBPServices.UI.Handlers
+  children:
+  - UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  - UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.UI.Handlers
+  nameWithType: UBP.Scripts.UBPServices.UI.Handlers
+  fullName: UBP.Scripts.UBPServices.UI.Handlers
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  commentId: T:UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+  href: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler.html
+  name: UIResizeHandler
+  nameWithType: UIResizeHandler
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIResizeHandler
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  commentId: T:UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  href: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.html
+  name: UIDragHandler
+  nameWithType: UIDragHandler
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler

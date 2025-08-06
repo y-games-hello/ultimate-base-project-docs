@@ -1,0 +1,241 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  commentId: T:UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  id: UIDragHandler
+  parent: UBP.Scripts.UBPServices.UI.Handlers
+  children:
+  - UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  - UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  langs:
+  - csharp
+  - vb
+  name: UIDragHandler
+  nameWithType: UIDragHandler
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/UI/Handlers/UIDragHandler.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UIDragHandler
+    path: ../Assets/UBP/Scripts/UBPServices/UI/Handlers/UIDragHandler.cs
+    startLine: 9
+  namespace: UBP.Scripts.UBPServices.UI.Handlers
+  summary: >-
+    Enables dragging of a UI panel via a drag handle (such as a header bar).
+
+    Keeps the panel within its local RectTransform hierarchy.
+  example: []
+  syntax:
+    content: >-
+      [RequireComponent(typeof(RectTransform))]
+
+      public class UIDragHandler : MonoBehaviour
+    content.vb: >-
+      <RequireComponent(GetType(RectTransform))>
+
+      Public Class UIDragHandler Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  langs:
+  - csharp
+  - vb
+  name: OnBeginDrag(PointerEventData)
+  nameWithType: UIDragHandler.OnBeginDrag(PointerEventData)
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/UI/Handlers/UIDragHandler.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnBeginDrag
+    path: ../Assets/UBP/Scripts/UBPServices/UI/Handlers/UIDragHandler.cs
+    startLine: 29
+  namespace: UBP.Scripts.UBPServices.UI.Handlers
+  summary: Called when the drag starts. Captures the offset between the cursor and the panel position.
+  example: []
+  syntax:
+    content: public void OnBeginDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnBeginDrag(eventData As PointerEventData)
+  overload: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag*
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  commentId: M:UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  id: OnDrag(UnityEngine.EventSystems.PointerEventData)
+  parent: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler
+  langs:
+  - csharp
+  - vb
+  name: OnDrag(PointerEventData)
+  nameWithType: UIDragHandler.OnDrag(PointerEventData)
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag(UnityEngine.EventSystems.PointerEventData)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/UI/Handlers/UIDragHandler.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnDrag
+    path: ../Assets/UBP/Scripts/UBPServices/UI/Handlers/UIDragHandler.cs
+    startLine: 37
+  namespace: UBP.Scripts.UBPServices.UI.Handlers
+  summary: Called while dragging. Updates the panel's position based on the mouse location and initial offset.
+  example: []
+  syntax:
+    content: public void OnDrag(PointerEventData eventData)
+    parameters:
+    - id: eventData
+      type: UnityEngine.EventSystems.PointerEventData
+    content.vb: Public Sub OnDrag(eventData As PointerEventData)
+  overload: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag*
+references:
+- uid: UBP.Scripts.UBPServices.UI.Handlers
+  commentId: N:UBP.Scripts.UBPServices.UI.Handlers
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.UI.Handlers
+  nameWithType: UBP.Scripts.UBPServices.UI.Handlers
+  fullName: UBP.Scripts.UBPServices.UI.Handlers
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI
+    name: UI
+    href: UBP.Scripts.UBPServices.UI.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI.Handlers
+    name: Handlers
+    href: UBP.Scripts.UBPServices.UI.Handlers.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI
+    name: UI
+    href: UBP.Scripts.UBPServices.UI.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.UI.Handlers
+    name: Handlers
+    href: UBP.Scripts.UBPServices.UI.Handlers.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag*
+  commentId: Overload:UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag
+  href: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.html#UBP_Scripts_UBPServices_UI_Handlers_UIDragHandler_OnBeginDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnBeginDrag
+  nameWithType: UIDragHandler.OnBeginDrag
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnBeginDrag
+- uid: UnityEngine.EventSystems.PointerEventData
+  commentId: T:UnityEngine.EventSystems.PointerEventData
+  parent: UnityEngine.EventSystems
+  isExternal: true
+  name: PointerEventData
+  nameWithType: PointerEventData
+  fullName: UnityEngine.EventSystems.PointerEventData
+- uid: UnityEngine.EventSystems
+  commentId: N:UnityEngine.EventSystems
+  isExternal: true
+  name: UnityEngine.EventSystems
+  nameWithType: UnityEngine.EventSystems
+  fullName: UnityEngine.EventSystems
+  spec.csharp:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+  spec.vb:
+  - uid: UnityEngine
+    name: UnityEngine
+    isExternal: true
+  - name: .
+  - uid: UnityEngine.EventSystems
+    name: EventSystems
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag*
+  commentId: Overload:UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag
+  href: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.html#UBP_Scripts_UBPServices_UI_Handlers_UIDragHandler_OnDrag_UnityEngine_EventSystems_PointerEventData_
+  name: OnDrag
+  nameWithType: UIDragHandler.OnDrag
+  fullName: UBP.Scripts.UBPServices.UI.Handlers.UIDragHandler.OnDrag

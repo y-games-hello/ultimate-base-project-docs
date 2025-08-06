@@ -1,0 +1,21 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Editor
+  commentId: N:UBP.Scripts.Editor
+  id: UBP.Scripts.Editor
+  children:
+  - UBP.Scripts.Editor.EditorApplicationEntry
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.Editor
+  nameWithType: UBP.Scripts.Editor
+  fullName: UBP.Scripts.Editor
+  type: Namespace
+references:
+- uid: UBP.Scripts.Editor.EditorApplicationEntry
+  commentId: T:UBP.Scripts.Editor.EditorApplicationEntry
+  href: UBP.Scripts.Editor.EditorApplicationEntry.html
+  name: EditorApplicationEntry
+  nameWithType: EditorApplicationEntry
+  fullName: UBP.Scripts.Editor.EditorApplicationEntry

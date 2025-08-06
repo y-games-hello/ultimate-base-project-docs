@@ -1,0 +1,67 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Factory
+  commentId: N:UBP.Scripts.UBPServices.Factory
+  id: UBP.Scripts.UBPServices.Factory
+  children:
+  - UBP.Scripts.UBPServices.Factory.FactoryService
+  - UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Factory
+  nameWithType: UBP.Scripts.UBPServices.Factory
+  fullName: UBP.Scripts.UBPServices.Factory
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Factory.FactoryService
+  commentId: T:UBP.Scripts.UBPServices.Factory.FactoryService
+  href: UBP.Scripts.UBPServices.Factory.FactoryService.html
+  name: FactoryService
+  nameWithType: FactoryService
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryService
+- uid: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  parent: UBP.Scripts.UBPServices.Factory
+  href: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig.html
+  name: FactoryServiceConfig
+  nameWithType: FactoryServiceConfig
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+- uid: UBP.Scripts.UBPServices.Factory
+  commentId: N:UBP.Scripts.UBPServices.Factory
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Factory
+  nameWithType: UBP.Scripts.UBPServices.Factory
+  fullName: UBP.Scripts.UBPServices.Factory
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html

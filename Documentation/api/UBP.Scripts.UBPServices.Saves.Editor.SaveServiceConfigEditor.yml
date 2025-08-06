@@ -1,0 +1,191 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  commentId: T:UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  id: SaveServiceConfigEditor
+  parent: UBP.Scripts.UBPServices.Saves.Editor
+  children:
+  - UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI
+  langs:
+  - csharp
+  - vb
+  name: SaveServiceConfigEditor
+  nameWithType: SaveServiceConfigEditor
+  fullName: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/Editor/SaveServiceConfigEditor.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: SaveServiceConfigEditor
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/Editor/SaveServiceConfigEditor.cs
+    startLine: 5
+  namespace: UBP.Scripts.UBPServices.Saves.Editor
+  syntax:
+    content: >-
+      [CustomEditor(typeof(SaveServiceConfig))]
+
+      public class SaveServiceConfigEditor : Editor
+    content.vb: >-
+      <CustomEditor(GetType(SaveServiceConfig))>
+
+      Public Class SaveServiceConfigEditor Inherits Editor
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  - UnityEditor.Editor
+  attributes:
+  - type: UnityEditor.CustomEditor
+    ctor: UnityEditor.CustomEditor.#ctor(System.Type)
+    arguments:
+    - type: System.Type
+      value: UBP.Scripts.UBPServices.Saves.SaveServiceConfig
+- uid: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI
+  commentId: M:UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI
+  id: OnInspectorGUI
+  parent: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor
+  langs:
+  - csharp
+  - vb
+  name: OnInspectorGUI()
+  nameWithType: SaveServiceConfigEditor.OnInspectorGUI()
+  fullName: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Saves/Editor/SaveServiceConfigEditor.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnInspectorGUI
+    path: ../Assets/UBP/Scripts/UBPServices/Saves/Editor/SaveServiceConfigEditor.cs
+    startLine: 8
+  namespace: UBP.Scripts.UBPServices.Saves.Editor
+  example: []
+  syntax:
+    content: public override void OnInspectorGUI()
+    content.vb: Public Overrides Sub OnInspectorGUI()
+  overridden: UnityEditor.Editor.OnInspectorGUI
+  overload: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI*
+references:
+- uid: UBP.Scripts.UBPServices.Saves.Editor
+  commentId: N:UBP.Scripts.UBPServices.Saves.Editor
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Saves.Editor
+  nameWithType: UBP.Scripts.UBPServices.Saves.Editor
+  fullName: UBP.Scripts.UBPServices.Saves.Editor
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Saves.Editor.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves
+    name: Saves
+    href: UBP.Scripts.UBPServices.Saves.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Saves.Editor
+    name: Editor
+    href: UBP.Scripts.UBPServices.Saves.Editor.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: UnityEditor.Editor
+  commentId: T:UnityEditor.Editor
+  parent: UnityEditor
+  isExternal: true
+  name: Editor
+  nameWithType: Editor
+  fullName: UnityEditor.Editor
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UnityEditor
+  commentId: N:UnityEditor
+  isExternal: true
+  name: UnityEditor
+  nameWithType: UnityEditor
+  fullName: UnityEditor
+- uid: UnityEditor.Editor.OnInspectorGUI
+  commentId: M:UnityEditor.Editor.OnInspectorGUI
+  parent: UnityEditor.Editor
+  isExternal: true
+  name: OnInspectorGUI()
+  nameWithType: Editor.OnInspectorGUI()
+  fullName: UnityEditor.Editor.OnInspectorGUI()
+  spec.csharp:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UnityEditor.Editor.OnInspectorGUI
+    name: OnInspectorGUI
+    isExternal: true
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI*
+  commentId: Overload:UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI
+  href: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.html#UBP_Scripts_UBPServices_Saves_Editor_SaveServiceConfigEditor_OnInspectorGUI
+  name: OnInspectorGUI
+  nameWithType: SaveServiceConfigEditor.OnInspectorGUI
+  fullName: UBP.Scripts.UBPServices.Saves.Editor.SaveServiceConfigEditor.OnInspectorGUI

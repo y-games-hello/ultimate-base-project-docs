@@ -1,0 +1,75 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+  commentId: N:UBP.Scripts.UBPServices.Factory.PostProcessors
+  id: UBP.Scripts.UBPServices.Factory.PostProcessors
+  children:
+  - UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  - UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Factory.PostProcessors
+  nameWithType: UBP.Scripts.UBPServices.Factory.PostProcessors
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor
+  commentId: T:UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor
+  href: UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor.html
+  name: UpdaterPostProcessor
+  nameWithType: UpdaterPostProcessor
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors.UpdaterPostProcessor
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  commentId: T:UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+  parent: UBP.Scripts.UBPServices.Factory.PostProcessors
+  href: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor.html
+  name: IPostProcessor
+  nameWithType: IPostProcessor
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors.IPostProcessor
+- uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+  commentId: N:UBP.Scripts.UBPServices.Factory.PostProcessors
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Factory.PostProcessors
+  nameWithType: UBP.Scripts.UBPServices.Factory.PostProcessors
+  fullName: UBP.Scripts.UBPServices.Factory.PostProcessors
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+    name: PostProcessors
+    href: UBP.Scripts.UBPServices.Factory.PostProcessors.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory.PostProcessors
+    name: PostProcessors
+    href: UBP.Scripts.UBPServices.Factory.PostProcessors.html

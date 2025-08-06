@@ -1,0 +1,54 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Extensions
+  commentId: N:UBP.Scripts.Extensions
+  id: UBP.Scripts.Extensions
+  children:
+  - UBP.Scripts.Extensions.BoundedQueue`1
+  - UBP.Scripts.Extensions.TaskExtensions
+  - UBP.Scripts.Extensions.UIExtensions
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.Extensions
+  nameWithType: UBP.Scripts.Extensions
+  fullName: UBP.Scripts.Extensions
+  type: Namespace
+references:
+- uid: UBP.Scripts.Extensions.UIExtensions
+  commentId: T:UBP.Scripts.Extensions.UIExtensions
+  href: UBP.Scripts.Extensions.UIExtensions.html
+  name: UIExtensions
+  nameWithType: UIExtensions
+  fullName: UBP.Scripts.Extensions.UIExtensions
+- uid: UBP.Scripts.Extensions.TaskExtensions
+  commentId: T:UBP.Scripts.Extensions.TaskExtensions
+  href: UBP.Scripts.Extensions.TaskExtensions.html
+  name: TaskExtensions
+  nameWithType: TaskExtensions
+  fullName: UBP.Scripts.Extensions.TaskExtensions
+- uid: UBP.Scripts.Extensions.BoundedQueue`1
+  commentId: T:UBP.Scripts.Extensions.BoundedQueue`1
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  name: BoundedQueue<T>
+  nameWithType: BoundedQueue<T>
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>
+  nameWithType.vb: BoundedQueue(Of T)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T)
+  name.vb: BoundedQueue(Of T)
+  spec.csharp:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )

@@ -1,0 +1,122 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  id: FactoryServiceConfig
+  parent: UBP.Scripts.UBPServices.Factory
+  children: []
+  langs:
+  - csharp
+  - vb
+  name: FactoryServiceConfig
+  nameWithType: FactoryServiceConfig
+  fullName: UBP.Scripts.UBPServices.Factory.FactoryServiceConfig
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Factory/FactoryServiceConfig.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: FactoryServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Factory/FactoryServiceConfig.cs
+    startLine: 4
+  namespace: UBP.Scripts.UBPServices.Factory
+  syntax:
+    content: >-
+      [CreateAssetMenu(fileName = "FactoryServiceConfig", menuName = "Configs/Services/FactoryServiceConfig")]
+
+      public class FactoryServiceConfig : ScriptableObject
+    content.vb: >-
+      <CreateAssetMenu(fileName:="FactoryServiceConfig", menuName:="Configs/Services/FactoryServiceConfig")>
+
+      Public Class FactoryServiceConfig Inherits ScriptableObject
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.ScriptableObject
+  attributes:
+  - type: UnityEngine.CreateAssetMenuAttribute
+    ctor: UnityEngine.CreateAssetMenuAttribute.#ctor
+    arguments: []
+    namedArguments:
+    - name: fileName
+      type: System.String
+      value: FactoryServiceConfig
+    - name: menuName
+      type: System.String
+      value: Configs/Services/FactoryServiceConfig
+references:
+- uid: UBP.Scripts.UBPServices.Factory
+  commentId: N:UBP.Scripts.UBPServices.Factory
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Factory
+  nameWithType: UBP.Scripts.UBPServices.Factory
+  fullName: UBP.Scripts.UBPServices.Factory
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Factory
+    name: Factory
+    href: UBP.Scripts.UBPServices.Factory.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.ScriptableObject
+  commentId: T:UnityEngine.ScriptableObject
+  parent: UnityEngine
+  isExternal: true
+  name: ScriptableObject
+  nameWithType: ScriptableObject
+  fullName: UnityEngine.ScriptableObject
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine

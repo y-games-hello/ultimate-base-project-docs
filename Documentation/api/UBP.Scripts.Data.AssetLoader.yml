@@ -1,0 +1,391 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.Data.AssetLoader
+  commentId: T:UBP.Scripts.Data.AssetLoader
+  id: AssetLoader
+  parent: UBP.Scripts.Data
+  children:
+  - UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync``1(System.String)
+  - UBP.Scripts.Data.AssetLoader.LoadResourcesAsset``1(System.String)
+  - UBP.Scripts.Data.AssetLoader.LoadResourcesAssets``1(System.String)
+  langs:
+  - csharp
+  - vb
+  name: AssetLoader
+  nameWithType: AssetLoader
+  fullName: UBP.Scripts.Data.AssetLoader
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/AssetLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: AssetLoader
+    path: ../Assets/UBP/Scripts/Data/AssetLoader.cs
+    startLine: 22
+  namespace: UBP.Scripts.Data
+  summary: >-
+    Centralized utility class for loading assets using Unity's Resources or Addressables APIs.
+
+    Provides async and sync loading methods for assets and scenes.
+  example: []
+  syntax:
+    content: public static class AssetLoader
+    content.vb: Public Module AssetLoader
+  inheritance:
+  - System.Object
+- uid: UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync``1(System.String)
+  commentId: M:UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync``1(System.String)
+  id: LoadResourcesAssetAsync``1(System.String)
+  parent: UBP.Scripts.Data.AssetLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadResourcesAssetAsync<T>(string)
+  nameWithType: AssetLoader.LoadResourcesAssetAsync<T>(string)
+  fullName: UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/AssetLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadResourcesAssetAsync
+    path: ../Assets/UBP/Scripts/Data/AssetLoader.cs
+    startLine: 27
+  namespace: UBP.Scripts.Data
+  summary: Asynchronously loads an asset from the Resources folder.
+  example: []
+  syntax:
+    content: 'public static Task<T> LoadResourcesAssetAsync<T>(string assetPath) where T : Object'
+    parameters:
+    - id: assetPath
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Threading.Tasks.Task{{T}}
+    content.vb: Public Shared Function LoadResourcesAssetAsync(Of T As [Object])(assetPath As String) As Task(Of T)
+  overload: UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync*
+  nameWithType.vb: AssetLoader.LoadResourcesAssetAsync(Of T)(String)
+  fullName.vb: UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync(Of T)(String)
+  name.vb: LoadResourcesAssetAsync(Of T)(String)
+- uid: UBP.Scripts.Data.AssetLoader.LoadResourcesAsset``1(System.String)
+  commentId: M:UBP.Scripts.Data.AssetLoader.LoadResourcesAsset``1(System.String)
+  id: LoadResourcesAsset``1(System.String)
+  parent: UBP.Scripts.Data.AssetLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadResourcesAsset<T>(string)
+  nameWithType: AssetLoader.LoadResourcesAsset<T>(string)
+  fullName: UBP.Scripts.Data.AssetLoader.LoadResourcesAsset<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/AssetLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadResourcesAsset
+    path: ../Assets/UBP/Scripts/Data/AssetLoader.cs
+    startLine: 42
+  namespace: UBP.Scripts.Data
+  summary: Asynchronously loads an asset from the Resources folder.
+  example: []
+  syntax:
+    content: 'public static T LoadResourcesAsset<T>(string assetPath) where T : Object'
+    parameters:
+    - id: assetPath
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: '{T}'
+    content.vb: Public Shared Function LoadResourcesAsset(Of T As [Object])(assetPath As String) As T
+  overload: UBP.Scripts.Data.AssetLoader.LoadResourcesAsset*
+  nameWithType.vb: AssetLoader.LoadResourcesAsset(Of T)(String)
+  fullName.vb: UBP.Scripts.Data.AssetLoader.LoadResourcesAsset(Of T)(String)
+  name.vb: LoadResourcesAsset(Of T)(String)
+- uid: UBP.Scripts.Data.AssetLoader.LoadResourcesAssets``1(System.String)
+  commentId: M:UBP.Scripts.Data.AssetLoader.LoadResourcesAssets``1(System.String)
+  id: LoadResourcesAssets``1(System.String)
+  parent: UBP.Scripts.Data.AssetLoader
+  langs:
+  - csharp
+  - vb
+  name: LoadResourcesAssets<T>(string)
+  nameWithType: AssetLoader.LoadResourcesAssets<T>(string)
+  fullName: UBP.Scripts.Data.AssetLoader.LoadResourcesAssets<T>(string)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/Data/AssetLoader.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LoadResourcesAssets
+    path: ../Assets/UBP/Scripts/Data/AssetLoader.cs
+    startLine: 56
+  namespace: UBP.Scripts.Data
+  summary: Synchronously loads all assets of type T from the specified folder in Resources.
+  example: []
+  syntax:
+    content: 'public static IList<T> LoadResourcesAssets<T>(string rootFolderPath) where T : Object'
+    parameters:
+    - id: rootFolderPath
+      type: System.String
+    typeParameters:
+    - id: T
+    return:
+      type: System.Collections.Generic.IList{{T}}
+    content.vb: Public Shared Function LoadResourcesAssets(Of T As [Object])(rootFolderPath As String) As IList(Of T)
+  overload: UBP.Scripts.Data.AssetLoader.LoadResourcesAssets*
+  nameWithType.vb: AssetLoader.LoadResourcesAssets(Of T)(String)
+  fullName.vb: UBP.Scripts.Data.AssetLoader.LoadResourcesAssets(Of T)(String)
+  name.vb: LoadResourcesAssets(Of T)(String)
+references:
+- uid: UBP.Scripts.Data
+  commentId: N:UBP.Scripts.Data
+  href: UBP.html
+  name: UBP.Scripts.Data
+  nameWithType: UBP.Scripts.Data
+  fullName: UBP.Scripts.Data
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Data
+    name: Data
+    href: UBP.Scripts.Data.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync*
+  commentId: Overload:UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync
+  href: UBP.Scripts.Data.AssetLoader.html#UBP_Scripts_Data_AssetLoader_LoadResourcesAssetAsync__1_System_String_
+  name: LoadResourcesAssetAsync
+  nameWithType: AssetLoader.LoadResourcesAssetAsync
+  fullName: UBP.Scripts.Data.AssetLoader.LoadResourcesAssetAsync
+- uid: System.String
+  commentId: T:System.String
+  parent: System
+  isExternal: true
+  name: string
+  nameWithType: string
+  fullName: string
+  nameWithType.vb: String
+  fullName.vb: String
+  name.vb: String
+- uid: System.Threading.Tasks.Task{{T}}
+  commentId: T:System.Threading.Tasks.Task{``0}
+  parent: System.Threading.Tasks
+  definition: System.Threading.Tasks.Task`1
+  name: Task<T>
+  nameWithType: Task<T>
+  fullName: System.Threading.Tasks.Task<T>
+  nameWithType.vb: Task(Of T)
+  fullName.vb: System.Threading.Tasks.Task(Of T)
+  name.vb: Task(Of T)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Threading.Tasks.Task`1
+  commentId: T:System.Threading.Tasks.Task`1
+  isExternal: true
+  name: Task<TResult>
+  nameWithType: Task<TResult>
+  fullName: System.Threading.Tasks.Task<TResult>
+  nameWithType.vb: Task(Of TResult)
+  fullName.vb: System.Threading.Tasks.Task(Of TResult)
+  name.vb: Task(Of TResult)
+  spec.csharp:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: <
+  - name: TResult
+  - name: '>'
+  spec.vb:
+  - uid: System.Threading.Tasks.Task`1
+    name: Task
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TResult
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.Data.AssetLoader.LoadResourcesAsset*
+  commentId: Overload:UBP.Scripts.Data.AssetLoader.LoadResourcesAsset
+  href: UBP.Scripts.Data.AssetLoader.html#UBP_Scripts_Data_AssetLoader_LoadResourcesAsset__1_System_String_
+  name: LoadResourcesAsset
+  nameWithType: AssetLoader.LoadResourcesAsset
+  fullName: UBP.Scripts.Data.AssetLoader.LoadResourcesAsset
+- uid: '{T}'
+  commentId: '!:T'
+  definition: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: T
+  name: T
+  nameWithType: T
+  fullName: T
+- uid: UBP.Scripts.Data.AssetLoader.LoadResourcesAssets*
+  commentId: Overload:UBP.Scripts.Data.AssetLoader.LoadResourcesAssets
+  href: UBP.Scripts.Data.AssetLoader.html#UBP_Scripts_Data_AssetLoader_LoadResourcesAssets__1_System_String_
+  name: LoadResourcesAssets
+  nameWithType: AssetLoader.LoadResourcesAssets
+  fullName: UBP.Scripts.Data.AssetLoader.LoadResourcesAssets
+- uid: System.Collections.Generic.IList{{T}}
+  commentId: T:System.Collections.Generic.IList{``0}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.IList`1
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic.IList`1
+  commentId: T:System.Collections.Generic.IList`1
+  isExternal: true
+  name: IList<T>
+  nameWithType: IList<T>
+  fullName: System.Collections.Generic.IList<T>
+  nameWithType.vb: IList(Of T)
+  fullName.vb: System.Collections.Generic.IList(Of T)
+  name.vb: IList(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.IList`1
+    name: IList
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true

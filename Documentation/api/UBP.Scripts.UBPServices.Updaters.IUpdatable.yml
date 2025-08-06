@@ -1,0 +1,107 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IUpdatable
+  id: IUpdatable
+  parent: UBP.Scripts.UBPServices.Updaters
+  children:
+  - UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+  langs:
+  - csharp
+  - vb
+  name: IUpdatable
+  nameWithType: IUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  type: Interface
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/IUpdatable.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: IUpdatable
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/IUpdatable.cs
+    startLine: 6
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    Interface for objects that want to receive custom <code>Update()</code> callbacks
+
+    from the <xref href="UBP.Scripts.UBPServices.Updaters.Updater" data-throw-if-not-resolved="false"></xref> each frame.
+  example: []
+  syntax:
+    content: public interface IUpdatable
+    content.vb: Public Interface IUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+  commentId: M:UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+  id: Update
+  parent: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: IUpdatable.Update()
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/IUpdatable.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Update
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/IUpdatable.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Updaters
+  syntax:
+    content: void Update()
+    content.vb: Sub Update()
+  overload: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update*
+references:
+- uid: UBP.Scripts.UBPServices.Updaters.Updater
+  commentId: T:UBP.Scripts.UBPServices.Updaters.Updater
+  href: UBP.Scripts.UBPServices.Updaters.Updater.html
+  name: Updater
+  nameWithType: Updater
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+  href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html#UBP_Scripts_UBPServices_Updaters_IUpdatable_Update
+  name: Update
+  nameWithType: IUpdatable.Update
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update

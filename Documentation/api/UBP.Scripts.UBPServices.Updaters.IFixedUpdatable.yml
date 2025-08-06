@@ -1,0 +1,112 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  id: IFixedUpdatable
+  parent: UBP.Scripts.UBPServices.Updaters
+  children:
+  - UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate
+  langs:
+  - csharp
+  - vb
+  name: IFixedUpdatable
+  nameWithType: IFixedUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  type: Interface
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/IFixedUpdatable.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: IFixedUpdatable
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/IFixedUpdatable.cs
+    startLine: 6
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    Interface for objects that want to receive custom <code>FixedUpdate()</code> callbacks
+
+    from the <xref href="UBP.Scripts.UBPServices.Updaters.Updater" data-throw-if-not-resolved="false"></xref> during the physics step.
+  example: []
+  syntax:
+    content: public interface IFixedUpdatable
+    content.vb: Public Interface IFixedUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate
+  commentId: M:UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate
+  id: FixedUpdate
+  parent: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  langs:
+  - csharp
+  - vb
+  name: FixedUpdate()
+  nameWithType: IFixedUpdatable.FixedUpdate()
+  fullName: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/IFixedUpdatable.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: FixedUpdate
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/IFixedUpdatable.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    Called at a fixed timestep by the <xref href="UBP.Scripts.UBPServices.Updaters.Updater" data-throw-if-not-resolved="false"></xref> if registered.
+
+    Use for physics or time-sensitive calculations.
+  example: []
+  syntax:
+    content: void FixedUpdate()
+    content.vb: Sub FixedUpdate()
+  overload: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate*
+references:
+- uid: UBP.Scripts.UBPServices.Updaters.Updater
+  commentId: T:UBP.Scripts.UBPServices.Updaters.Updater
+  href: UBP.Scripts.UBPServices.Updaters.Updater.html
+  name: Updater
+  nameWithType: Updater
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+- uid: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate
+  href: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.html#UBP_Scripts_UBPServices_Updaters_IFixedUpdatable_FixedUpdate
+  name: FixedUpdate
+  nameWithType: IFixedUpdatable.FixedUpdate
+  fullName: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.FixedUpdate

@@ -1,0 +1,916 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService
+  commentId: T:UBP.Scripts.UBPServices.Debugs.DebugService
+  id: DebugService
+  parent: UBP.Scripts.UBPServices.Debugs
+  children:
+  - UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands
+  - UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync
+  - UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue
+  - UBP.Scripts.UBPServices.Debugs.DebugService.OnLogMessageReceived
+  - UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  - UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig
+  - UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  - UBP.Scripts.UBPServices.Debugs.DebugService.Update
+  langs:
+  - csharp
+  - vb
+  name: DebugService
+  nameWithType: DebugService
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: DebugService
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 17
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: >-
+    A service that provides runtime debugging functionality during development builds.
+
+    Handles Unity log message capture, bounded log queue storage, and in-game console UI with command registration.
+  example: []
+  syntax:
+    content: 'public class DebugService : ConfiguredService<DebugServiceConfig>, IService, IUpdatable'
+    content.vb: Public Class DebugService Inherits ConfiguredService(Of DebugServiceConfig) Implements IService, IUpdatable
+  inheritance:
+  - System.Object
+  - UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}
+  implements:
+  - UBP.Scripts.UBPServices.IService
+  - UBP.Scripts.UBPServices.Updaters.IUpdatable
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig
+  id: ServiceConfig
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: ServiceConfig
+  nameWithType: DebugService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ServiceConfig
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 22
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Returns the configuration associated with the debug service.
+  example: []
+  syntax:
+    content: public override DebugServiceConfig ServiceConfig { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+    content.vb: Public Overrides ReadOnly Property ServiceConfig As DebugServiceConfig
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.ServiceConfig
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue
+  id: LogMessagesQueue
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: LogMessagesQueue
+  nameWithType: DebugService.LogMessagesQueue
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: LogMessagesQueue
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 27
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Gets a bounded queue that stores recent log messages.
+  example: []
+  syntax:
+    content: public BoundedQueue<LogMessageData> LogMessagesQueue { get; }
+    parameters: []
+    return:
+      type: UBP.Scripts.Extensions.BoundedQueue{UBP.Scripts.UBPServices.Debugs.LogMessageData}
+    content.vb: Public Property LogMessagesQueue As BoundedQueue(Of LogMessageData)
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands
+  commentId: P:UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands
+  id: ConsoleCommands
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: ConsoleCommands
+  nameWithType: DebugService.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands
+  type: Property
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleCommands
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 32
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Gets the registered set of console commands.
+  example: []
+  syntax:
+    content: public HashSet<ConsoleCommand> ConsoleCommands { get; }
+    parameters: []
+    return:
+      type: System.Collections.Generic.HashSet{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+    content.vb: Public Property ConsoleCommands As HashSet(Of ConsoleCommand)
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.OnLogMessageReceived
+  commentId: F:UBP.Scripts.UBPServices.Debugs.DebugService.OnLogMessageReceived
+  id: OnLogMessageReceived
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: OnLogMessageReceived
+  nameWithType: DebugService.OnLogMessageReceived
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.OnLogMessageReceived
+  type: Field
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: OnLogMessageReceived
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 37
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Event triggered when a new log message is received.
+  example: []
+  syntax:
+    content: public Action<LogMessageData> OnLogMessageReceived
+    return:
+      type: System.Action{UBP.Scripts.UBPServices.Debugs.LogMessageData}
+    content.vb: Public OnLogMessageReceived As Action(Of LogMessageData)
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync
+  id: InitializeAsync
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: InitializeAsync()
+  nameWithType: DebugService.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: InitializeAsync
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 44
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Asynchronously initializes the service, registering log handlers and setting up internal structures.
+  example: []
+  syntax:
+    content: public override Task InitializeAsync()
+    return:
+      type: System.Threading.Tasks.Task
+    content.vb: Public Overrides Function InitializeAsync() As Task
+  overridden: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.InitializeAsync
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.Update
+  commentId: M:UBP.Scripts.UBPServices.Debugs.DebugService.Update
+  id: Update
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: Update()
+  nameWithType: DebugService.Update()
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.Update()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Update
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 58
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Called every frame to listen for input and toggle the console UI if applicable.
+  example: []
+  syntax:
+    content: public void Update()
+    content.vb: Public Sub Update()
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.Update*
+  implements:
+  - UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  id: RegisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: RegisterCommand(ConsoleCommand)
+  nameWithType: DebugService.RegisterCommand(ConsoleCommand)
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: RegisterCommand
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 114
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Registers a new console command for use in the in-game debug console.
+  example: []
+  syntax:
+    content: public void RegisterCommand(ConsoleCommand command)
+    parameters:
+    - id: command
+      type: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+      description: The command to register.
+    content.vb: Public Sub RegisterCommand(command As ConsoleCommand)
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand*
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  id: UnregisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  parent: UBP.Scripts.UBPServices.Debugs.DebugService
+  langs:
+  - csharp
+  - vb
+  name: UnregisterCommand(ConsoleCommand)
+  nameWithType: DebugService.UnregisterCommand(ConsoleCommand)
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand(UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: UnregisterCommand
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/DebugService.cs
+    startLine: 123
+  namespace: UBP.Scripts.UBPServices.Debugs
+  summary: Unregisters a console command, removing it from the console interface.
+  example: []
+  syntax:
+    content: public void UnregisterCommand(ConsoleCommand command)
+    parameters:
+    - id: command
+      type: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+      description: The command to unregister.
+    content.vb: Public Sub UnregisterCommand(command As ConsoleCommand)
+  overload: UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs
+  commentId: N:UBP.Scripts.UBPServices.Debugs
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs
+  nameWithType: UBP.Scripts.UBPServices.Debugs
+  fullName: UBP.Scripts.UBPServices.Debugs
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}
+  parent: UBP.Scripts.UBPServices
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<DebugServiceConfig>
+  nameWithType: ConfiguredService<DebugServiceConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Debugs.DebugServiceConfig>
+  nameWithType.vb: ConfiguredService(Of DebugServiceConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Debugs.DebugServiceConfig)
+  name.vb: ConfiguredService(Of DebugServiceConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+    name: DebugServiceConfig
+    href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+    name: DebugServiceConfig
+    href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html
+  - name: )
+- uid: UBP.Scripts.UBPServices.IService
+  commentId: T:UBP.Scripts.UBPServices.IService
+  parent: UBP.Scripts.UBPServices
+  href: UBP.Scripts.UBPServices.IService.html
+  name: IService
+  nameWithType: IService
+  fullName: UBP.Scripts.UBPServices.IService
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IUpdatable
+  parent: UBP.Scripts.UBPServices.Updaters
+  href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html
+  name: IUpdatable
+  nameWithType: IUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1
+  commentId: T:UBP.Scripts.UBPServices.ConfiguredService`1
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  name: ConfiguredService<TConfig>
+  nameWithType: ConfiguredService<TConfig>
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>
+  nameWithType.vb: ConfiguredService(Of TConfig)
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig)
+  name.vb: ConfiguredService(Of TConfig)
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: <
+  - name: TConfig
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1
+    name: ConfiguredService
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: TConfig
+  - name: )
+- uid: UBP.Scripts.UBPServices
+  commentId: N:UBP.Scripts.UBPServices
+  href: UBP.html
+  name: UBP.Scripts.UBPServices
+  nameWithType: UBP.Scripts.UBPServices
+  fullName: UBP.Scripts.UBPServices
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.ServiceConfig
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<DebugServiceConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Debugs.DebugServiceConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of DebugServiceConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Debugs.DebugServiceConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_ServiceConfig
+  name: ServiceConfig
+  nameWithType: DebugService.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.ServiceConfig
+- uid: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+  parent: UBP.Scripts.UBPServices.Debugs
+  href: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig.html
+  name: DebugServiceConfig
+  nameWithType: DebugServiceConfig
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugServiceConfig
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  commentId: P:UBP.Scripts.UBPServices.ConfiguredService`1.ServiceConfig
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_ServiceConfig
+  name: ServiceConfig
+  nameWithType: ConfiguredService<TConfig>.ServiceConfig
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.ServiceConfig
+  nameWithType.vb: ConfiguredService(Of TConfig).ServiceConfig
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).ServiceConfig
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_LogMessagesQueue
+  name: LogMessagesQueue
+  nameWithType: DebugService.LogMessagesQueue
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.LogMessagesQueue
+- uid: UBP.Scripts.Extensions.BoundedQueue{UBP.Scripts.UBPServices.Debugs.LogMessageData}
+  commentId: T:UBP.Scripts.Extensions.BoundedQueue{UBP.Scripts.UBPServices.Debugs.LogMessageData}
+  parent: UBP.Scripts.Extensions
+  definition: UBP.Scripts.Extensions.BoundedQueue`1
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  name: BoundedQueue<LogMessageData>
+  nameWithType: BoundedQueue<LogMessageData>
+  fullName: UBP.Scripts.Extensions.BoundedQueue<UBP.Scripts.UBPServices.Debugs.LogMessageData>
+  nameWithType.vb: BoundedQueue(Of LogMessageData)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  name.vb: BoundedQueue(Of LogMessageData)
+  spec.csharp:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+    name: LogMessageData
+    href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+    name: LogMessageData
+    href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  - name: )
+- uid: UBP.Scripts.Extensions.BoundedQueue`1
+  commentId: T:UBP.Scripts.Extensions.BoundedQueue`1
+  href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  name: BoundedQueue<T>
+  nameWithType: BoundedQueue<T>
+  fullName: UBP.Scripts.Extensions.BoundedQueue<T>
+  nameWithType.vb: BoundedQueue(Of T)
+  fullName.vb: UBP.Scripts.Extensions.BoundedQueue(Of T)
+  name.vb: BoundedQueue(Of T)
+  spec.csharp:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: UBP.Scripts.Extensions.BoundedQueue`1
+    name: BoundedQueue
+    href: UBP.Scripts.Extensions.BoundedQueue-1.html
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UBP.Scripts.Extensions
+  commentId: N:UBP.Scripts.Extensions
+  href: UBP.html
+  name: UBP.Scripts.Extensions
+  nameWithType: UBP.Scripts.Extensions
+  fullName: UBP.Scripts.Extensions
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.Extensions
+    name: Extensions
+    href: UBP.Scripts.Extensions.html
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_ConsoleCommands
+  name: ConsoleCommands
+  nameWithType: DebugService.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.ConsoleCommands
+- uid: System.Collections.Generic.HashSet{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+  commentId: T:System.Collections.Generic.HashSet{UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand}
+  parent: System.Collections.Generic
+  definition: System.Collections.Generic.HashSet`1
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: HashSet<ConsoleCommand>
+  nameWithType: HashSet<ConsoleCommand>
+  fullName: System.Collections.Generic.HashSet<UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand>
+  nameWithType.vb: HashSet(Of ConsoleCommand)
+  fullName.vb: System.Collections.Generic.HashSet(Of UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand)
+  name.vb: HashSet(Of ConsoleCommand)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+    name: ConsoleCommand
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  - name: )
+- uid: System.Collections.Generic.HashSet`1
+  commentId: T:System.Collections.Generic.HashSet`1
+  isExternal: true
+  name: HashSet<T>
+  nameWithType: HashSet<T>
+  fullName: System.Collections.Generic.HashSet<T>
+  nameWithType.vb: HashSet(Of T)
+  fullName.vb: System.Collections.Generic.HashSet(Of T)
+  name.vb: HashSet(Of T)
+  spec.csharp:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Collections.Generic.HashSet`1
+    name: HashSet
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: System.Collections.Generic
+  commentId: N:System.Collections.Generic
+  isExternal: true
+  name: System.Collections.Generic
+  nameWithType: System.Collections.Generic
+  fullName: System.Collections.Generic
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Collections
+    name: Collections
+    isExternal: true
+  - name: .
+  - uid: System.Collections.Generic
+    name: Generic
+    isExternal: true
+- uid: System.Action{UBP.Scripts.UBPServices.Debugs.LogMessageData}
+  commentId: T:System.Action{UBP.Scripts.UBPServices.Debugs.LogMessageData}
+  parent: System
+  definition: System.Action`1
+  href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  name: Action<LogMessageData>
+  nameWithType: Action<LogMessageData>
+  fullName: System.Action<UBP.Scripts.UBPServices.Debugs.LogMessageData>
+  nameWithType.vb: Action(Of LogMessageData)
+  fullName.vb: System.Action(Of UBP.Scripts.UBPServices.Debugs.LogMessageData)
+  name.vb: Action(Of LogMessageData)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+    name: LogMessageData
+    href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - uid: UBP.Scripts.UBPServices.Debugs.LogMessageData
+    name: LogMessageData
+    href: UBP.Scripts.UBPServices.Debugs.LogMessageData.html
+  - name: )
+- uid: System.Action`1
+  commentId: T:System.Action`1
+  isExternal: true
+  name: Action<T>
+  nameWithType: Action<T>
+  fullName: System.Action<T>
+  nameWithType.vb: Action(Of T)
+  fullName.vb: System.Action(Of T)
+  name.vb: Action(Of T)
+  spec.csharp:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: <
+  - name: T
+  - name: '>'
+  spec.vb:
+  - uid: System.Action`1
+    name: Action
+    isExternal: true
+  - name: (
+  - name: Of
+  - name: " "
+  - name: T
+  - name: )
+- uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.InitializeAsync
+  parent: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}
+  definition: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<DebugServiceConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<UBP.Scripts.UBPServices.Debugs.DebugServiceConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of DebugServiceConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of UBP.Scripts.UBPServices.Debugs.DebugServiceConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService{UBP.Scripts.UBPServices.Debugs.DebugServiceConfig}.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_InitializeAsync
+  name: InitializeAsync
+  nameWithType: DebugService.InitializeAsync
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.InitializeAsync
+- uid: System.Threading.Tasks.Task
+  commentId: T:System.Threading.Tasks.Task
+  parent: System.Threading.Tasks
+  isExternal: true
+  name: Task
+  nameWithType: Task
+  fullName: System.Threading.Tasks.Task
+- uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  commentId: M:UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+  href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  name: InitializeAsync()
+  nameWithType: ConfiguredService<TConfig>.InitializeAsync()
+  fullName: UBP.Scripts.UBPServices.ConfiguredService<TConfig>.InitializeAsync()
+  nameWithType.vb: ConfiguredService(Of TConfig).InitializeAsync()
+  fullName.vb: UBP.Scripts.UBPServices.ConfiguredService(Of TConfig).InitializeAsync()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.ConfiguredService`1.InitializeAsync
+    name: InitializeAsync
+    href: UBP.Scripts.UBPServices.ConfiguredService-1.html#UBP_Scripts_UBPServices_ConfiguredService_1_InitializeAsync
+  - name: (
+  - name: )
+- uid: System.Threading.Tasks
+  commentId: N:System.Threading.Tasks
+  isExternal: true
+  name: System.Threading.Tasks
+  nameWithType: System.Threading.Tasks
+  fullName: System.Threading.Tasks
+  spec.csharp:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+  spec.vb:
+  - uid: System
+    name: System
+    isExternal: true
+  - name: .
+  - uid: System.Threading
+    name: Threading
+    isExternal: true
+  - name: .
+  - uid: System.Threading.Tasks
+    name: Tasks
+    isExternal: true
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.Update*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.Update
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_Update
+  name: Update
+  nameWithType: DebugService.Update
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.Update
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+  commentId: M:UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+  parent: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html#UBP_Scripts_UBPServices_Updaters_IUpdatable_Update
+  name: Update()
+  nameWithType: IUpdatable.Update()
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update()
+  spec.csharp:
+  - uid: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+    name: Update
+    href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html#UBP_Scripts_UBPServices_Updaters_IUpdatable_Update
+  - name: (
+  - name: )
+  spec.vb:
+  - uid: UBP.Scripts.UBPServices.Updaters.IUpdatable.Update
+    name: Update
+    href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html#UBP_Scripts_UBPServices_Updaters_IUpdatable_Update
+  - name: (
+  - name: )
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_RegisterCommand_UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_
+  name: RegisterCommand
+  nameWithType: DebugService.RegisterCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.RegisterCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  commentId: T:UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+  parent: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand.html
+  name: ConsoleCommand
+  nameWithType: ConsoleCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.ConsoleCommand
+- uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  commentId: N:UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  nameWithType: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  fullName: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.ConsoleCommands
+    name: ConsoleCommands
+    href: UBP.Scripts.UBPServices.Debugs.ConsoleCommands.html
+- uid: UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand
+  href: UBP.Scripts.UBPServices.Debugs.DebugService.html#UBP_Scripts_UBPServices_Debugs_DebugService_UnregisterCommand_UBP_Scripts_UBPServices_Debugs_ConsoleCommands_ConsoleCommand_
+  name: UnregisterCommand
+  nameWithType: DebugService.UnregisterCommand
+  fullName: UBP.Scripts.UBPServices.Debugs.DebugService.UnregisterCommand

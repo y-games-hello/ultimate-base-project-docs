@@ -1,0 +1,28 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts
+  commentId: N:UBP.Scripts
+  id: UBP.Scripts
+  children:
+  - UBP.Scripts.ApplicationEntry
+  - UBP.Scripts.UBPConstants
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts
+  nameWithType: UBP.Scripts
+  fullName: UBP.Scripts
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPConstants
+  commentId: T:UBP.Scripts.UBPConstants
+  href: UBP.Scripts.UBPConstants.html
+  name: UBPConstants
+  nameWithType: UBPConstants
+  fullName: UBP.Scripts.UBPConstants
+- uid: UBP.Scripts.ApplicationEntry
+  commentId: T:UBP.Scripts.ApplicationEntry
+  href: UBP.Scripts.ApplicationEntry.html
+  name: ApplicationEntry
+  nameWithType: ApplicationEntry
+  fullName: UBP.Scripts.ApplicationEntry

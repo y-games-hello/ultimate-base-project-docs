@@ -1,0 +1,294 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  id: AudioSourcesPool
+  parent: UBP.Scripts.UBPServices.Audio
+  children:
+  - UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource
+  - UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize
+  - UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay(UnityEngine.AudioSource)
+  - UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource(UnityEngine.AudioSource)
+  langs:
+  - csharp
+  - vb
+  name: AudioSourcesPool
+  nameWithType: AudioSourcesPool
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: AudioSourcesPool
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+    startLine: 12
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: >-
+    A reusable object pool for <xref href="UnityEngine.AudioSource" data-throw-if-not-resolved="false"></xref> instances.
+
+    Prevents unnecessary allocation and destruction of AudioSources at runtime.
+
+    Used internally by the <xref href="UBP.Scripts.UBPServices.Audio.AudioService" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: 'public class AudioSourcesPool : MonoBehaviour'
+    content.vb: Public Class AudioSourcesPool Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize
+  id: Initialize
+  parent: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  langs:
+  - csharp
+  - vb
+  name: Initialize()
+  nameWithType: AudioSourcesPool.Initialize()
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Initialize
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+    startLine: 19
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Initializes the pool by preallocating a number of AudioSources as defined in the <xref href="UBP.Scripts.UBPServices.Audio.AudioServiceConfig" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Initialize()
+    content.vb: Public Sub Initialize()
+  overload: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize*
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource
+  id: GetAudioSource
+  parent: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  langs:
+  - csharp
+  - vb
+  name: GetAudioSource()
+  nameWithType: AudioSourcesPool.GetAudioSource()
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource()
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: GetAudioSource
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+    startLine: 46
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: >-
+    Retrieves an AudioSource from the pool or creates one if the pool is empty.
+
+    The AudioSource will be activated and ready for playback.
+  example: []
+  syntax:
+    content: public AudioSource GetAudioSource()
+    return:
+      type: UnityEngine.AudioSource
+      description: A prepared <xref href="UnityEngine.AudioSource" data-throw-if-not-resolved="false"></xref> instance.
+    content.vb: Public Function GetAudioSource() As AudioSource
+  overload: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource*
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource(UnityEngine.AudioSource)
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource(UnityEngine.AudioSource)
+  id: ReturnAudioSource(UnityEngine.AudioSource)
+  parent: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  langs:
+  - csharp
+  - vb
+  name: ReturnAudioSource(AudioSource)
+  nameWithType: AudioSourcesPool.ReturnAudioSource(AudioSource)
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource(UnityEngine.AudioSource)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ReturnAudioSource
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+    startLine: 57
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Returns an AudioSource to the pool after stopping playback and deactivating it.
+  example: []
+  syntax:
+    content: public void ReturnAudioSource(AudioSource audioSource)
+    parameters:
+    - id: audioSource
+      type: UnityEngine.AudioSource
+      description: The AudioSource to return to the pool.
+    content.vb: Public Sub ReturnAudioSource(audioSource As AudioSource)
+  overload: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource*
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay(UnityEngine.AudioSource)
+  commentId: M:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay(UnityEngine.AudioSource)
+  id: ReleaseAfterPlay(UnityEngine.AudioSource)
+  parent: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  langs:
+  - csharp
+  - vb
+  name: ReleaseAfterPlay(AudioSource)
+  nameWithType: AudioSourcesPool.ReleaseAfterPlay(AudioSource)
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay(UnityEngine.AudioSource)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ReleaseAfterPlay
+    path: ../Assets/UBP/Scripts/UBPServices/Audio/AudioSourcesPool.cs
+    startLine: 71
+  namespace: UBP.Scripts.UBPServices.Audio
+  summary: Automatically returns an AudioSource to the pool once it finishes playing.
+  example: []
+  syntax:
+    content: public void ReleaseAfterPlay(AudioSource source)
+    parameters:
+    - id: source
+      type: UnityEngine.AudioSource
+      description: The AudioSource that should be recycled.
+    content.vb: Public Sub ReleaseAfterPlay(source As AudioSource)
+  overload: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay*
+references:
+- uid: UnityEngine.AudioSource
+  commentId: T:UnityEngine.AudioSource
+  parent: UnityEngine
+  isExternal: true
+  name: AudioSource
+  nameWithType: AudioSource
+  fullName: UnityEngine.AudioSource
+- uid: UBP.Scripts.UBPServices.Audio.AudioService
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioService
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html
+  name: AudioService
+  nameWithType: AudioService
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService
+- uid: UBP.Scripts.UBPServices.Audio
+  commentId: N:UBP.Scripts.UBPServices.Audio
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Audio
+  nameWithType: UBP.Scripts.UBPServices.Audio
+  fullName: UBP.Scripts.UBPServices.Audio
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  parent: UBP.Scripts.UBPServices.Audio
+  href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html
+  name: AudioServiceConfig
+  nameWithType: AudioServiceConfig
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize
+  href: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html#UBP_Scripts_UBPServices_Audio_AudioSourcesPool_Initialize
+  name: Initialize
+  nameWithType: AudioSourcesPool.Initialize
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.Initialize
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource
+  href: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html#UBP_Scripts_UBPServices_Audio_AudioSourcesPool_GetAudioSource
+  name: GetAudioSource
+  nameWithType: AudioSourcesPool.GetAudioSource
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.GetAudioSource
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource
+  href: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html#UBP_Scripts_UBPServices_Audio_AudioSourcesPool_ReturnAudioSource_UnityEngine_AudioSource_
+  name: ReturnAudioSource
+  nameWithType: AudioSourcesPool.ReturnAudioSource
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReturnAudioSource
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay*
+  commentId: Overload:UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay
+  href: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html#UBP_Scripts_UBPServices_Audio_AudioSourcesPool_ReleaseAfterPlay_UnityEngine_AudioSource_
+  name: ReleaseAfterPlay
+  nameWithType: AudioSourcesPool.ReleaseAfterPlay
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.ReleaseAfterPlay

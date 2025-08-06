@@ -1,0 +1,175 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  commentId: T:UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  id: ConsoleView
+  parent: UBP.Scripts.UBPServices.Debugs.Console
+  children:
+  - UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup(System.Action)
+  langs:
+  - csharp
+  - vb
+  name: ConsoleView
+  nameWithType: ConsoleView
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: ConsoleView
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleView.cs
+    startLine: 10
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Manages the main in-game debug console UI, including input, suggestions, log rendering, and state persistence.
+  example: []
+  syntax:
+    content: 'public class ConsoleView : MonoBehaviour'
+    content.vb: Public Class ConsoleView Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup(System.Action)
+  commentId: M:UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup(System.Action)
+  id: Setup(System.Action)
+  parent: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView
+  langs:
+  - csharp
+  - vb
+  name: Setup(Action)
+  nameWithType: ConsoleView.Setup(Action)
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup(System.Action)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleView.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Setup
+    path: ../Assets/UBP/Scripts/UBPServices/Debugs/Console/ConsoleView.cs
+    startLine: 85
+  namespace: UBP.Scripts.UBPServices.Debugs.Console
+  summary: Registers a callback to be invoked when the console is closed.
+  example: []
+  syntax:
+    content: public void Setup(Action onCloseCallback)
+    parameters:
+    - id: onCloseCallback
+      type: System.Action
+      description: Callback to invoke on console close.
+    content.vb: Public Sub Setup(onCloseCallback As Action)
+  overload: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup*
+references:
+- uid: UBP.Scripts.UBPServices.Debugs.Console
+  commentId: N:UBP.Scripts.UBPServices.Debugs.Console
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Debugs.Console
+  nameWithType: UBP.Scripts.UBPServices.Debugs.Console
+  fullName: UBP.Scripts.UBPServices.Debugs.Console
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs
+    name: Debugs
+    href: UBP.Scripts.UBPServices.Debugs.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Debugs.Console
+    name: Console
+    href: UBP.Scripts.UBPServices.Debugs.Console.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup*
+  commentId: Overload:UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup
+  href: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.html#UBP_Scripts_UBPServices_Debugs_Console_ConsoleView_Setup_System_Action_
+  name: Setup
+  nameWithType: ConsoleView.Setup
+  fullName: UBP.Scripts.UBPServices.Debugs.Console.ConsoleView.Setup
+- uid: System.Action
+  commentId: T:System.Action
+  parent: System
+  isExternal: true
+  name: Action
+  nameWithType: Action
+  fullName: System.Action

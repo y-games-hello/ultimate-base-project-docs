@@ -1,0 +1,234 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Updaters.Updater
+  commentId: T:UBP.Scripts.UBPServices.Updaters.Updater
+  id: Updater
+  parent: UBP.Scripts.UBPServices.Updaters
+  children:
+  - UBP.Scripts.UBPServices.Updaters.Updater.Register(System.Object)
+  - UBP.Scripts.UBPServices.Updaters.Updater.Unregister(System.Object)
+  langs:
+  - csharp
+  - vb
+  name: Updater
+  nameWithType: Updater
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater
+  type: Class
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/Updater.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Updater
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/Updater.cs
+    startLine: 9
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    Central update dispatcher used by the <xref href="UBP.Scripts.UBPServices.Updaters.UpdaterService" data-throw-if-not-resolved="false"></xref>.
+
+    Allows non-MonoBehaviour objects to hook into Unity's Update, FixedUpdate, and LateUpdate cycles.
+  example: []
+  syntax:
+    content: 'public class Updater : MonoBehaviour'
+    content.vb: Public Class Updater Inherits MonoBehaviour
+  inheritance:
+  - System.Object
+  - UnityEngine.Object
+  - UnityEngine.Component
+  - UnityEngine.Behaviour
+  - UnityEngine.MonoBehaviour
+- uid: UBP.Scripts.UBPServices.Updaters.Updater.Register(System.Object)
+  commentId: M:UBP.Scripts.UBPServices.Updaters.Updater.Register(System.Object)
+  id: Register(System.Object)
+  parent: UBP.Scripts.UBPServices.Updaters.Updater
+  langs:
+  - csharp
+  - vb
+  name: Register(object)
+  nameWithType: Updater.Register(object)
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater.Register(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/Updater.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Register
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/Updater.cs
+    startLine: 147
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: >-
+    Registers an object to receive update calls.
+
+    The object may implement one or more of <xref href="UBP.Scripts.UBPServices.Updaters.IUpdatable" data-throw-if-not-resolved="false"></xref>, <xref href="UBP.Scripts.UBPServices.Updaters.IFixedUpdatable" data-throw-if-not-resolved="false"></xref>, or <xref href="UBP.Scripts.UBPServices.Updaters.ILateUpdatable" data-throw-if-not-resolved="false"></xref>.
+  example: []
+  syntax:
+    content: public void Register(object updateRequester)
+    parameters:
+    - id: updateRequester
+      type: System.Object
+      description: The object to register.
+    content.vb: Public Sub Register(updateRequester As Object)
+  overload: UBP.Scripts.UBPServices.Updaters.Updater.Register*
+  nameWithType.vb: Updater.Register(Object)
+  fullName.vb: UBP.Scripts.UBPServices.Updaters.Updater.Register(Object)
+  name.vb: Register(Object)
+- uid: UBP.Scripts.UBPServices.Updaters.Updater.Unregister(System.Object)
+  commentId: M:UBP.Scripts.UBPServices.Updaters.Updater.Unregister(System.Object)
+  id: Unregister(System.Object)
+  parent: UBP.Scripts.UBPServices.Updaters.Updater
+  langs:
+  - csharp
+  - vb
+  name: Unregister(object)
+  nameWithType: Updater.Unregister(object)
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater.Unregister(object)
+  type: Method
+  source:
+    remote:
+      path: Assets/UBP/Scripts/UBPServices/Updaters/Updater.cs
+      branch: main
+      repo: https://github.com/y-games-hello/ultimate-base-project.git
+    id: Unregister
+    path: ../Assets/UBP/Scripts/UBPServices/Updaters/Updater.cs
+    startLine: 159
+  namespace: UBP.Scripts.UBPServices.Updaters
+  summary: Unregisters an object from receiving update calls.
+  example: []
+  syntax:
+    content: public void Unregister(object updateRequester)
+    parameters:
+    - id: updateRequester
+      type: System.Object
+      description: The object to unregister.
+    content.vb: Public Sub Unregister(updateRequester As Object)
+  overload: UBP.Scripts.UBPServices.Updaters.Updater.Unregister*
+  nameWithType.vb: Updater.Unregister(Object)
+  fullName.vb: UBP.Scripts.UBPServices.Updaters.Updater.Unregister(Object)
+  name.vb: Unregister(Object)
+references:
+- uid: UBP.Scripts.UBPServices.Updaters.UpdaterService
+  commentId: T:UBP.Scripts.UBPServices.Updaters.UpdaterService
+  href: UBP.Scripts.UBPServices.Updaters.UpdaterService.html
+  name: UpdaterService
+  nameWithType: UpdaterService
+  fullName: UBP.Scripts.UBPServices.Updaters.UpdaterService
+- uid: UBP.Scripts.UBPServices.Updaters
+  commentId: N:UBP.Scripts.UBPServices.Updaters
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Updaters
+  nameWithType: UBP.Scripts.UBPServices.Updaters
+  fullName: UBP.Scripts.UBPServices.Updaters
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Updaters
+    name: Updaters
+    href: UBP.Scripts.UBPServices.Updaters.html
+- uid: System.Object
+  commentId: T:System.Object
+  parent: System
+  isExternal: true
+  name: object
+  nameWithType: object
+  fullName: object
+  nameWithType.vb: Object
+  fullName.vb: Object
+  name.vb: Object
+- uid: UnityEngine.Object
+  commentId: T:UnityEngine.Object
+  parent: UnityEngine
+  isExternal: true
+  name: Object
+  nameWithType: Object
+  fullName: UnityEngine.Object
+- uid: UnityEngine.Component
+  commentId: T:UnityEngine.Component
+  parent: UnityEngine
+  isExternal: true
+  name: Component
+  nameWithType: Component
+  fullName: UnityEngine.Component
+- uid: UnityEngine.Behaviour
+  commentId: T:UnityEngine.Behaviour
+  parent: UnityEngine
+  isExternal: true
+  name: Behaviour
+  nameWithType: Behaviour
+  fullName: UnityEngine.Behaviour
+- uid: UnityEngine.MonoBehaviour
+  commentId: T:UnityEngine.MonoBehaviour
+  parent: UnityEngine
+  isExternal: true
+  name: MonoBehaviour
+  nameWithType: MonoBehaviour
+  fullName: UnityEngine.MonoBehaviour
+- uid: System
+  commentId: N:System
+  isExternal: true
+  name: System
+  nameWithType: System
+  fullName: System
+- uid: UnityEngine
+  commentId: N:UnityEngine
+  isExternal: true
+  name: UnityEngine
+  nameWithType: UnityEngine
+  fullName: UnityEngine
+- uid: UBP.Scripts.UBPServices.Updaters.IUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IUpdatable
+  parent: UBP.Scripts.UBPServices.Updaters
+  href: UBP.Scripts.UBPServices.Updaters.IUpdatable.html
+  name: IUpdatable
+  nameWithType: IUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+  href: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable.html
+  name: IFixedUpdatable
+  nameWithType: IFixedUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.IFixedUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+  commentId: T:UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+  href: UBP.Scripts.UBPServices.Updaters.ILateUpdatable.html
+  name: ILateUpdatable
+  nameWithType: ILateUpdatable
+  fullName: UBP.Scripts.UBPServices.Updaters.ILateUpdatable
+- uid: UBP.Scripts.UBPServices.Updaters.Updater.Register*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.Updater.Register
+  href: UBP.Scripts.UBPServices.Updaters.Updater.html#UBP_Scripts_UBPServices_Updaters_Updater_Register_System_Object_
+  name: Register
+  nameWithType: Updater.Register
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater.Register
+- uid: UBP.Scripts.UBPServices.Updaters.Updater.Unregister*
+  commentId: Overload:UBP.Scripts.UBPServices.Updaters.Updater.Unregister
+  href: UBP.Scripts.UBPServices.Updaters.Updater.html#UBP_Scripts_UBPServices_Updaters_Updater_Unregister_System_Object_
+  name: Unregister
+  nameWithType: Updater.Unregister
+  fullName: UBP.Scripts.UBPServices.Updaters.Updater.Unregister

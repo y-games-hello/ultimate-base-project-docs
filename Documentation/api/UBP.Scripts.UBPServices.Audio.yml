@@ -1,0 +1,74 @@
+### YamlMime:ManagedReference
+items:
+- uid: UBP.Scripts.UBPServices.Audio
+  commentId: N:UBP.Scripts.UBPServices.Audio
+  id: UBP.Scripts.UBPServices.Audio
+  children:
+  - UBP.Scripts.UBPServices.Audio.AudioService
+  - UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  - UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  langs:
+  - csharp
+  - vb
+  name: UBP.Scripts.UBPServices.Audio
+  nameWithType: UBP.Scripts.UBPServices.Audio
+  fullName: UBP.Scripts.UBPServices.Audio
+  type: Namespace
+references:
+- uid: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+  href: UBP.Scripts.UBPServices.Audio.AudioSourcesPool.html
+  name: AudioSourcesPool
+  nameWithType: AudioSourcesPool
+  fullName: UBP.Scripts.UBPServices.Audio.AudioSourcesPool
+- uid: UBP.Scripts.UBPServices.Audio.AudioService
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioService
+  href: UBP.Scripts.UBPServices.Audio.AudioService.html
+  name: AudioService
+  nameWithType: AudioService
+  fullName: UBP.Scripts.UBPServices.Audio.AudioService
+- uid: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  commentId: T:UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+  parent: UBP.Scripts.UBPServices.Audio
+  href: UBP.Scripts.UBPServices.Audio.AudioServiceConfig.html
+  name: AudioServiceConfig
+  nameWithType: AudioServiceConfig
+  fullName: UBP.Scripts.UBPServices.Audio.AudioServiceConfig
+- uid: UBP.Scripts.UBPServices.Audio
+  commentId: N:UBP.Scripts.UBPServices.Audio
+  href: UBP.html
+  name: UBP.Scripts.UBPServices.Audio
+  nameWithType: UBP.Scripts.UBPServices.Audio
+  fullName: UBP.Scripts.UBPServices.Audio
+  spec.csharp:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
+  spec.vb:
+  - uid: UBP
+    name: UBP
+    href: UBP.html
+  - name: .
+  - uid: UBP.Scripts
+    name: Scripts
+    href: UBP.Scripts.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices
+    name: UBPServices
+    href: UBP.Scripts.UBPServices.html
+  - name: .
+  - uid: UBP.Scripts.UBPServices.Audio
+    name: Audio
+    href: UBP.Scripts.UBPServices.Audio.html
