@@ -1,0 +1,186 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#128230; Application Events Service | Ultimate Base Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#128230; Application Events Service | Ultimate Base Project ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="-application-events-service">📦 Application Events Service</h1>
+
+<p>The <strong>Application Events Service</strong> provides a centralized, non-MonoBehaviour way to react to Unity’s core lifecycle events — such as <strong>pause</strong>, <strong>focus</strong>, <strong>quit</strong>, and <strong>destroy</strong> — from any part of your codebase.</p>
+<p>This is particularly useful when you want backend systems (services, managers, etc.) to respond to application-level events <strong>without needing a MonoBehaviour</strong>.</p>
+<hr>
+<h2 id="-features">✅ Features</h2>
+<ul>
+<li>Listen to <strong>OnApplicationPause</strong>, <strong>OnApplicationFocus</strong>, <strong>OnApplicationQuit</strong>, and <strong>OnDestroy</strong> from any system.</li>
+<li>Events are forwarded through a persistent dispatcher object.</li>
+<li>Works across all scenes — no need to add MonoBehaviours manually.</li>
+</ul>
+<hr>
+<h2 id="-example-usage">🧪 Example Usage</h2>
+<pre><code class="lang-csharp">public class SampleClass
+{
+    public SampleClass()
+    {
+        var appEvents = Services.Get&lt;ApplicationEventsService&gt;();
+
+        appEvents.OnApplicationPause += paused =&gt; Debug.Log($&quot;Paused: {paused}&quot;);
+        appEvents.OnApplicationFocus += focused =&gt; Debug.Log($&quot;Focused: {focused}&quot;);
+        appEvents.OnApplicationQuit += () =&gt; Debug.Log(&quot;Application is quitting&quot;);
+        appEvents.OnApplicationDestroy += () =&gt; Debug.Log(&quot;App destroy lifecycle event&quot;);
+    }
+}
+</code></pre><hr>
+<h2 id="-event-reference">🔄 Event Reference</h2>
+<table>
+<thead>
+<tr>
+<th>Event</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>OnApplicationPause</code></td>
+<td>Invoked when the application is paused or resumed.</td>
+</tr>
+<tr>
+<td><code>OnApplicationFocus</code></td>
+<td>Invoked when the application gains or loses focus.</td>
+</tr>
+<tr>
+<td><code>OnApplicationQuit</code></td>
+<td>Invoked right before the application quits.</td>
+</tr>
+<tr>
+<td><code>OnApplicationDestroy</code></td>
+<td>Invoked when the dispatcher GameObject is destroyed.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h2 id="-internal-structure">🧱 Internal Structure</h2>
+<h3 id="applicationeventsservicecs">ApplicationEventsService.cs</h3>
+<ul>
+<li>A pure C# class implementing <code>IService</code></li>
+<li>Exposes <code>Action</code> delegates for Unity lifecycle hooks</li>
+<li>Instantiates a dispatcher GameObject and makes it persistent</li>
+</ul>
+<h3 id="applicationeventsdispatchercs">ApplicationEventsDispatcher.cs</h3>
+<ul>
+<li>A hidden MonoBehaviour attached at runtime</li>
+<li>Listens to Unity lifecycle events and routes them to the service</li>
+<li>Never needs to be manually placed in scenes</li>
+</ul>
+<hr>
+<h2 id="-best-practices">🧼 Best Practices</h2>
+<ul>
+<li>Use this service when you want to react to app-level events from systems that don&#39;t derive from <code>MonoBehaviour</code>.</li>
+<li>In case when you want to handle these events from single and centralized place.</li>
+</ul>
+<hr>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ultimate Base Project
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

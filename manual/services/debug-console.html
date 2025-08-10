@@ -1,0 +1,218 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#128030; Debug Service | Ultimate Base Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#128030; Debug Service | Ultimate Base Project ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="-debug-service">🐞 Debug Service</h1>
+
+<p>The <strong>Debug Service</strong> provides powerful runtime debugging tools. It captures logs, manages an in-game console, and supports registration of custom console commands.</p>
+<hr>
+<h2 id="-features">✅ Features</h2>
+<ul>
+<li>Captures <strong>Unity log messages</strong></li>
+<li>Stores logs in a <strong>bounded queue</strong></li>
+<li>Displays logs in a <strong>persistent in-game console UI</strong></li>
+<li>Registers and executes <strong>custom console commands</strong></li>
+<li>Toggleable with a keybind (e.g. <code>~</code>)</li>
+<li>Persists console window position and size across sessions</li>
+</ul>
+<hr>
+<h1 id="-creating-and-using-a-custom-console-command">🛠️ Creating and Using a Custom Console Command</h1>
+<p>The in-game debug console allows you to register and run your own commands for testing, debugging, or cheat functionality.</p>
+<p>Follow these steps to add a custom command to the console:</p>
+<hr>
+<h2 id="1-create-a-new-command-class">1. Create a New Command Class</h2>
+<p>Create a new class that inherits from <code>ConsoleCommand</code> and implement the <code>Execute</code> and <code>Undo</code> methods.</p>
+<pre><code class="lang-csharp">using System;
+using UnityEngine;
+using UBP.Scripts.UBPServices.Debugs.ConsoleCommands;
+
+public class PrintNameCommand : ConsoleCommand
+{
+    public PrintNameCommand(Type[] requiredArguments) : base(requiredArguments) {}
+
+    public override void Execute(object[] arguments)
+    {
+        var name = arguments[0] as string;
+        Debug.Log($&quot;Hello, {name}!&quot;);
+    }
+
+    public override void Undo() { }
+}
+</code></pre><ul>
+<li>The constructor defines what argument types are required.</li>
+<li>The <code>Name</code> is automatically taken from the class name (<code>PrintNameCommand</code>).</li>
+<li>The <code>Execute</code> method receives user input as <code>object[]</code>.</li>
+</ul>
+<hr>
+<h2 id="2-register-the-command-in-code">2. Register the Command in Code</h2>
+<p>Register your command so the console can recognize it:</p>
+<pre><code class="lang-csharp">Services.Get&lt;DebugService&gt;().RegisterCommand(new PrintNameCommand(new[] { typeof(string) }));
+</code></pre><p>Place this call during initialization (e.g. in a MonoBehaviour&#39;s <code>Start()</code> or a service setup phase).</p>
+<hr>
+<h2 id="3-execute-the-command-from-the-console-ui">3. Execute the Command from the Console UI</h2>
+<ul>
+<li>Enter Play Mode and open the debug console (default: <code>~</code> key).</li>
+<li>Type your command using the expected arguments:</li>
+</ul>
+<pre><code>PrintNameCommand John
+</code></pre><p>You should see this in the Unity Console:</p>
+<pre><code>Hello, John!
+</code></pre><hr>
+<h2 id="-notes">💡 Notes</h2>
+<ul>
+<li>Only active in <strong>development builds</strong> (<code>Debug.isDebugBuild</code>)</li>
+<li>The command system automatically checks the number and type of arguments.</li>
+<li>You can define any number of parameters using different types (<code>int</code>, <code>bool</code>, <code>float</code>, etc.).</li>
+<li><code>Undo()</code> is optional and can be left empty if not needed.</li>
+</ul>
+<p>This system is ideal for:</p>
+<ul>
+<li>Enabling cheat/debug tools</li>
+<li>Quickly simulating gameplay events</li>
+<li>Testing systems without building UI</li>
+</ul>
+<h2 id="-configuration">⚙️ Configuration</h2>
+<pre><code>Window &gt; YGames &gt; Ultimate Base Project &gt; Debug Service
+</code></pre><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>MaxLogMessagesCapacity</code></td>
+<td>Max number of logs to store in memory</td>
+</tr>
+<tr>
+<td><code>ConsoleCanvasPrefab</code></td>
+<td>Prefab shown when toggling console</td>
+</tr>
+<tr>
+<td><code>OpenConsoleKey</code></td>
+<td>KeyCode to toggle the console</td>
+</tr>
+<tr>
+<td><code>LogMessageColor</code></td>
+<td>Log message color</td>
+</tr>
+<tr>
+<td><code>WarningMessageColor</code></td>
+<td>Warning message color</td>
+</tr>
+<tr>
+<td><code>ErrorMessageColor</code></td>
+<td>Error message color</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ultimate Base Project
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>

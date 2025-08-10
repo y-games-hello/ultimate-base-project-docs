@@ -5,11 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Class EditorApplicationEntry
-   | Ultimate Base Project </title>
+    <title>Getting Started | Ultimate Base Project </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Class EditorApplicationEntry
-   | Ultimate Base Project ">
+    <meta name="title" content="Getting Started | Ultimate Base Project ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -78,27 +76,57 @@
         </div>
         <div class="article row grid-right">
           <div class="col-md-10">
-            <article class="content wrap" id="_content" data-uid="UBP.Scripts.Editor.EditorApplicationEntry">
-  
-  
-  <h1 id="UBP_Scripts_Editor_EditorApplicationEntry" data-uid="UBP.Scripts.Editor.EditorApplicationEntry" class="text-break">Class EditorApplicationEntry
-  </h1>
-  <div class="markdown level0 summary"><p>Automatically sets the play mode start scene in the Unity Editor to the first scene listed in build settings.
-Ensures a consistent and controlled entry point for testing and development.</p>
-</div>
-  <div class="markdown level0 conceptual"></div>
-  <div class="inheritance">
-    <h5>Inheritance</h5>
-    <div class="level0"><span class="xref">object</span></div>
-    <div class="level1"><span class="xref">EditorApplicationEntry</span></div>
-  </div>
-  <h6><strong>Namespace</strong>: <span class="xref">UBP</span><a class="xref" href="UBP.Scripts.html">Scripts</a><a class="xref" href="UBP.Scripts.Editor.html">Editor</a></h6>
-  <h6><strong>Assembly</strong>: .dll</h6>
-  <h5 id="UBP_Scripts_Editor_EditorApplicationEntry_syntax">Syntax</h5>
-  <div class="codewrapper">
-    <pre><code class="lang-csharp hljs">[InitializeOnLoad]
-public static class EditorApplicationEntry</code></pre>
-  </div>
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="getting-started">Getting Started</h1>
+
+<h2 id="-requirements">✅ Requirements</h2>
+<ul>
+<li>Unity 2021.3 or newer</li>
+</ul>
+<h2 id="-quick-start">🚀 Quick Start</h2>
+<p>Follow these steps to get the <strong>Ultimate Base Project (UBP)</strong> up and running in just a few minutes.</p>
+<hr>
+<h3 id="1-import-the-asset">1. Import the Asset</h3>
+<p>Import <strong>Ultimate Base Project (UBP)</strong> from the Package Manager into your Unity project.</p>
+<hr>
+<h3 id="2-create-the-entry-scene">2. Create the &quot;Entry&quot; Scene</h3>
+<p>Create a new empty scene and name it:</p>
+<pre><code>Entry
+</code></pre><p>This scene will act as the bootstrapper — it&#39;s where all UBP services and configurations are initialized <strong>before</strong> your actual game begins.</p>
+<hr>
+<h3 id="3-add-the-entry-scene-to-build-settings">3. Add the Entry Scene to Build Settings</h3>
+<ul>
+<li>Go to <code>File &gt; Build Settings</code></li>
+<li>Click <strong>&quot;Add Open Scenes&quot;</strong> to include the current <code>Entry</code> scene</li>
+<li>Make sure it’s the <strong>first</strong> scene in the list (index <code>0</code>)</li>
+</ul>
+<hr>
+<h3 id="4-open-the-ubp-settings-window">4. Open the UBP Settings Window</h3>
+<p>Navigate to:</p>
+<pre><code>Window &gt; YGames &gt; Ultimate Base Project
+</code></pre><p>This opens the centralized UBP configuration window.</p>
+<hr>
+<h3 id="5-set-your-games-intro-scene">5. Set Your Game&#39;s Intro Scene</h3>
+<ul>
+<li>In the UBP Settings window, select the <strong>Scene Service</strong> tab</li>
+<li>Set the <strong>&quot;Game Intro Scene&quot;</strong> field to the name of your first real gameplay scene (e.g. <code>MainMenu</code>, <code>Gameplay</code>, etc.)</li>
+<li>UBP will automatically load this scene after initializing all services and configuration</li>
+</ul>
+<hr>
+<h3 id="6-start-using-ubp-services">6. Start Using UBP Services</h3>
+<p>Once the Entry scene initializes UBP, you can immediately call core services from anywhere in your code:</p>
+<pre><code class="lang-csharp">Audio.Play(&quot;ButtonClick&quot;);
+SaveSystem.Save();
+Scenes.Load(&quot;Level2&quot;);
+</code></pre><hr>
+<p>You’re now ready to build your game on top of a solid, service-driven foundation 🚀</p>
+<h2 id="-service-based-architecture">🧩 Service-Based Architecture</h2>
+<p>UBP is built around a <strong>modular service system</strong>. Every major system (Audio, Save, Scenes, etc.) is managed as a service and accessible from anywhere in the project.</p>
+<p>You can access services directly from the <strong>Services Locator</strong>.</p>
+<h3 id="example-custom-access-via-locator">Example: Custom Access via Locator</h3>
+<pre><code class="lang-csharp">Services.Get&lt;SaveService&gt;().SaveGame();
+</code></pre><p>You can also define and register your own services easily. See <a href="create-service.html">Create Service</a> for more info.</p>
+<hr>
 </article>
           </div>
           

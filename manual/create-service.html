@@ -5,9 +5,9 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-    <title>Etiam nantemque exul | Ultimate Base Project </title>
+    <title>&#128736; How to Create a Service in UBP | Ultimate Base Project </title>
     <meta name="viewport" content="width=device-width">
-    <meta name="title" content="Etiam nantemque exul | Ultimate Base Project ">
+    <meta name="title" content="&#128736; How to Create a Service in UBP | Ultimate Base Project ">
     <meta name="generator" content="docfx 2.59.4.0">
     
     <link rel="shortcut icon" href="../favicon.ico">
@@ -77,75 +77,77 @@
         <div class="article row grid-right">
           <div class="col-md-10">
             <article class="content wrap" id="_content" data-uid="">
-<h1 id="etiam-nantemque-exul">Etiam nantemque exul</h1>
+<h1 id="-how-to-create-a-service-in-ubp">🛠 How to Create a Service in UBP</h1>
 
-<h2 id="cum-tulit">Cum tulit</h2>
-<p>Lorem markdownum quos stimulosque <strong>altos</strong>. Putat nubes molle Troiae vero dea;
-nostraque <a href="http://www.tibi.io/">plurima</a>. Vos de mihi, credidit: salibus et
-iacuit, volvitur sunt unda fronti deriguisse <strong>refert</strong>.</p>
-<h2 id="sumpsisse-viso">Sumpsisse viso</h2>
-<p>Nubila nomine. Purpura se o et causa parva ripas, adsonat saevaque; quid modo
-ambo et venere voveo. Sine et esse, illa tempore, sive tibi roseo, ministerio
-altos. Trepident medicamine, primasque cum et peregit
-<a href="http://www.vetustas.net/">dapibusque</a> quoslibet hominis quoque insula.
-Tepentibus ut Cecropios ab turba, est auro ferventi aliter duratos feres
-differtis Ausoniis potes, non noctis Laertaque iuvenes.</p>
-<h2 id="caelumque-vestigia">Caelumque vestigia</h2>
-<p>Et promissa fila sentiet leges; Phrygiae et levatus ferire? Salutifer coniugis
-fierent ante fecissent post vultumque ultima, per radios currere; tandem.
-<a href="http://www.est-adicit.com/licet.html">Fuerat</a> qua, ne foedera reformatus nunc
-diu dea audet nonne.</p>
-<blockquote><p>Ut utinam mitia tenuerunt movent spectans Mavortis nulla ite, somnos exsiccata
-dixit Aeetias. Binas Trinacriam album ex ipse. Quoque <strong>una utraque tardius</strong>
-placetque gerere; mariti sed dare ludunt memorante Delphice corpora. Caret
-quantum intellegat venis gaudent eurus. Et suos crista; has et ferarum quid
-audit omine; mea cum praemia quae duris, suspicor.</p>
+<p>This guide explains how to create your own UBP service, either:</p>
+<ul>
+<li><strong>Without configuration</strong> — simplest path</li>
+<li><strong>With configuration</strong> — editable via UBP Settings Window</li>
+</ul>
+<p>All services are automatically discovered and registered when the game starts.</p>
+<blockquote><p>⚠️ <strong>Important:</strong> All service classes <strong>must</strong> have a <strong>parameterless constructor</strong>.</p>
 </blockquote>
-<h2 id="adflati-qui">Adflati qui</h2>
-<p>Spiro conata supprimit diemque; ora oblitus ensem alti non quo lacrimis ferunt,
-<strong>ageret</strong> Cebrenida rutilis delendaque? Terras lata modus: nec fas, misi utque
-adpositis Iunonis. Fide vidit, ferox Schoeneia mundi, voce, tellus pariterque
-pedum, <strong>sic Celadon</strong> securior corpora partesque posito.</p>
-<blockquote><p>Potest faxo unda pendulaque ille rostro, haesit pars: formidine captat,
-viseret simulaverat! Sequi est peragit flumineae pallent simulatas formae
-avulsa, imagine undis; formam. Et nec sed adeunt, huic aequa et ignes nec,
-medere terram. Move ipsum abnuat retemptat retinebat duabus diu Iovi est
-pluma. <strong>Tecum non</strong> deducit Pelops Inachus: arcet aliquemque, regia telo.</p>
-</blockquote>
-<h2 id="tollens-altore-nec-semel-qui-voce-palatinae">Tollens altore nec semel qui voce Palatinae</h2>
-<p>Apertis et <strong>dei duo inquit</strong>; luna secundo, fervida terret. In haec dextra
-septima Tydides tibi: congelat hospes nativum radice <strong>tegumenque</strong> membris
-Hesperio ne Libys, est vocabula siqua. Dumque <a href="http://peparethos-ultus.org/">stet
-mulces</a>, ut fontem dea atricolor, est pronos,
-clarissimus poterat cum intrare sidere templi.</p>
-<pre><code>cut_metadata(whitelistSequenceUnit.thick.of_bezel_cdma(
-        address_suffix_troubleshooting), sram_trojan(4, hdmi_network - 1));
-flash.apache -= web_gps_plug;
-if (offline.dac_bridge(scrollEbookRom,
-        parameter.internal_target_superscalar(2)) &lt; qwerty + 2 -
-        ipvCgiContextual) {
-    certificateIdeAsp = overclocking + app;
-    supplyCard = siteRaster;
+<hr>
+<h2 id="1-create-a-basic-configless-service">1️⃣ Create a Basic (Configless) Service</h2>
+<p>If your service doesn’t need any editable settings:</p>
+<pre><code class="lang-csharp">using System.Threading.Tasks;
+
+public class SampleService : IService
+{
+    public SampleService() { } // Parameterless constructor required
+
+    public Task InitializeAsync()
+    {
+        // Initialization logic here
+        return Task.CompletedTask;
+    }
 }
-</code></pre><p>Sagitta curvum quoque petisti opibusque proximitas in, illa vestrum, mihi domum
-nescia flexit sacra in. Magni <em>vive sim crescente</em> causam saxo voluit, mens,
-quod. Tela <em>ter ulterius similis</em> illos nato refugit ait verbaque nec fatigatum
-penates iaculatricemque cecidit pinnas, cum. Misso contigit <em>caelo</em> dedissent
-lumina; nympha ad vobis occidat, malo sacra utrumque cunctos Diomedeos addita.
-Virgineus autumnos, ait mitissima curru: fuit sed fessi se habebat hactenus
-Ultor; meus.</p>
+</code></pre><p>✅ That’s it — the framework will automatically create and register it.</p>
+<hr>
+<h2 id="2-create-a-configured-service-with-ubp-settings-support">2️⃣ Create a Configured Service (with UBP Settings support)</h2>
+<p>If you want your service to have editable settings in the <strong>UBP Settings Window</strong>:</p>
+<h3 id="step-21--create-the-config-scriptableobject">Step 2.1 — Create the config ScriptableObject</h3>
+<pre><code class="lang-csharp">using UnityEngine;
+
+[CreateAssetMenu(fileName = nameof(SampleServiceConfig), menuName = &quot;Configs/Services/&quot; + nameof(SampleServiceConfig))]
+public class SampleServiceConfig : ScriptableObject
+{
+    [field: SerializeField] public string ExampleSetting { get; private set; } = &quot;Default value&quot;;
+}
+</code></pre><ul>
+<li>This asset will hold all editable settings for your service.</li>
+<li>You can create it in the Editor via <strong>Assets → Create → Configs → Services → SampleServiceConfig</strong>.</li>
+</ul>
+<hr>
+<h3 id="step-22--create-the-service-class">Step 2.2 — Create the service class</h3>
+<pre><code class="lang-csharp">using System.Threading.Tasks;
+
+public class SampleService : ConfiguredService&lt;SampleServiceConfig&gt;
+{
+    public SampleService() { } // Parameterless constructor required
+
+    // Returns the active config instance for this service
+    public override SampleServiceConfig ServiceConfig =&gt;
+        ConfigStorage.GetConfig&lt;SampleServiceConfig&gt;();
+
+    public override Task InitializeAsync()
+    {
+        // Use ServiceConfig.ExampleSetting here
+        return Task.CompletedTask;
+    }
+}
+</code></pre><hr>
+<h2 id="3-framework-behavior">3️⃣ Framework Behavior</h2>
+<ul>
+<li>Any class implementing <strong><code>IService</code></strong> (including <code>ConfiguredService&lt;TConfig&gt;</code>) will be <strong>automatically registered</strong> and <strong>instantiated</strong>.</li>
+<li><code>InitializeAsync()</code> is called after creation — do all setup work here.</li>
+<li>Do <strong>not</strong> put heavy logic in the constructor.</li>
+</ul>
 </article>
           </div>
           
           <div class="hidden-sm col-md-2" role="complementary">
             <div class="sideaffix">
-              <div class="contribution">
-                <ul class="nav">
-                  <li>
-                    <a href="https://github.com/y-games-hello/ultimate-base-project-docs/blob/main/Documentation/manual/etiam.md/#L1" class="contribution-link">Improve this Doc</a>
-                  </li>
-                </ul>
-              </div>
               <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
                 <h5>In This Article</h5>
                 <div></div>

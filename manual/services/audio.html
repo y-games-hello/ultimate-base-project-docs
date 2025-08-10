@@ -1,0 +1,177 @@
+﻿<!DOCTYPE html>
+<!--[if IE]><![endif]-->
+<html>
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>&#128266; Audio Service | Ultimate Base Project </title>
+    <meta name="viewport" content="width=device-width">
+    <meta name="title" content="&#128266; Audio Service | Ultimate Base Project ">
+    <meta name="generator" content="docfx 2.59.4.0">
+    
+    <link rel="shortcut icon" href="../../favicon.ico">
+    <link rel="stylesheet" href="../../styles/docfx.vendor.css">
+    <link rel="stylesheet" href="../../styles/docfx.css">
+    <link rel="stylesheet" href="../../styles/main.css">
+    <meta property="docfx:navrel" content="../../toc.html">
+    <meta property="docfx:tocrel" content="../toc.html">
+    
+    <meta property="docfx:rel" content="../../">
+    
+  </head>
+  <body data-spy="scroll" data-target="#affix" data-offset="120">
+    <div id="wrapper">
+      <header>
+        
+        <nav id="autocollapse" class="navbar navbar-inverse ng-scope" role="navigation">
+          <div class="container">
+            <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+              </button>
+              
+              <a class="navbar-brand" href="../../index.html">
+                <img id="logo" class="svg" src="../../logo.svg" alt="">
+              </a>
+            </div>
+            <div class="collapse navbar-collapse" id="navbar">
+              <form class="navbar-form navbar-right" role="search" id="search">
+                <div class="form-group">
+                  <input type="text" class="form-control" id="search-query" placeholder="Search" autocomplete="off">
+                </div>
+              </form>
+            </div>
+          </div>
+        </nav>
+        
+        <div class="subnav navbar navbar-default">
+          <div class="container hide-when-search" id="breadcrumb">
+            <ul class="breadcrumb">
+              <li></li>
+            </ul>
+          </div>
+        </div>
+      </header>
+      <div class="container body-content">
+        
+        <div id="search-results">
+          <div class="search-list">Search Results for <span></span></div>
+          <div class="sr-items">
+            <p><i class="glyphicon glyphicon-refresh index-loading"></i></p>
+          </div>
+          <ul id="pagination" data-first="First" data-prev="Previous" data-next="Next" data-last="Last"></ul>
+        </div>
+      </div>
+      <div role="main" class="container body-content hide-when-search">
+        
+        <div class="sidenav hide-when-search">
+          <a class="btn toc-toggle collapse" data-toggle="collapse" href="#sidetoggle" aria-expanded="false" aria-controls="sidetoggle">Show / Hide Table of Contents</a>
+          <div class="sidetoggle collapse" id="sidetoggle">
+            <div id="sidetoc"></div>
+          </div>
+        </div>
+        <div class="article row grid-right">
+          <div class="col-md-10">
+            <article class="content wrap" id="_content" data-uid="">
+<h1 id="-audio-service">🔊 Audio Service</h1>
+
+<p>The <strong>Audio Service</strong> provides a centralized, pooled system for playing <strong>sound effects (SFX)</strong> and <strong>music</strong> across your game. It supports volume control through Unity’s built-in <strong>AudioMixer</strong>, and handles audio source reuse to avoid unnecessary allocations and runtime overhead.</p>
+<hr>
+<h2 id="-features">✅ Features</h2>
+<ul>
+<li>Plays <strong>2D/3D sound effects</strong></li>
+<li>Plays <strong>Music and SFX</strong> with volume and pitch control</li>
+<li><strong>Pooled AudioSources</strong> for optimized performance</li>
+<li>Volume control for <strong>SFX</strong> and <strong>Music</strong> via <code>AudioMixerGroup</code></li>
+<li>Works seamlessly across all scenes</li>
+</ul>
+<hr>
+<h2 id="-example-usage">🧪 Example Usage</h2>
+<h3 id="play-a-sound-effect-sfx">Play a Sound Effect (SFX)</h3>
+<pre><code class="lang-csharp">Services.Get&lt;AudioService&gt;().PlaySFX(sfxClip, transform.position);
+</code></pre><p>With custom volume and pitch:</p>
+<pre><code class="lang-csharp">Services.Get&lt;AudioService&gt;().PlaySFX(sfxClip, transform.position, volume: 0.8f, pitch: 1.2f);
+</code></pre><hr>
+<h3 id="play-music">Play Music</h3>
+<pre><code class="lang-csharp">Services.Get&lt;AudioService&gt;().PlayMusic(musicClip);
+</code></pre><p>With custom volume, pitch, and loop settings:</p>
+<pre><code class="lang-csharp">Services.Get&lt;AudioService&gt;().PlayMusic(musicClip, volume: 0.5f, pitch: 1f, loop: true);
+</code></pre><hr>
+<h3 id="set-sfx-or-music-volume-0-to-1">Set SFX or Music Volume (0 to 1)</h3>
+<pre><code class="lang-csharp">Services.Get&lt;AudioService&gt;().SetSFXVolume(0.7f);
+Services.Get&lt;AudioService&gt;().SetMusicVolume(0.3f);
+</code></pre><hr>
+<h2 id="-configuration">⚙️ Configuration</h2>
+<p>The service uses a <code>ScriptableObject</code> for settings:</p>
+<pre><code class="lang-csharp">[CreateAssetMenu(fileName = &quot;AudioServiceConfig&quot;, menuName = &quot;Configs/Services/AudioServiceConfig&quot;)]
+public class AudioServiceConfig : ScriptableObject
+{
+    public int AudioSourcesPoolSize = 10;
+    public AudioMixerGroup MusicAudioMixerGroup;
+    public AudioMixerGroup SFXAudioMixerGroup;
+}
+</code></pre><p>Set these values via the <strong>UBP Settings Window</strong>:</p>
+<pre><code>Window &gt; YGames &gt; Ultimate Base Project &gt; Audio Service
+</code></pre><hr>
+<h2 id="-inspector-settings">🎛️ Inspector Settings</h2>
+<table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>AudioSourcesPoolSize</code></td>
+<td>Number of <code>AudioSources</code> pre-created at startup.</td>
+</tr>
+<tr>
+<td><code>MusicAudioMixerGroup</code></td>
+<td>Mixer group used for music playback.</td>
+</tr>
+<tr>
+<td><code>SFXAudioMixerGroup</code></td>
+<td>Mixer group used for SFX playback.</td>
+</tr>
+</tbody>
+</table>
+<p>Make sure your <strong>Audio Mixer</strong> has exposed volume parameters named <code>&quot;Volume&quot;</code> to allow runtime volume adjustments.</p>
+<hr>
+</article>
+          </div>
+          
+          <div class="hidden-sm col-md-2" role="complementary">
+            <div class="sideaffix">
+              <nav class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix" id="affix">
+                <h5>In This Article</h5>
+                <div></div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      <footer>
+        <div class="grad-bottom"></div>
+        <div class="footer">
+          <div class="container">
+            <span class="pull-right">
+              <a href="#top">Back to top</a>
+            </span>
+            Ultimate Base Project
+            
+          </div>
+        </div>
+      </footer>
+    </div>
+    
+    <script type="text/javascript" src="../../styles/docfx.vendor.js"></script>
+    <script type="text/javascript" src="../../styles/docfx.js"></script>
+    <script type="text/javascript" src="../../styles/main.js"></script>
+  </body>
+</html>
