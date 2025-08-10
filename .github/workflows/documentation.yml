@@ -22,9 +22,6 @@ jobs:
       - name: Install DocFX
         run: choco install -y docfx
 
-      - name: Use README.md as index.md
-        run: copy README.md Documentation\\index.md
-
       - name: Build DocFX
         run: docfx Documentation\\docfx.json
 
