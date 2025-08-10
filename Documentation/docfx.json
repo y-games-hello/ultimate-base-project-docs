@@ -12,24 +12,24 @@
                     ]
                 }
             ],
-"references": [
-"UnityEngine.dll",
-"UnityEditor.dll",
-//"UnityEngine.UIModule.dll",
-"Unity.TextMeshPro.dll",
-"UnityEngine.UI.dll",
-//"UnityEngine.AudioModule.dll"
-],
+            "references": [
+                "UnityEngine.dll",
+                "UnityEditor.dll",
+                "Unity.TextMeshPro.dll",
+                "UnityEngine.UI.dll"
+            ],
             "globalNamespaceId": "Global",
             "filter": "filterConfig.yml",
-            "dest": "api"
+            "dest": "api",
+            "disableGitFeatures": true
         }
     ],
     "build": {
         "globalMetadata": {
             "_appTitle": "Ultimate Base Project",
             "_appFooter": "Ultimate Base Project",
-            "_enableSearch": true
+            "_enableSearch": true,
+            "_disableContribution": true
         },
         "content": [
             {
@@ -49,7 +49,8 @@
                 "src": "manual",
                 "files": [
                     "toc.yml",
-                    "*.md"
+                    "*.md",
+                    "**/*.md"
                 ],
                 "dest": "manual"
             }
