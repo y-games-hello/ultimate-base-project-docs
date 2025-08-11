@@ -8,8 +8,7 @@ This is particularly useful when you want backend systems (services, managers, e
 
 ## ✅ Features
 
-- Listen to **OnApplicationPause**, **OnApplicationFocus**, **OnApplicationQuit**, and **OnDestroy** from any system.
-- Events are forwarded through a persistent dispatcher object.
+- Listens to **OnApplicationPause**, **OnApplicationFocus**, **OnApplicationQuit**, and **OnDestroy**.
 - Works across all scenes — no need to add MonoBehaviours manually.
 
 ---
@@ -41,22 +40,6 @@ public class SampleClass
 | `OnApplicationFocus`     | Invoked when the application gains or loses focus. |
 | `OnApplicationQuit`      | Invoked right before the application quits. |
 | `OnApplicationDestroy`   | Invoked when the dispatcher GameObject is destroyed. |
-
----
-
-## 🧱 Internal Structure
-
-### ApplicationEventsService.cs
-
-- A pure C# class implementing `IService`
-- Exposes `Action` delegates for Unity lifecycle hooks
-- Instantiates a dispatcher GameObject and makes it persistent
-
-### ApplicationEventsDispatcher.cs
-
-- A hidden MonoBehaviour attached at runtime
-- Listens to Unity lifecycle events and routes them to the service
-- Never needs to be manually placed in scenes
 
 ---
 
