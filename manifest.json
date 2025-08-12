@@ -955,7 +955,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/create-service.html",
-          "hash": "VjF0ndwdchVy4DdBoG7MWwBtfajUW8zApZl8YMPYR+8="
+          "hash": "BF8TTxWqZWdp1MmA29i9QTyT+1e+IftU8gglGacAVqA="
         }
       },
       "is_incremental": false,
@@ -970,7 +970,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/getting-started.html",
-          "hash": "UtN52zIXNV8dDexZmFthGjIDStNB0UKfS+ETjIsKqRc="
+          "hash": "zAmqtYK8uIdkPHi+8Kqy6CLf8oVhFGQfzG/y/XQHb2A="
         }
       },
       "is_incremental": false,
@@ -985,7 +985,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/index.html",
-          "hash": "HJht7VHWvWK3HI5golTqqPL+LHtb4EfQSsZwwOMwnV8="
+          "hash": "XvqwEHvCsjKOHwkGmgxakIT2k4S1QsDXa1XQMH7u/1s="
         }
       },
       "is_incremental": false,
@@ -1057,7 +1057,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/services/index.html",
-          "hash": "0tSnYgUrKBj2c/UZK2x6V4+uVTjnDFzf/liAvIR69Q0="
+          "hash": "bnw4B8eDcRQCLIxCVLM6CCo9QsX2z2PbalPyZsK2wss="
         }
       },
       "is_incremental": false,
@@ -1126,7 +1126,7 @@
       "output": {
         ".html": {
           "relative_path": "manual/ubp-settings-window.html",
-          "hash": "pVGUDjQsFBUeuoOdKYm8CFb5HCEMXr5cJi+U29+R6kM="
+          "hash": "lFrbVOX3iq8wGVOSDcl/btObj+SpNX6EPJElTCvlKPI="
         }
       },
       "is_incremental": false,

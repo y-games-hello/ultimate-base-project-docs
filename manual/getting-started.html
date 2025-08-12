@@ -80,12 +80,8 @@
 <h1 id="getting-started">Getting Started</h1>
 
 <h2 id="-requirements">✅ Requirements</h2>
-<ul>
-<li>Unity 2021.3 or newer</li>
-</ul>
+<h2 id="--unity-20213-or-newer">- Unity 2021.3 or newer</h2>
 <h2 id="-quick-start">🚀 Quick Start</h2>
-<p>Follow these steps to get the <strong>Ultimate Base Project (UBP)</strong> up and running in just a few minutes.</p>
-<hr>
 <h3 id="1-import-the-asset">1. Import the Asset</h3>
 <p>Import <strong>Ultimate Base Project (UBP)</strong> from the Package Manager into your Unity project.</p>
 <hr>
@@ -97,7 +93,7 @@
 <h3 id="3-add-the-entry-scene-to-build-settings">3. Add the Entry Scene to Build Settings</h3>
 <ul>
 <li>Go to <code>File &gt; Build Settings</code></li>
-<li>Click <strong>&quot;Add Open Scenes&quot;</strong> to include the current <code>Entry</code> scene</li>
+<li>Click <strong>&quot;Add Open Scenes&quot;</strong> to include the currently opened <code>Entry</code> scene or drag it into the list</li>
 <li>Make sure it’s the <strong>first</strong> scene in the list (index <code>0</code>)</li>
 </ul>
 <hr>
@@ -109,23 +105,18 @@
 <h3 id="5-set-your-games-intro-scene">5. Set Your Game&#39;s Intro Scene</h3>
 <ul>
 <li>In the UBP Settings window, select the <strong>Scene Service</strong> tab</li>
-<li>Set the <strong>&quot;Game Intro Scene&quot;</strong> field to the name of your first real gameplay scene (e.g. <code>MainMenu</code>, <code>Gameplay</code>, etc.)</li>
-<li>UBP will automatically load this scene after initializing all services and configuration</li>
+<li>Set the <code>GameIntroScene</code> field to the first real gameplay scene (e.g. <code>MainMenu</code>, <code>Gameplay</code>, etc.)</li>
+<li>UBP will automatically load this scene after initializing all services</li>
 </ul>
 <hr>
 <h3 id="6-start-using-ubp-services">6. Start Using UBP Services</h3>
-<p>Once the Entry scene initializes UBP, you can immediately call core services from anywhere in your code:</p>
-<pre><code class="lang-csharp">Audio.Play(&quot;ButtonClick&quot;);
-SaveSystem.Save();
-Scenes.Load(&quot;Level2&quot;);
+<p>Once the Entry scene initializes UBP, you can immediately call all services from anywhere in your code:</p>
+<pre><code class="lang-csharp">Services.Get&lt;AudioService&gt;().Play(&quot;ButtonClick&quot;);
+Services.Get&lt;SaveService&gt;().Save(&quot;playerData&quot;, playerData);
+Services.Get&lt;ScenesService&gt;().LoadScene(&quot;GameScene&quot;);
 </code></pre><hr>
-<p>You’re now ready to build your game on top of a solid, service-driven foundation 🚀</p>
-<h2 id="-service-based-architecture">🧩 Service-Based Architecture</h2>
-<p>UBP is built around a <strong>modular service system</strong>. Every major system (Audio, Save, Scenes, etc.) is managed as a service and accessible from anywhere in the project.</p>
-<p>You can access services directly from the <strong>Services Locator</strong>.</p>
-<h3 id="example-custom-access-via-locator">Example: Custom Access via Locator</h3>
-<pre><code class="lang-csharp">Services.Get&lt;SaveService&gt;().SaveGame();
-</code></pre><p>You can also define and register your own services easily. See <a href="create-service.html">Create Service</a> for more info.</p>
+<p>You’re now ready to build your game on top of a solid, service-driven foundation.</p>
+<p>You can also define and register your own services easily. See <a href="create-service.html">Create Service</a> for more info.</p>
 <hr>
 </article>
           </div>

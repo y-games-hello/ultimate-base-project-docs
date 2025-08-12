@@ -84,8 +84,7 @@
 <li><strong>Without configuration</strong> — simplest path</li>
 <li><strong>With configuration</strong> — editable via UBP Settings Window</li>
 </ul>
-<p>All services are automatically discovered and registered when the game starts.</p>
-<blockquote><p>⚠️ <strong>Important:</strong> All service classes <strong>must</strong> have a <strong>parameterless constructor</strong>.</p>
+<blockquote><p>⚠️ <strong>Important:</strong> All services are automatically discovered and registered when the game starts.</p>
 </blockquote>
 <hr>
 <h2 id="1-create-a-basic-configless-service">1️⃣ Create a Basic (Configless) Service</h2>
@@ -102,7 +101,7 @@ public class SampleService : IService
         return Task.CompletedTask;
     }
 }
-</code></pre><p>✅ That’s it — the framework will automatically create and register it.</p>
+</code></pre><p>✅ That’s it — the framework will automatically create, register and inject dependencies for this service.</p>
 <hr>
 <h2 id="2-create-a-configured-service-with-ubp-settings-support">2️⃣ Create a Configured Service (with UBP Settings support)</h2>
 <p>If you want your service to have editable settings in the <strong>UBP Settings Window</strong>:</p>
@@ -114,10 +113,7 @@ public class SampleServiceConfig : ScriptableObject
 {
     [field: SerializeField] public string ExampleSetting { get; private set; } = &quot;Default value&quot;;
 }
-</code></pre><ul>
-<li>This asset will hold all editable settings for your service.</li>
-<li>You can create it in the Editor via <strong>Assets → Create → Configs → Services → SampleServiceConfig</strong>.</li>
-</ul>
+</code></pre><p>This asset will hold all editable settings for your service.</p>
 <hr>
 <h3 id="step-22--create-the-service-class">Step 2.2 — Create the service class</h3>
 <pre><code class="lang-csharp">using System.Threading.Tasks;
@@ -136,12 +132,12 @@ public class SampleService : ConfiguredService&lt;SampleServiceConfig&gt;
         return Task.CompletedTask;
     }
 }
-</code></pre><hr>
-<h2 id="3-framework-behavior">3️⃣ Framework Behavior</h2>
+</code></pre><p>Inheriting from <code>ConfiguredService&lt;TConfig&gt;</code> requires from you to implement ServiceConfig property, which returns the active configuration instance for this service.</p>
+<hr>
+<h2 id="-best-practices">🏆 Best Practices</h2>
 <ul>
-<li>Any class implementing <strong><code>IService</code></strong> (including <code>ConfiguredService&lt;TConfig&gt;</code>) will be <strong>automatically registered</strong> and <strong>instantiated</strong>.</li>
-<li><code>InitializeAsync()</code> is called after creation — do all setup work here.</li>
-<li>Do <strong>not</strong> put heavy logic in the constructor.</li>
+<li><code>InitializeAsync()</code> is called after creation — do all setup work here</li>
+<li>Do <strong>not</strong> put heavy logic in the constructor</li>
 </ul>
 </article>
           </div>
