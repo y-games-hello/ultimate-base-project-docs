@@ -5,59 +5,42 @@ It centralizes scene management, allowing for asynchronous loading, additive sce
 
 ---
 
-## Overview
+## ✅ Features
 
-The Scenes Service provides:
-- **Asynchronous scene loading** with callbacks.
-- **Additive scene loading** for multi-scene workflows.
-- **Events** for scene load/unload lifecycle.
-- A clean API for developers to load/unload scenes without directly interacting with `UnityEngine.SceneManagement`.
-
----
-
-## Basic Usage
-
-### Loading a Scene
-```csharp
-Services.Get<ScenesService>().LoadSceneAsync("GameScene");
-```
-
-### Loading a Scene Additively
-```csharp
-Services.Get<ScenesService>().LoadSceneAdditiveAsync("UIOverlay");
-```
-
-### Unloading a Scene
-```csharp
-Services.Get<ScenesService>().UnloadSceneAsync("UIOverlay");
-```
+- **Async/sync scene loading** with callbacks
+- **Additive scene loading** for multi-scene workflows
+- **Events** for scene load/unload lifecycle
+- A clean API for developers to load/unload scenes without directly interacting with `UnityEngine.SceneManagement`
 
 ---
 
-## Example: Switching Scenes with a Transition
+## 🧪 Example Usage
+
+Load a Scene:
 ```csharp
-async void SwitchToGameplay()
-{
-    await Services.Get<ScenesService>().LoadSceneAsync("GameplayScene");
-}
+Services.Get<ScenesService>().LoadScene("GameScene");
+```
+Load a Scene Async:
+```csharp
+Services.Get<SceneService>().LoadSceneAsync("GameScene", progressCallback, completionCallback,
+    allowSceneActivation: true, LoadSceneMode.Additive);
 ```
 
+Unload a Scene Async:
+```csharp
+await Services.Get<ScenesService>().UnloadSceneAsync("GameScene");
+```
 ---
 
-## Events
+## ⚙️ Configuration
 
-The Scenes Service exposes events you can subscribe to:
+Scene Service Config available in [UBP Settings Window](../ubp-settings-window.md):
 
-```csharp
-Services.Get<ScenesService>().SceneLoaded += sceneName =>
-{
-    Debug.Log($"Scene {sceneName} loaded successfully!");
-};
-
-Services.Get<ScenesService>().SceneUnloaded += sceneName =>
-{
-    Debug.Log($"Scene {sceneName} unloaded.");
-};
+```
+Window > YGames > Ultimate Base Project > Scene Service
 ```
 
+| Field               | Description                                                                                         |
+|---------------------|-----------------------------------------------------------------------------------------------------|
+| `GameIntroScene`   | The scene which UBP loads after EntryScene once all Services and Configs are loaded and initialized |
 ---

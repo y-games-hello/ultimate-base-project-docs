@@ -9,7 +9,7 @@ This is particularly useful when you want backend systems (services, managers, e
 ## ✅ Features
 
 - Listens to **OnApplicationPause**, **OnApplicationFocus**, **OnApplicationQuit**, and **OnDestroy**
-- Works across all scenes — no need to add MonoBehaviours manually
+- Works seamlessly across all scenes
 
 ---
 

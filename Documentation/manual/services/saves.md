@@ -6,7 +6,7 @@ This ensures safe and robust save/load functionality with minimal setup and full
 
 ---
 
-## 🔧 What It Does
+## ✅ Features
 
 - Serializes and saves any object to disk (sync or async)
 - Creates backups and handles recovery if the main save is corrupted
@@ -38,7 +38,21 @@ var data = await Services.Get<SaveService>().LoadAsync<PlayerData>("playerData")
 
 ---
 
-## 🔄 Integration with Other Services
+## ⚙️ Configuration
+
+Save Service Config available in [UBP Settings Window](../ubp-settings-window.md):
+
+```
+Window > YGames > Ultimate Base Project > Save Service
+```
+
+| Field               | Description                     |
+|---------------------|---------------------------------|
+| `SavesRootFolder`   | Root folder of all game saves   |
+| `Open Saves Folder` | Opens the root saves folder     |
+---
+
+## 🔄 Save File Serializer
 
 The `SaveService` uses a `SaveSerializer` to convert objects into a string format. By default, it uses:
 
@@ -46,72 +60,27 @@ The `SaveService` uses a `SaveSerializer` to convert objects into a string forma
 
 This serializer wraps Unity’s built-in `JsonUtility` for fast and simple JSON serialization.
 
-You can implement your own by extending `SaveSerializer` and overriding:
+You can implement your own by inheriting `SaveSerializer` and overriding:
 
 - `string Serialize<T>(T data)`
 - `T Deserialize<T>(string data)`
 
-Then assign your serializer in the `SaveService`.
+Then assign your serializer during `SaveService` initialization:
 
 ```csharp
-public override Task InitializeAsync()
-{
-    _saveSerializer = new JSONSaveSerializer();
-    return Task.CompletedTask;
+public class SaveService : ConfiguredService<SaveServiceConfig>{
+
+    public override Task InitializeAsync()
+    {
+        _saveSerializer = new CustomSaveSerializer();
+        return Task.CompletedTask;
+    }
 }
 ```
 
 ---
 
-# ⚙️ Configuration
+## 🏆 Best Practices
 
-You can configure where save files are stored using:
-
-### `SaveServiceConfig`
-
-Located in your project under:
-
-```
-Configs/Services/SaveServiceConfig.asset
-```
-
-#### Example:
-```csharp
-[field: SerializeField] public string SavesRootFolder { get; private set; } = "Saves/";
-```
-
-All saves are stored inside:
-```
-Application.persistentDataPath + /SavesRootFolder/
-```
-
----
-
-# 🛡️ Backup & Recovery
-
-If the original is corrupted, `SaveService` automatically attempts to load the **.bak** backup.
-
----
-
-## 📁 File Structure
-
-For a save called `"playerData"`, the following files are managed:
-
-| Type      | File Path                            |
-|-----------|--------------------------------------|
-| Original  | `.../playerData.save`                |
-| Temp      | `.../playerData.save.tmp`            |
-| Backup    | `.../playerData.save.bak`            |
-
-This structure provides automatic fallback and prevents permanent data loss.
-
----
-
-## ✅ Use Cases
-
-- Save/load game state, player data, or settings
 - Plug in custom serializers (JSON, binary, encrypted)
-- Auto-recover from corrupted saves
-- Async save/load for runtime stability
-
-The service helps you persist game data safely without writing redundant file or serialization logic.
+- Use async save/load for runtime stability

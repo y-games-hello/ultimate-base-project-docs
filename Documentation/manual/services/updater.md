@@ -6,13 +6,14 @@ It manages object registration and ensures update callbacks are delivered effici
 
 ---
 
-## 🔧 What It Does
+## ✅ Features
 
-- Lets you register/unregister objects for:
+- Allows you register/unregister objects for:
   - **`Update()`** (per frame)
   - **`FixedUpdate()`** (fixed timestep, physics-safe)
   - **`LateUpdate()`** (end-of-frame logic)
 - Safely handles null objects and delayed registration/unregistration
+- Works seamlessly across all scenes
 
 ---
 
@@ -33,36 +34,14 @@ public class PlayerController : IUpdatable, IFixedUpdatable
         // Physics-based logic
     }
 }
+```
 
-// Somewhere in initialization:
+Register this way:
+```csharp
 Services.Get<UpdaterService>().Register(playerController);
 ```
-
-Unregister when done:
-
+Or through the `FactoryService`:
 ```csharp
-Services.Get<UpdaterService>().Unregister(playerController);
+Services.Get<FactoryService>().InjectDependency(playerController);
 ```
-
 ---
-
-## 🔄 Integration with Other Services
-
-The `UpdaterService` is often used alongside the **FactoryService**'s `UpdaterPostProcessor`, which automatically registers any object implementing:
-
-- `IUpdatable`
-- `IFixedUpdatable`
-- `ILateUpdatable`
-
-This means your services and systems can start receiving Unity update events without any manual registration code.
-
----
-
-## ✅ Use Cases
-
-- Update loops for services or managers
-- Game systems that run outside MonoBehaviours
-- Physics-based calculations in non-MonoBehaviour classes
-- Late-frame logic (e.g., camera adjustments, post-processing triggers)
-
-This service helps decouple update logic from Unity components, making your architecture more modular and testable.
