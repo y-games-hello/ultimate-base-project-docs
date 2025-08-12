@@ -82,7 +82,7 @@
 <p>The <strong>SaveService</strong> provides persistent data storage for your game, handling serialization, backup recovery, and both async and sync file operations.</p>
 <p>This ensures safe and robust save/load functionality with minimal setup and full extensibility.</p>
 <hr>
-<h2 id="-what-it-does">🔧 What It Does</h2>
+<h2 id="-features">✅ Features</h2>
 <ul>
 <li>Serializes and saves any object to disk (sync or async)</li>
 <li>Creates backups and handles recovery if the main save is corrupted</li>
@@ -99,69 +99,52 @@
 <pre><code class="lang-csharp">await Services.Get&lt;SaveService&gt;().SaveAsync(&quot;playerData&quot;, playerData);
 var data = await Services.Get&lt;SaveService&gt;().LoadAsync&lt;PlayerData&gt;(&quot;playerData&quot;);
 </code></pre><hr>
-<h2 id="-integration-with-other-services">🔄 Integration with Other Services</h2>
-<p>The <code>SaveService</code> uses a <code>SaveSerializer</code> to convert objects into a string format. By default, it uses:</p>
-<h3 id="jsonsaveserializer"><code>JSONSaveSerializer</code></h3>
-<p>This serializer wraps Unity’s built-in <code>JsonUtility</code> for fast and simple JSON serialization.</p>
-<p>You can implement your own by extending <code>SaveSerializer</code> and overriding:</p>
-<ul>
-<li><code>string Serialize&lt;T&gt;(T data)</code></li>
-<li><code>T Deserialize&lt;T&gt;(string data)</code></li>
-</ul>
-<p>Then assign your serializer in the <code>SaveService</code>.</p>
-<pre><code class="lang-csharp">public override Task InitializeAsync()
-{
-    _saveSerializer = new JSONSaveSerializer();
-    return Task.CompletedTask;
-}
-</code></pre><hr>
-<h1 id="-configuration">⚙️ Configuration</h1>
-<p>You can configure where save files are stored using:</p>
-<h3 id="saveserviceconfig"><code>SaveServiceConfig</code></h3>
-<p>Located in your project under:</p>
-<pre><code>Configs/Services/SaveServiceConfig.asset
-</code></pre><h4 id="example">Example:</h4>
-<pre><code class="lang-csharp">[field: SerializeField] public string SavesRootFolder { get; private set; } = &quot;Saves/&quot;;
-</code></pre><p>All saves are stored inside:</p>
-<pre><code>Application.persistentDataPath + /SavesRootFolder/
-</code></pre><hr>
-<h1 id="-backup--recovery">🛡️ Backup &amp; Recovery</h1>
-<p>If the original is corrupted, <code>SaveService</code> automatically attempts to load the <strong>.bak</strong> backup.</p>
-<hr>
-<h2 id="-file-structure">📁 File Structure</h2>
-<p>For a save called <code>&quot;playerData&quot;</code>, the following files are managed:</p>
-<table>
+<h2 id="-configuration">⚙️ Configuration</h2>
+<p>Save Service Config available in <a href="../ubp-settings-window.html">UBP Settings Window</a>:</p>
+<pre><code>Window &gt; YGames &gt; Ultimate Base Project &gt; Save Service
+</code></pre><table>
 <thead>
 <tr>
-<th>Type</th>
-<th>File Path</th>
+<th>Field</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td>Original</td>
-<td><code>.../playerData.save</code></td>
+<td><code>SavesRootFolder</code></td>
+<td>Root folder of all game saves</td>
 </tr>
 <tr>
-<td>Temp</td>
-<td><code>.../playerData.save.tmp</code></td>
-</tr>
-<tr>
-<td>Backup</td>
-<td><code>.../playerData.save.bak</code></td>
+<td><code>Open Saves Folder</code></td>
+<td>Opens the root saves folder</td>
 </tr>
 </tbody>
 </table>
-<p>This structure provides automatic fallback and prevents permanent data loss.</p>
 <hr>
-<h2 id="-use-cases">✅ Use Cases</h2>
+<h2 id="-save-file-serializer">🔄 Save File Serializer</h2>
+<p>The <code>SaveService</code> uses a <code>SaveSerializer</code> to convert objects into a string format. By default, it uses:</p>
+<h3 id="jsonsaveserializer"><code>JSONSaveSerializer</code></h3>
+<p>This serializer wraps Unity’s built-in <code>JsonUtility</code> for fast and simple JSON serialization.</p>
+<p>You can implement your own by inheriting <code>SaveSerializer</code> and overriding:</p>
 <ul>
-<li>Save/load game state, player data, or settings</li>
-<li>Plug in custom serializers (JSON, binary, encrypted)</li>
-<li>Auto-recover from corrupted saves</li>
-<li>Async save/load for runtime stability</li>
+<li><code>string Serialize&lt;T&gt;(T data)</code></li>
+<li><code>T Deserialize&lt;T&gt;(string data)</code></li>
 </ul>
-<p>The service helps you persist game data safely without writing redundant file or serialization logic.</p>
+<p>Then assign your serializer during <code>SaveService</code> initialization:</p>
+<pre><code class="lang-csharp">public class SaveService : ConfiguredService&lt;SaveServiceConfig&gt;{
+
+    public override Task InitializeAsync()
+    {
+        _saveSerializer = new CustomSaveSerializer();
+        return Task.CompletedTask;
+    }
+}
+</code></pre><hr>
+<h2 id="-best-practices">🏆 Best Practices</h2>
+<ul>
+<li>Plug in custom serializers (JSON, binary, encrypted)</li>
+<li>Use async save/load for runtime stability</li>
+</ul>
 </article>
           </div>
           

@@ -82,15 +82,16 @@
 <p>The <strong>UpdaterService</strong> allows plain C# objects to hook into Unity’s <code>Update</code>, <code>FixedUpdate</code>, and <code>LateUpdate</code> loops without inheriting from <code>MonoBehaviour</code>.</p>
 <p>It manages object registration and ensures update callbacks are delivered efficiently through an internal <code>Updater</code> component.</p>
 <hr>
-<h2 id="-what-it-does">🔧 What It Does</h2>
+<h2 id="-features">✅ Features</h2>
 <ul>
-<li>Lets you register/unregister objects for:<ul>
+<li>Allows you register/unregister objects for:<ul>
 <li><strong><code>Update()</code></strong> (per frame)</li>
 <li><strong><code>FixedUpdate()</code></strong> (fixed timestep, physics-safe)</li>
 <li><strong><code>LateUpdate()</code></strong> (end-of-frame logic)</li>
 </ul>
 </li>
 <li>Safely handles null objects and delayed registration/unregistration</li>
+<li>Works seamlessly across all scenes</li>
 </ul>
 <hr>
 <h2 id="-example-usage">🧪 Example Usage</h2>
@@ -107,29 +108,11 @@
         // Physics-based logic
     }
 }
-
-// Somewhere in initialization:
-Services.Get&lt;UpdaterService&gt;().Register(playerController);
-</code></pre><p>Unregister when done:</p>
-<pre><code class="lang-csharp">Services.Get&lt;UpdaterService&gt;().Unregister(playerController);
+</code></pre><p>Register this way:</p>
+<pre><code class="lang-csharp">Services.Get&lt;UpdaterService&gt;().Register(playerController);
+</code></pre><p>Or through the <code>FactoryService</code>:</p>
+<pre><code class="lang-csharp">Services.Get&lt;FactoryService&gt;().InjectDependency(playerController);
 </code></pre><hr>
-<h2 id="-integration-with-other-services">🔄 Integration with Other Services</h2>
-<p>The <code>UpdaterService</code> is often used alongside the <strong>FactoryService</strong>&#39;s <code>UpdaterPostProcessor</code>, which automatically registers any object implementing:</p>
-<ul>
-<li><code>IUpdatable</code></li>
-<li><code>IFixedUpdatable</code></li>
-<li><code>ILateUpdatable</code></li>
-</ul>
-<p>This means your services and systems can start receiving Unity update events without any manual registration code.</p>
-<hr>
-<h2 id="-use-cases">✅ Use Cases</h2>
-<ul>
-<li>Update loops for services or managers</li>
-<li>Game systems that run outside MonoBehaviours</li>
-<li>Physics-based calculations in non-MonoBehaviour classes</li>
-<li>Late-frame logic (e.g., camera adjustments, post-processing triggers)</li>
-</ul>
-<p>This service helps decouple update logic from Unity components, making your architecture more modular and testable.</p>
 </article>
           </div>
           

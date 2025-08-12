@@ -81,41 +81,41 @@
 
 <p>The <strong>Scenes Service</strong> is responsible for managing scene loading, unloading, and transitions in a structured and extensible way.<br>It centralizes scene management, allowing for asynchronous loading, additive scenes, and event-driven scene lifecycle handling.</p>
 <hr>
-<h2 id="overview">Overview</h2>
-<p>The Scenes Service provides:</p>
+<h2 id="-features">✅ Features</h2>
 <ul>
-<li><strong>Asynchronous scene loading</strong> with callbacks.</li>
-<li><strong>Additive scene loading</strong> for multi-scene workflows.</li>
-<li><strong>Events</strong> for scene load/unload lifecycle.</li>
-<li>A clean API for developers to load/unload scenes without directly interacting with <code>UnityEngine.SceneManagement</code>.</li>
+<li><strong>Async/sync scene loading</strong> with callbacks</li>
+<li><strong>Additive scene loading</strong> for multi-scene workflows</li>
+<li><strong>Events</strong> for scene load/unload lifecycle</li>
+<li>A clean API for developers to load/unload scenes without directly interacting with <code>UnityEngine.SceneManagement</code></li>
 </ul>
 <hr>
-<h2 id="basic-usage">Basic Usage</h2>
-<h3 id="loading-a-scene">Loading a Scene</h3>
-<pre><code class="lang-csharp">Services.Get&lt;ScenesService&gt;().LoadSceneAsync(&quot;GameScene&quot;);
-</code></pre><h3 id="loading-a-scene-additively">Loading a Scene Additively</h3>
-<pre><code class="lang-csharp">Services.Get&lt;ScenesService&gt;().LoadSceneAdditiveAsync(&quot;UIOverlay&quot;);
-</code></pre><h3 id="unloading-a-scene">Unloading a Scene</h3>
-<pre><code class="lang-csharp">Services.Get&lt;ScenesService&gt;().UnloadSceneAsync(&quot;UIOverlay&quot;);
+<h2 id="-example-usage">🧪 Example Usage</h2>
+<p>Load a Scene:</p>
+<pre><code class="lang-csharp">Services.Get&lt;ScenesService&gt;().LoadScene(&quot;GameScene&quot;);
+</code></pre><p>Load a Scene Async:</p>
+<pre><code class="lang-csharp">Services.Get&lt;SceneService&gt;().LoadSceneAsync(&quot;GameScene&quot;, progressCallback, completionCallback,
+    allowSceneActivation: true, LoadSceneMode.Additive);
+</code></pre><p>Unload a Scene Async:</p>
+<pre><code class="lang-csharp">await Services.Get&lt;ScenesService&gt;().UnloadSceneAsync(&quot;GameScene&quot;);
 </code></pre><hr>
-<h2 id="example-switching-scenes-with-a-transition">Example: Switching Scenes with a Transition</h2>
-<pre><code class="lang-csharp">async void SwitchToGameplay()
-{
-    await Services.Get&lt;ScenesService&gt;().LoadSceneAsync(&quot;GameplayScene&quot;);
-}
-</code></pre><hr>
-<h2 id="events">Events</h2>
-<p>The Scenes Service exposes events you can subscribe to:</p>
-<pre><code class="lang-csharp">Services.Get&lt;ScenesService&gt;().SceneLoaded += sceneName =&gt;
-{
-    Debug.Log($&quot;Scene {sceneName} loaded successfully!&quot;);
-};
-
-Services.Get&lt;ScenesService&gt;().SceneUnloaded += sceneName =&gt;
-{
-    Debug.Log($&quot;Scene {sceneName} unloaded.&quot;);
-};
-</code></pre><hr>
+<h2 id="-configuration">⚙️ Configuration</h2>
+<p>Scene Service Config available in <a href="../ubp-settings-window.html">UBP Settings Window</a>:</p>
+<pre><code>Window &gt; YGames &gt; Ultimate Base Project &gt; Scene Service
+</code></pre><table>
+<thead>
+<tr>
+<th>Field</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><code>GameIntroScene</code></td>
+<td>The scene which UBP loads after EntryScene once all Services and Configs are loaded and initialized</td>
+</tr>
+</tbody>
+</table>
+<hr>
 </article>
           </div>
           
