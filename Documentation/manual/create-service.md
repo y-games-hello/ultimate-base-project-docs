@@ -4,8 +4,7 @@ This guide explains how to create your own UBP service, either:
 - **Without configuration** — simplest path
 - **With configuration** — editable via UBP Settings Window
 
-All services are automatically discovered and registered when the game starts.
-> ⚠️ **Important:** All service classes **must** have a **parameterless constructor**.
+> ⚠️ **Important:** All services are automatically discovered and registered when the game starts.
 
 ---
 
@@ -28,7 +27,7 @@ public class SampleService : IService
 }
 ```
 
-✅ That’s it — the framework will automatically create and register it.
+✅ That’s it — the framework will automatically create, register and inject dependencies for this service.
 
 ---
 
@@ -47,9 +46,7 @@ public class SampleServiceConfig : ScriptableObject
     [field: SerializeField] public string ExampleSetting { get; private set; } = "Default value";
 }
 ```
-
-- This asset will hold all editable settings for your service.
-- You can create it in the Editor via **Assets → Create → Configs → Services → SampleServiceConfig**.
+This asset will hold all editable settings for your service.
 
 ---
 
@@ -73,11 +70,10 @@ public class SampleService : ConfiguredService<SampleServiceConfig>
     }
 }
 ```
+Inheriting from `ConfiguredService<TConfig>` requires from you to implement ServiceConfig property, which returns the active configuration instance for this service.
 
 ---
 
-## 3️⃣ Framework Behavior
-
-- Any class implementing **`IService`** (including `ConfiguredService<TConfig>`) will be **automatically registered** and **instantiated**.
-- `InitializeAsync()` is called after creation — do all setup work here.
-- Do **not** put heavy logic in the constructor.
+## 🏆 Best Practices
+- `InitializeAsync()` is called after creation — do all setup work here
+- Do **not** put heavy logic in the constructor

@@ -1,10 +1,9 @@
 # ⚙️ UBP Settings Window
-The UBP Settings Window is the central place to configure all configured services in your project.
+The UBP Settings Window is the central place to setup all configured services in your project.
 
-## 🪟 What It Does
-- Lists every service that inherits from ConfiguredService<TConfig>
+## ✅ Features
+- Lists every configured service automatically
 - Displays all their serialized fields from the associated ScriptableObject config
-- Lets you edit values directly in the Unity Editor
 - Saves changes to the linked config asset
 ---
 
