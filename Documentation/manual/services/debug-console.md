@@ -11,19 +11,34 @@ The **Debug Service** provides powerful runtime debugging tools. It captures log
 - Displays logs in a **persistent in-game console UI**
 - Registers and executes **custom console commands**
 - Toggleable with a keybind (e.g. `~`)
-- Persists console window position and size across sessions
+- Only active in **development builds** and **editor** (`Debug.isDebugBuild`)
+- The command system automatically checks the number and type of arguments
+- You can define any number of parameters using different types (`int`, `bool`, `float`, etc.)
+- Resizable and draggable UI window
 
 ---
 
-# 🛠️ Creating and Using a Custom Console Command
+## ⚙️ Configuration
 
-The in-game debug console allows you to register and run your own commands for testing, debugging, or cheat functionality.
+Debug Service Config available in [UBP Settings Window](../ubp-settings-window.md):
 
-Follow these steps to add a custom command to the console:
+```
+Window > YGames > Ultimate Base Project > Debug Service
+```
 
+| Field | Description |
+|---|---|
+| `MaxLogMessagesCapacity` | Max number of logs to store in memory |
+| `ConsoleCanvasPrefab` | Prefab shown when toggling console |
+| `OpenConsoleKey` | KeyCode to toggle the console |
+| `LogMessageColor` | Log message color |
+| `WarningMessageColor` | Warning message color |
+| `ErrorMessageColor` | Error message color |
 ---
 
-## 1. Create a New Command Class
+## 🛠️ How To Create Custom Console Command
+
+### 1. Create a New Command Class
 
 Create a new class that inherits from `ConsoleCommand` and implement the `Execute` and `Undo` methods.
 
@@ -52,7 +67,7 @@ public class PrintNameCommand : ConsoleCommand
 
 ---
 
-## 2. Register the Command in Code
+### 2. Register the Command in Code
 
 Register your command so the console can recognize it:
 
@@ -60,11 +75,11 @@ Register your command so the console can recognize it:
 Services.Get<DebugService>().RegisterCommand(new PrintNameCommand(new[] { typeof(string) }));
 ```
 
-Place this call during initialization (e.g. in a MonoBehaviour's `Start()` or a service setup phase).
+Place this call during initialization (e.g. in a MonoBehaviour's `Start()` or during Debug Service initialization phase).
 
 ---
 
-## 3. Execute the Command from the Console UI
+### 3. Execute the Command from the Console UI
 
 - Enter Play Mode and open the debug console (default: `~` key).
 - Type your command using the expected arguments:
@@ -72,8 +87,7 @@ Place this call during initialization (e.g. in a MonoBehaviour's `Start()` or a 
 ```
 PrintNameCommand John
 ```
-
-You should see this in the Unity Console:
+Press `Enter` to execute. You should see this in the Unity Console:
 
 ```
 Hello, John!
@@ -81,30 +95,9 @@ Hello, John!
 
 ---
 
-## 💡 Notes
-
-- Only active in **development builds** (`Debug.isDebugBuild`)
-- The command system automatically checks the number and type of arguments.
-- You can define any number of parameters using different types (`int`, `bool`, `float`, etc.).
-- `Undo()` is optional and can be left empty if not needed.
-
-This system is ideal for:
+## 🏆 Best Practices
 
 - Enabling cheat/debug tools
 - Quickly simulating gameplay events
 - Testing systems without building UI
-
-## ⚙️ Configuration
-```
-Window > YGames > Ultimate Base Project > Debug Service
-```
-
-| Field | Description |
-|---|---|
-| `MaxLogMessagesCapacity` | Max number of logs to store in memory |
-| `ConsoleCanvasPrefab` | Prefab shown when toggling console |
-| `OpenConsoleKey` | KeyCode to toggle the console |
-| `LogMessageColor` | Log message color |
-| `WarningMessageColor` | Warning message color |
-| `ErrorMessageColor` | Error message color |
 ---

@@ -6,7 +6,7 @@ This allows you to extend behavior without hardcoding dependencies, making your 
 
 ---
 
-## 🔧 What It Does
+## ✅ Features
 
 - Scans all assemblies for classes that implement `IPostProcessor`
 - Instantiates and stores all valid processors at runtime
@@ -26,31 +26,13 @@ This will run **all registered processors** on `myObject`.
 
 ---
 
-## 🔄 Integration with Other Services
+## 🛠️ How To Create Custom Post Processor
 
-FactoryService comes with a built-in processor:
-
-### `UpdaterPostProcessor`
-
-Automatically registers any object that implements:
-
-- `IUpdatable`
-- `IFixedUpdatable`
-- `ILateUpdatable`
-
-into the `UpdaterService`, allowing plain C# objects to receive Unity update events.
+The `FactoryService` applies logic to objects using a system of pluggable **PostProcessors**. These are ideal for injecting dependencies, handling interfaces, registering objects to other services, or setting up runtime logic.
 
 ---
 
-# 🧩 Creating a Custom PostProcessor
-
-The `FactoryService` automatically applies logic to objects after creation using a system of pluggable **PostProcessors**. These are ideal for injecting dependencies, registering objects to other services, or setting up runtime logic.
-
-This guide explains how to implement and register your own `IPostProcessor`.
-
----
-
-## 1. Create a Class that Implements `IPostProcessor`
+### 1. Create a Class that Implements `IPostProcessor`
 
 Your custom processor must implement the `Process(object target)` method.
 
@@ -72,7 +54,7 @@ public class SamplePostProcessor : IPostProcessor
 
 ---
 
-## 2. No Manual Registration Required
+### 2. No Manual Registration Required
 
 All post processors are automatically discovered at runtime, as long as:
 
@@ -80,13 +62,11 @@ All post processors are automatically discovered at runtime, as long as:
 - Are non-abstract
 - Have a public parameterless constructor
 
-> ✅ You do NOT need to manually register them.
-
 ---
 
-## 3. Injecting Dependencies into Your Objects
+### 3. Injecting Dependencies into Your Objects
 
-To apply your custom logic to an object:
+To run injection process on the object call:
 
 ```csharp
 Services.Get<FactoryService>().InjectDependency(myObject);
@@ -96,11 +76,6 @@ This will run your `Process()` logic along with all other registered processors.
 
 ---
 
-## ✅ Use Cases
-
-- Inject services into plain C# objects
-- Register objects to update services
-- Auto-bind event handlers
-- Apply configuration data
-
-This system helps decouple your architecture and removes boilerplate setup code.
+## 🏆 Best Practices
+- Decouple your architecture by implementing more interfaces
+- 

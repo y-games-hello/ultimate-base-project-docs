@@ -8,8 +8,8 @@ This is particularly useful when you want backend systems (services, managers, e
 
 ## ✅ Features
 
-- Listens to **OnApplicationPause**, **OnApplicationFocus**, **OnApplicationQuit**, and **OnDestroy**.
-- Works across all scenes — no need to add MonoBehaviours manually.
+- Listens to **OnApplicationPause**, **OnApplicationFocus**, **OnApplicationQuit**, and **OnDestroy**
+- Works across all scenes — no need to add MonoBehaviours manually
 
 ---
 
@@ -43,7 +43,7 @@ public class SampleClass
 
 ---
 
-## 🧼 Best Practices
+## 🏆 Best Practices
 
 - Use this service when you want to react to app-level events from systems that don't derive from `MonoBehaviour`.
 - In case when you want to handle these events from single and centralized place.
