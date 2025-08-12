@@ -82,7 +82,7 @@
 <p>The <strong>FactoryService</strong> is responsible for applying dependency injection or post-construction logic to objects using dynamically discovered <code>IPostProcessor</code> implementations.</p>
 <p>This allows you to extend behavior without hardcoding dependencies, making your architecture clean and decoupled.</p>
 <hr>
-<h2 id="-what-it-does">🔧 What It Does</h2>
+<h2 id="-features">✅ Features</h2>
 <ul>
 <li>Scans all assemblies for classes that implement <code>IPostProcessor</code></li>
 <li>Instantiates and stores all valid processors at runtime</li>
@@ -94,22 +94,10 @@
 <pre><code class="lang-csharp">Services.Get&lt;FactoryService&gt;().InjectDependency(myObject);
 </code></pre><p>This will run <strong>all registered processors</strong> on <code>myObject</code>.</p>
 <hr>
-<h2 id="-integration-with-other-services">🔄 Integration with Other Services</h2>
-<p>FactoryService comes with a built-in processor:</p>
-<h3 id="updaterpostprocessor"><code>UpdaterPostProcessor</code></h3>
-<p>Automatically registers any object that implements:</p>
-<ul>
-<li><code>IUpdatable</code></li>
-<li><code>IFixedUpdatable</code></li>
-<li><code>ILateUpdatable</code></li>
-</ul>
-<p>into the <code>UpdaterService</code>, allowing plain C# objects to receive Unity update events.</p>
+<h2 id="-how-to-create-custom-post-processor">🛠️ How To Create Custom Post Processor</h2>
+<p>The <code>FactoryService</code> applies logic to objects using a system of pluggable <strong>PostProcessors</strong>. These are ideal for injecting dependencies, handling interfaces, registering objects to other services, or setting up runtime logic.</p>
 <hr>
-<h1 id="-creating-a-custom-postprocessor">🧩 Creating a Custom PostProcessor</h1>
-<p>The <code>FactoryService</code> automatically applies logic to objects after creation using a system of pluggable <strong>PostProcessors</strong>. These are ideal for injecting dependencies, registering objects to other services, or setting up runtime logic.</p>
-<p>This guide explains how to implement and register your own <code>IPostProcessor</code>.</p>
-<hr>
-<h2 id="1-create-a-class-that-implements-ipostprocessor">1. Create a Class that Implements <code>IPostProcessor</code></h2>
+<h3 id="1-create-a-class-that-implements-ipostprocessor">1. Create a Class that Implements <code>IPostProcessor</code></h3>
 <p>Your custom processor must implement the <code>Process(object target)</code> method.</p>
 <h3 id="example">Example:</h3>
 <pre><code class="lang-csharp">using UBP.Scripts.UBPServices.Factory.PostProcessors;
@@ -124,30 +112,16 @@ public class SamplePostProcessor : IPostProcessor
         }
     }
 }
-</code></pre><hr>
-<h2 id="2-no-manual-registration-required">2. No Manual Registration Required</h2>
-<p>All post processors are automatically discovered at runtime, as long as:</p>
-<ul>
-<li>They implement <code>IPostProcessor</code></li>
-<li>Are non-abstract</li>
-<li>Have a public parameterless constructor</li>
-</ul>
-<blockquote><p>✅ You do NOT need to manually register them.</p>
-</blockquote>
-<hr>
-<h2 id="3-injecting-dependencies-into-your-objects">3. Injecting Dependencies into Your Objects</h2>
-<p>To apply your custom logic to an object:</p>
+</code></pre><h3 id="3-injecting-dependencies-into-your-objects">3. Injecting Dependencies into Your Objects</h3>
+<p>To run injection process on the object call:</p>
 <pre><code class="lang-csharp">Services.Get&lt;FactoryService&gt;().InjectDependency(myObject);
 </code></pre><p>This will run your <code>Process()</code> logic along with all other registered processors.</p>
 <hr>
-<h2 id="-use-cases">✅ Use Cases</h2>
+<h2 id="-best-practices">🏆 Best Practices</h2>
 <ul>
-<li>Inject services into plain C# objects</li>
-<li>Register objects to update services</li>
-<li>Auto-bind event handlers</li>
-<li>Apply configuration data</li>
+<li>Decouple your architecture by implementing more interfaces</li>
+<li></li>
 </ul>
-<p>This system helps decouple your architecture and removes boilerplate setup code.</p>
 </article>
           </div>
           

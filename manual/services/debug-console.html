@@ -88,65 +88,14 @@
 <li>Displays logs in a <strong>persistent in-game console UI</strong></li>
 <li>Registers and executes <strong>custom console commands</strong></li>
 <li>Toggleable with a keybind (e.g. <code>~</code>)</li>
-<li>Persists console window position and size across sessions</li>
+<li>Only active in <strong>development builds</strong> and <strong>editor</strong> (<code>Debug.isDebugBuild</code>)</li>
+<li>The command system automatically checks the number and type of arguments</li>
+<li>You can define any number of parameters using different types (<code>int</code>, <code>bool</code>, <code>float</code>, etc.)</li>
+<li>Resizable and draggable UI window</li>
 </ul>
 <hr>
-<h1 id="-creating-and-using-a-custom-console-command">🛠️ Creating and Using a Custom Console Command</h1>
-<p>The in-game debug console allows you to register and run your own commands for testing, debugging, or cheat functionality.</p>
-<p>Follow these steps to add a custom command to the console:</p>
-<hr>
-<h2 id="1-create-a-new-command-class">1. Create a New Command Class</h2>
-<p>Create a new class that inherits from <code>ConsoleCommand</code> and implement the <code>Execute</code> and <code>Undo</code> methods.</p>
-<pre><code class="lang-csharp">using System;
-using UnityEngine;
-using UBP.Scripts.UBPServices.Debugs.ConsoleCommands;
-
-public class PrintNameCommand : ConsoleCommand
-{
-    public PrintNameCommand(Type[] requiredArguments) : base(requiredArguments) {}
-
-    public override void Execute(object[] arguments)
-    {
-        var name = arguments[0] as string;
-        Debug.Log($&quot;Hello, {name}!&quot;);
-    }
-
-    public override void Undo() { }
-}
-</code></pre><ul>
-<li>The constructor defines what argument types are required.</li>
-<li>The <code>Name</code> is automatically taken from the class name (<code>PrintNameCommand</code>).</li>
-<li>The <code>Execute</code> method receives user input as <code>object[]</code>.</li>
-</ul>
-<hr>
-<h2 id="2-register-the-command-in-code">2. Register the Command in Code</h2>
-<p>Register your command so the console can recognize it:</p>
-<pre><code class="lang-csharp">Services.Get&lt;DebugService&gt;().RegisterCommand(new PrintNameCommand(new[] { typeof(string) }));
-</code></pre><p>Place this call during initialization (e.g. in a MonoBehaviour&#39;s <code>Start()</code> or a service setup phase).</p>
-<hr>
-<h2 id="3-execute-the-command-from-the-console-ui">3. Execute the Command from the Console UI</h2>
-<ul>
-<li>Enter Play Mode and open the debug console (default: <code>~</code> key).</li>
-<li>Type your command using the expected arguments:</li>
-</ul>
-<pre><code>PrintNameCommand John
-</code></pre><p>You should see this in the Unity Console:</p>
-<pre><code>Hello, John!
-</code></pre><hr>
-<h2 id="-notes">💡 Notes</h2>
-<ul>
-<li>Only active in <strong>development builds</strong> (<code>Debug.isDebugBuild</code>)</li>
-<li>The command system automatically checks the number and type of arguments.</li>
-<li>You can define any number of parameters using different types (<code>int</code>, <code>bool</code>, <code>float</code>, etc.).</li>
-<li><code>Undo()</code> is optional and can be left empty if not needed.</li>
-</ul>
-<p>This system is ideal for:</p>
-<ul>
-<li>Enabling cheat/debug tools</li>
-<li>Quickly simulating gameplay events</li>
-<li>Testing systems without building UI</li>
-</ul>
 <h2 id="-configuration">⚙️ Configuration</h2>
+<p>Debug Service Config available in <a href="../ubp-settings-window.html">UBP Settings Window</a>:</p>
 <pre><code>Window &gt; YGames &gt; Ultimate Base Project &gt; Debug Service
 </code></pre><table>
 <thead>
@@ -183,6 +132,51 @@ public class PrintNameCommand : ConsoleCommand
 </tbody>
 </table>
 <hr>
+<h2 id="-how-to-create-custom-console-command">🛠️ How To Create Custom Console Command</h2>
+<h3 id="1-create-a-new-command-class">1. Create a New Command Class</h3>
+<p>Create a new class that inherits from <code>ConsoleCommand</code> and implement the <code>Execute</code> and <code>Undo</code> methods.</p>
+<pre><code class="lang-csharp">using System;
+using UnityEngine;
+using UBP.Scripts.UBPServices.Debugs.ConsoleCommands;
+
+public class PrintNameCommand : ConsoleCommand
+{
+    public PrintNameCommand(Type[] requiredArguments) : base(requiredArguments) {}
+
+    public override void Execute(object[] arguments)
+    {
+        var name = arguments[0] as string;
+        Debug.Log($&quot;Hello, {name}!&quot;);
+    }
+
+    public override void Undo() { }
+}
+</code></pre><ul>
+<li>The constructor defines what argument types are required.</li>
+<li>The <code>Name</code> is automatically taken from the class name (<code>PrintNameCommand</code>).</li>
+<li>The <code>Execute</code> method receives user input as <code>object[]</code>.</li>
+</ul>
+<hr>
+<h3 id="2-register-the-command-in-code">2. Register the Command in Code</h3>
+<p>Register your command so the console can recognize it:</p>
+<pre><code class="lang-csharp">Services.Get&lt;DebugService&gt;().RegisterCommand(new PrintNameCommand(new[] { typeof(string) }));
+</code></pre><p>Place this call during initialization (e.g. in a MonoBehaviour&#39;s <code>Start()</code> or during Debug Service initialization phase).</p>
+<hr>
+<h3 id="3-execute-the-command-from-the-console-ui">3. Execute the Command from the Console UI</h3>
+<ul>
+<li>Enter Play Mode and open the debug console (default: <code>~</code> key).</li>
+<li>Type your command using the expected arguments:</li>
+</ul>
+<pre><code>PrintNameCommand John
+</code></pre><p>Press <code>Enter</code> to execute. You should see this in the Unity Console:</p>
+<pre><code>Hello, John!
+</code></pre><hr>
+<h2 id="-best-practices">🏆 Best Practices</h2>
+<ul>
+<li>Enabling cheat/debug tools</li>
+<li>Quickly simulating gameplay events</li>
+</ul>
+<h2 id="--testing-systems-without-building-ui">- Testing systems without building UI</h2>
 </article>
           </div>
           
