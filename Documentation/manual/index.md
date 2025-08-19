@@ -10,11 +10,11 @@ Whether you’re a solo developer or part of a larger team, UBP provides a produ
 
 With UBP, you don’t need to worry about setting up your game's core systems. Everything is ready from the start:
 
-- 🎮 **Need to play a sound?** Just call `PlaySFX()`
-- 💾 **Want to save the game?** Use `SaveGame()` and you're done
-- 🧠 **Need data persistence, management, or loading?** It's all built-in and extensible
-- 🐞 **Need in-game debugging?** Open the **Debug Console** and run your commands or check logs
-- 🔁 **Want to load another scene?** Just call `LoadScene()`
+- 🎮 **Play a sound or music**
+- 💾 **Save the game**
+- 🧠 **Data persistence, management, and loading are built-in and extensible** 
+- 🐞 **In-game debugging and console commands** 
+- 🔁 **Scenes loading and management**
 - And much more!
 
 This project is structured to feel like a natural extension of Unity — intuitive, familiar, but vastly more powerful.

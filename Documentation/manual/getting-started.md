@@ -1,15 +1,11 @@
 # Getting Started
 
-## ✅ Requirements
-- Unity 2021.3 or newer
----
-
 ## 🚀 Quick Start
 
 
 ### 1. Import the Asset
 
-Import **Ultimate Base Project (UBP)** from the Package Manager into your Unity project.
+Import **Ultimate Base Project (UBP)** from the Package Manager into Unity project.
 
 ---
 
