@@ -28,8 +28,10 @@
         "globalMetadata": {
             "_appTitle": "Ultimate Base Project",
             "_appFooter": "Ultimate Base Project",
+            "_appLogoPath": "resources/logo.svg",
             "_enableSearch": true,
-            "_disableContribution": true
+            "_disableContribution": true,
+            "_appFaviconPath": "resources/favicon.ico"
         },
         "content": [
             {
